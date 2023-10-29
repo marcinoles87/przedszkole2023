@@ -85,4 +85,19 @@ img{
 }
 
 
+/* about*/
 
+#about{
+    height: 90vh;
+    background-image: url('../img/kids2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
+}
+
+#about p{
+
+    color:white;
+}
