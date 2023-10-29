@@ -13,22 +13,17 @@ function Contact() {
         </Row>
         <Row className='d-flex text-align-center'>
             <Col>
-            
                 <h2>Dane Adresowe Naszego przedszkola:</h2>
+
                 <div className='contact-info'>
-                <ul>
-                    <li>Adres : os. Na Stoku 21, 31-704 Kraków</li>
-                    <li>Email : przedszkole111@wp.pl</li>
-                    <li>Telefon : 12-666-666-666</li>
-                    </ul>
-                
+                    <i class="fa fa-house"></i><p>Adres : os na Stoku 1</p>
+                    <i class="fa fa-envelope"></i><p>Email : przedszkole111@wp.pl</p> 
+                    <i class="fa fa-phone"></i><p> Telefon : 12-666-666-666</p>
                 </div>
             </Col>
 
             <Col>
-                
                 <img src={mapa} alt='mapa'></img>
-            
             </Col>
         </Row>
     </Container>
