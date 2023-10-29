@@ -13,6 +13,8 @@ img{
 }
 
 .main-info{
+    width: auto;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,3 +39,4 @@ img{
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
 }
+

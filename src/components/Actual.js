@@ -49,14 +49,14 @@ function Actual() {
     <Container>
 
         <Row>
-            <Col style={{textAlign : 'center'}}>
+            <Col style={{textAlign : 'center' , marginTop:120 , marginBottom: 50}}>
                 <h1>Aktualności</h1>
             </Col>
         </Row>
-        <Row className='align-center'>
+        <Row>
             {actual.map( (item) => {
                 return(
-                    <Col md={4}>
+                    <Col md={4} className="d-flex justify-content-center">
                     <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl}></ActualCard>
                     </Col>
                 )

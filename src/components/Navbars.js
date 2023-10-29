@@ -20,7 +20,7 @@ function Navbars() {
               className="d-inline-block align-top"></img>
               
       </Navbar.Brand>
-      <h3>Przedszkole pod modrzewiami nr 111 Kraków</h3>
+      <h3>Przedszkole pod " Modrzewiem " nr 111 w Krakowie</h3>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">
