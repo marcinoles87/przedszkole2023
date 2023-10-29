@@ -8,7 +8,7 @@ function ActualCard({title,text,image}) {
     
   return (
     
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' , marginBottom:20}}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
