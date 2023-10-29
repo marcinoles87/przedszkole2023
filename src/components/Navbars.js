@@ -25,8 +25,8 @@ function Navbars() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">
           <Nav.Link href="#home">O Nas</Nav.Link>
-          <Nav.Link href="przedszkole">Nasze przedszkole</Nav.Link>
-          <Nav.Link href="przedszkole">Informacje</Nav.Link>
+          <Nav.Link href="#about">Nasze przedszkole</Nav.Link>
+          <Nav.Link href="#info">Informacje</Nav.Link>
           <Nav.Link href="#galeria">Galeria</Nav.Link>
           <Nav.Link href="#kontakt">Kontakt</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
