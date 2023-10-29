@@ -7,7 +7,7 @@ import mapa from '../img/mapa.png'
 
 function Contact() {
   return (
-    <Container className='contact-form'>
+    <Container id='contact' className='contact-form'>
         <Row>
             <Col><h1> Kontakt</h1></Col>
         </Row>

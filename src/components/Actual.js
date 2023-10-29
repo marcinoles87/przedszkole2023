@@ -46,7 +46,7 @@ function Actual() {
         }
     ]
   return (
-    <Container>
+    <Container id='info'>
 
         <Row>
             <Col style={{textAlign : 'center' , marginTop:120 , marginBottom: 50}}>

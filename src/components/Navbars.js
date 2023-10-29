@@ -24,11 +24,11 @@ function Navbars() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">
-          <Nav.Link href="#home">O Nas</Nav.Link>
+          
           <Nav.Link href="#about">Nasze przedszkole</Nav.Link>
           <Nav.Link href="#info">Informacje</Nav.Link>
-          <Nav.Link href="#galeria">Galeria</Nav.Link>
-          <Nav.Link href="#kontakt">Kontakt</Nav.Link>
+          <Nav.Link href="#gallery">Galeria</Nav.Link>
+          <Nav.Link href="#contact">Kontakt</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Grupa 1</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Grupa 2</NavDropdown.Item>
