@@ -13,12 +13,12 @@ function Contact() {
         </Row>
         <Row className='d-flex text-align-center'>
             <Col>
-                <h2>Dane Adresowe Naszego przedszkola:</h2>
+              
 
                 <div className='contact-info'>
-                    <i class="fa fa-house"></i><p>Adres : os na Stoku 1</p>
-                    <i class="fa fa-envelope"></i><p>Email : przedszkole111@wp.pl</p> 
-                    <i class="fa fa-phone"></i><p> Telefon : 12-666-666-666</p>
+                    <i class="fa fa-house fa-2xl"></i><p>Adres : os na Stoku 1</p>
+                    <i class="fa fa-envelope fa-2xl"></i><p>Email : przedszkole111@wp.pl</p> 
+                    <i class="fa fa-phone fa-2xl"></i><p> Telefon : 12-666-666-666</p>
                 </div>
             </Col>
 

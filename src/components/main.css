@@ -57,9 +57,16 @@ img{
 
 }
 
+.contact-info p {
+    font-size: 20px;
+    margin: 10px;
+}
+
 .contact-form img{
     padding: 5px;
     border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .contact-info ul {
