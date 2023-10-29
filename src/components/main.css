@@ -40,3 +40,30 @@ img{
     justify-content: flex-end;
 }
 
+/* main-info */
+
+
+
+/* contact form */
+
+.contact-form h1{
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.contact-info ul {
+    list-style-type: none;
+    background-color: rgb(56, 183, 243);
+    border-radius: 20px;
+}
+
+.contact-info ul li{
+    font-size: larger;
+    padding: 10px;
+}
+
