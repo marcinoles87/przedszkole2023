@@ -9,14 +9,17 @@ function AboutUs() {
   window.onscroll = function() {myFunction()};
 
   const aboutSection = document.querySelector('.about-info');
+  const aboutSection2 = document.querySelector('.about-info2');
 
   const myFunction = () => {
-    if(document.documentElement.scrollTop > 1800){
+    if(document.documentElement.scrollTop > 1700){
       
       aboutSection.classList.add('visible')
+      aboutSection2.classList.add('visible')
     }
     else{
        aboutSection.classList.remove('visible')
+       aboutSection2.classList.remove('visible')
     }}
 
   return (
