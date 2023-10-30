@@ -103,15 +103,11 @@ img{
    margin-top: 100px;
     background: rgba(0,0,0,0.6);
     border-radius: 20px;
-    
+    color: white;
 }
 
 .about-info ul li {
-    color:white;
+    
     text-align: left;
 }
 
-.about-info h3,p,li{
-    
-    color:rgb(203, 203, 203);
-}
