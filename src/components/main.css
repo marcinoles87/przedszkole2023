@@ -103,12 +103,7 @@ img{
    margin-top: 100px;
     background: rgba(0,0,0,0.6);
     border-radius: 20px;
-    display: none;
-    transition: 2s ease;
-}
-
-.visible{
-    display: contents;
+    
 }
 
 .about-info ul li {

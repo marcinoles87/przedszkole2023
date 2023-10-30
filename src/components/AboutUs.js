@@ -6,24 +6,23 @@ import Col from 'react-bootstrap/Col';
 
 function AboutUs() {
 
-  window.onscroll = function() {myFunction()};
+  // window.onscroll = function() {myFunction()};
 
-  const myFunction = () => {
-    if(document.documentElement.scrollTop > 1900){
-      console.log(window.scrollY)
-      console.log('powyzej 3000')
-      document.querySelector('.about-info').classList.add('visible')
-    }else{
+  // const myFunction = () => {
+  //   if(document.documentElement.scrollTop > 1800){
       
-      document.querySelector('.about-info').classList.remove('visible')
-    }
-  }
+  //     document.querySelector('.about-info').classList.add('visible')
+  //   }else{
+      
+  //     document.querySelector('.about-info').classList.remove('visible')
+  //   }
+  // }
   return (
     <Container id='about'>
        <Row>
         
         
-        <Col>
+      <Col>
           <div className='about-info'>
             <h3>O  Nas</h3>
             <p>Przedszkole usytuowane jest w budynku piętrowym, wolnostojącym. Dysponuje kilkoma jasnymi obszernymi salami zajęć, łazienkami i dużą szatnią. Na naszym terenie znajduje się piękny, zmodernizowany ogród bogaty w zieleń. Dodatkowo posiadamy bogatą bazę dydaktyczną oraz sprzęt sportowy.Naszym celem jest wspomaganie i ukierunkowanie rozwoju dziecka zgodnie z jego wrodzonym potencjałem w relacjach ze środowiskiem społeczno-kulturowym i przyrodniczym.</p>
@@ -37,9 +36,9 @@ function AboutUs() {
 
               </ul>
       </div> 
-       </Col>
+      </Col>
 
-       <Col>
+      <Col>
 
         <div className='about-info'>
            <h3>Jeśli wybierając przedszkole dla swojego dziecka pragniecie aby:</h3>
@@ -63,7 +62,7 @@ function AboutUs() {
 
       
        
-       </Col>
+      </Col>
 
        
        </Row>
