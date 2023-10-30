@@ -88,6 +88,7 @@ img{
 /* about*/
 
 #about{
+    position: relative;
     height: 90vh;
     background-image: url('../img/kids2.jpg');
     background-position: center;
@@ -97,7 +98,13 @@ img{
     
 }
 
-#about p{
+.about-info{
+    position: absolute;
+    top:50%;
+    background: rgba(0,0,0,0.6);
+}
 
+.about-info h1,p{
+    
     color:white;
 }
