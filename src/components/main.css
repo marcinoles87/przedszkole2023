@@ -99,9 +99,14 @@ img{
 }
 
 .about-info{
-    position: absolute;
-    top:50%;
+   
     background: rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+
+.about-info ul li {
+    color:white;
+    text-align: left;
 }
 
 .about-info h1,p{
