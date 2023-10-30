@@ -6,17 +6,19 @@ import Col from 'react-bootstrap/Col';
 
 function AboutUs() {
 
-  // window.onscroll = function() {myFunction()};
+  window.onscroll = function() {myFunction()};
 
-  // const myFunction = () => {
-  //   if(document.documentElement.scrollTop > 1800){
+  const aboutSection = document.querySelector('.about-info');
+
+  const myFunction = () => {
+    if(document.documentElement.scrollTop > 1800){
       
-  //     document.querySelector('.about-info').classList.add('visible')
-  //   }else{
-      
-  //     document.querySelector('.about-info').classList.remove('visible')
-  //   }
-  // }
+      aboutSection.classList.add('visible')
+    }
+    else{
+       aboutSection.classList.remove('visible')
+    }}
+
   return (
     <Container id='about'>
        <Row>
@@ -40,7 +42,7 @@ function AboutUs() {
 
       <Col>
 
-        <div className='about-info'>
+        <div className='about-info2'>
            <h3>Jeśli wybierając przedszkole dla swojego dziecka pragniecie aby:</h3>
             <ul>
                   <li>zapewniło wysoki poziom wychowania i kształcenia</li>

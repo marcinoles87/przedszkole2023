@@ -100,10 +100,19 @@ img{
 }
 
 .about-info{
-   margin-top: 100px;
+    margin-top: 100px;
     background: rgba(0,0,0,0.6);
     border-radius: 20px;
     color: white;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all;
+}
+
+.visible{
+    transform: translateY(0px);
+    opacity: 1;
+
 }
 
 .about-info ul li {
