@@ -5,6 +5,19 @@ import Col from 'react-bootstrap/Col';
 
 
 function AboutUs() {
+
+  window.onscroll = function() {myFunction()};
+
+  const myFunction = () => {
+    if(document.documentElement.scrollTop > 1900){
+      console.log(window.scrollY)
+      console.log('powyzej 3000')
+      document.querySelector('.about-info').classList.add('visible')
+    }else{
+      
+      document.querySelector('.about-info').classList.remove('visible')
+    }
+  }
   return (
     <Container id='about'>
        <Row>
@@ -12,15 +25,15 @@ function AboutUs() {
         
         <Col>
           <div className='about-info'>
-            <h1>O  Nas</h1>
+            <h3>O  Nas</h3>
             <p>Przedszkole usytuowane jest w budynku piętrowym, wolnostojącym. Dysponuje kilkoma jasnymi obszernymi salami zajęć, łazienkami i dużą szatnią. Na naszym terenie znajduje się piękny, zmodernizowany ogród bogaty w zieleń. Dodatkowo posiadamy bogatą bazę dydaktyczną oraz sprzęt sportowy.Naszym celem jest wspomaganie i ukierunkowanie rozwoju dziecka zgodnie z jego wrodzonym potencjałem w relacjach ze środowiskiem społeczno-kulturowym i przyrodniczym.</p>
 
             <p>Gwarantujemy:</p>
               <ul>
-                <li>     odpowiednio dobrany zespół kompetentnych nauczycieli o wysokich kwalifikacjach i doświadczeniu pedagogicznym</li>
-                <li>     gotowość pełnej współpracy z rodzicami</li>
-                <li>     opracowany i znany rodzicom plan rozwoju przedszkola</li>
-              <li>     prowadzenie działalności w oparciu o "Podstawę Programową" obudowaną nowatorskimi programami edukacyjnymi oraz autorskimi nauczycieli </li>
+                <li>odpowiednio dobrany zespół kompetentnych nauczycieli o wysokich kwalifikacjach i doświadczeniu pedagogicznym</li>
+                <li>gotowość pełnej współpracy z rodzicami</li>
+                <li>opracowany i znany rodzicom plan rozwoju przedszkola</li>
+              <li>prowadzenie działalności w oparciu o "Podstawę Programową" obudowaną nowatorskimi programami edukacyjnymi oraz autorskimi nauczycieli </li>
 
               </ul>
       </div> 
@@ -29,7 +42,7 @@ function AboutUs() {
        <Col>
 
         <div className='about-info'>
-           <h1>Co oferujemy</h1>
+           <h3>Jeśli wybierając przedszkole dla swojego dziecka pragniecie aby:</h3>
             <ul>
                   <li>zapewniło wysoki poziom wychowania i kształcenia</li>
                   <li>zachęcało do działania i osiągnięcia sukcesów</li>
