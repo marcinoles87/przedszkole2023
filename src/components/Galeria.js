@@ -8,10 +8,15 @@ import im1 from '../img/kids2.jpg'
 
 function Galeria() {
 
- const  [modal , setModal] = useState(false)
+ const  [modal , setModal] = useState(false);
+ const [img , setImg] = useState('');
 
   const handleOnClick = (e) => {
     setModal(!modal)
+    console.log(modal)
+    console.log(e.target)
+    let i = e.target
+    setImg(i)
 
   }
 
@@ -27,15 +32,12 @@ function Galeria() {
           <Row>
             <Col>
             <div className='gallery-container'>
-          
-              <img id='gallery-img1' src={im1} alt='1' onClick={handleOnClick}></img>
-              <img src={im1} alt='2' onClick={handleOnClick}></img>
-              <img src={im1} alt='3' onClick={handleOnClick}></img>
-              <img src={im1} alt='4' onClick={handleOnClick}></img>
-              <img src={im1} alt='5' onClick={handleOnClick}></img>
-              <img src={im1} alt='6' onClick={handleOnClick}></img>
-              <img src={im1} alt='7' onClick={handleOnClick}></img>
-              <img src={im1} alt='8' onClick={handleOnClick}></img>
+
+              {modal && <div className='modal'>{img}</div>}
+              
+              <img className={modal} src={im1} alt='1' onClick={handleOnClick}></img>
+              <img className={modal} src={im1} alt='2' onClick={handleOnClick}></img>
+              <img className={modal} src={im1} alt='3' onClick={handleOnClick}></img>
              
               
             </div>
