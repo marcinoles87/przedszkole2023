@@ -8,8 +8,8 @@ function AboutUs() {
 const aboutSection = document.querySelector('.about-info');
   const aboutSection2 = document.querySelector('.about-info2');
   
-  window.onscroll = function() {myFunction()};
-
+ 
+ window.onscroll =function() {myFunction()};
   
 
   const myFunction = () => {
@@ -18,10 +18,9 @@ const aboutSection = document.querySelector('.about-info');
       aboutSection.classList.add('visible')
       aboutSection2.classList.add('visible')
     }
-    else{
-       aboutSection.classList.remove('visible')
-       aboutSection2.classList.remove('visible')
-    }}
+  }
+    
+   
 
   return (
     <Container id='about'>

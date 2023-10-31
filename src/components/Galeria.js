@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import images from '../images.json'
 
 
 function Galeria() {
@@ -15,9 +16,9 @@ function Galeria() {
 
           <Col>
             <div className='gallery-container'>
-              {images.map( () =>{
+              {images.map( (item) =>{
                 return(
-                  <img src='' alt=''></img>
+                  <img src={item.images} alt=''></img>
                 )
               })}
               
