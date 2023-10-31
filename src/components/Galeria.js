@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,11 +8,10 @@ import im1 from '../img/kids2.jpg'
 
 function Galeria() {
 
+ const  [modal , setModal] = useState(false)
+
   const handleOnClick = (e) => {
-    console.log(e.target.alt)
-    const element = document.getElementById('gallery-img1')
-    console.log(element)
-    element.classList.add('modal')
+    setModal(!modal)
 
   }
 
