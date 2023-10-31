@@ -4,21 +4,22 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-function AboutUs() {
-const aboutSection = document.querySelector('.about-info');
-  const aboutSection2 = document.querySelector('.about-info2');
-  
+function AboutUs() {  
  
-//  window.onscroll =function() {myFunction()};
+ window.onscroll =function() {myFunction()};
   
+  const myFunction = () => {
 
-  // const myFunction = () => {
-  //   if(document.documentElement.scrollTop > 1700){
-      
-  //     aboutSection.classList.add('visible')
-  //     aboutSection2.classList.add('visible')
-  //   }
-  // }
+    let el = document.querySelector('#about-info')
+    let el2 = document.querySelector('#about-info2')
+
+    if(document.documentElement.scrollTop > 1700){
+        el.classList.add('visible')
+        el2.classList.add('visible')
+    }else{
+        el.classList.remove('visible')
+        el2.classList.remove('visible')
+  }}
     
    
 
@@ -28,7 +29,7 @@ const aboutSection = document.querySelector('.about-info');
         
         
       <Col>
-          <div className='about-info'>
+          <div className='about-info' id='about-info'>
             <h3>O  Nas</h3>
             <p>Przedszkole usytuowane jest w budynku piętrowym, wolnostojącym. Dysponuje kilkoma jasnymi obszernymi salami zajęć, łazienkami i dużą szatnią. Na naszym terenie znajduje się piękny, zmodernizowany ogród bogaty w zieleń. Dodatkowo posiadamy bogatą bazę dydaktyczną oraz sprzęt sportowy.Naszym celem jest wspomaganie i ukierunkowanie rozwoju dziecka zgodnie z jego wrodzonym potencjałem w relacjach ze środowiskiem społeczno-kulturowym i przyrodniczym.</p>
 
@@ -45,7 +46,7 @@ const aboutSection = document.querySelector('.about-info');
 
       <Col>
 
-        <div className='about-info2'>
+        <div className='about-info2' id='about-info2'>
            <h3>Jeśli wybierając przedszkole dla swojego dziecka pragniecie aby:</h3>
             <ul>
                   <li>zapewniło wysoki poziom wychowania i kształcenia</li>

@@ -172,6 +172,15 @@ img{
     height: 60vh;
 }
 
+.gallery-container .drop img{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 .gallery-container .modal img{
     position: relative;
     top: 50%;
@@ -180,4 +189,6 @@ img{
     height: 80%;
     transform: translate(-50%,-50%);
 }
+
+
 
