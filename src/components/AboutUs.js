@@ -9,16 +9,16 @@ const aboutSection = document.querySelector('.about-info');
   const aboutSection2 = document.querySelector('.about-info2');
   
  
- window.onscroll =function() {myFunction()};
+//  window.onscroll =function() {myFunction()};
   
 
-  const myFunction = () => {
-    if(document.documentElement.scrollTop > 1700){
+  // const myFunction = () => {
+  //   if(document.documentElement.scrollTop > 1700){
       
-      aboutSection.classList.add('visible')
-      aboutSection2.classList.add('visible')
-    }
-  }
+  //     aboutSection.classList.add('visible')
+  //     aboutSection2.classList.add('visible')
+  //   }
+  // }
     
    
 
