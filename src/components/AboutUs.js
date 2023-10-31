@@ -5,11 +5,12 @@ import Col from 'react-bootstrap/Col';
 
 
 function AboutUs() {
-
+const aboutSection = document.querySelector('.about-info');
+  const aboutSection2 = document.querySelector('.about-info2');
+  
   window.onscroll = function() {myFunction()};
 
-  const aboutSection = document.querySelector('.about-info');
-  const aboutSection2 = document.querySelector('.about-info2');
+  
 
   const myFunction = () => {
     if(document.documentElement.scrollTop > 1700){
