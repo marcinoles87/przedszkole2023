@@ -19,7 +19,8 @@ function AboutUs() {
     }else{
         el.classList.remove('visible')
         el2.classList.remove('visible')
-  }}
+      }
+    }
     
    
 
@@ -38,7 +39,7 @@ function AboutUs() {
                 <li>odpowiednio dobrany zespół kompetentnych nauczycieli o wysokich kwalifikacjach i doświadczeniu pedagogicznym</li>
                 <li>gotowość pełnej współpracy z rodzicami</li>
                 <li>opracowany i znany rodzicom plan rozwoju przedszkola</li>
-              <li>prowadzenie działalności w oparciu o "Podstawę Programową" obudowaną nowatorskimi programami edukacyjnymi oraz autorskimi nauczycieli </li>
+                <li>prowadzenie działalności w oparciu o "Podstawę Programową" obudowaną nowatorskimi programami edukacyjnymi oraz autorskimi nauczycieli </li>
 
               </ul>
       </div> 
