@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/esm/Col'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import ActualCard from './ActualCard'
-import img1 from '../img/logo.png'
+import img1 from '../img/kids.png'
 
 
 function Actual() {
