@@ -10,16 +10,16 @@ import im2 from '../img/kids.png'
 
 function Galeria() {
 
-const [modal , setModal] = useState(false);
-
   const handleOnClick = (e) => {
-
-    console.log(e.target)
     
-let el = e.target
+    let el = e.target
+
+    const drop = document.querySelector('.drop-enlarge')
       
+    
     el.classList.toggle('modal')
-    setModal(!modal)
+    drop.classList.toggle('drop')
+  
     }
   
 
@@ -40,7 +40,7 @@ let el = e.target
 
               
             
-              
+              <div className='drop-enlarge'></div>
               <img id='galImg' src={im1} alt='1' onClick={handleOnClick}></img>
               <img id='galImg2' src={im2} alt='2' onClick={handleOnClick}></img>
               <img id='galImg2' src={im2} alt='2' onClick={handleOnClick}></img>

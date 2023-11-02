@@ -142,6 +142,7 @@ img{
 }
 
 .gallery-container{
+    position: relative;
     height: 110%;
     display: flex;
     flex-direction: row;
@@ -154,33 +155,35 @@ img{
     text-align: center;
 }
 
-
-
-.gallery-container img{
-    width: 23%;
-
-}
-
 .gallery-container .modal{
 
     display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: blue;
-    width: 60vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40vw;
     height: 70vh;
+    transform: translate(-50%,-50%);
+    background-color: blue;
+    z-index: 1;
+}
+
+.gallery-container img{
+    width: 23%;
+    transition: 0.3 ease;
+
 }
 
 
-
 .gallery-container .drop{
+    margin: 20px;
     position: fixed;
     top:0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
+    width: 95vw;
+    height: 95vh;
+    background: rgba(46, 46, 46, 0.5);
+    z-index: 1;
 }
 
 .gallery-container .modal img{
