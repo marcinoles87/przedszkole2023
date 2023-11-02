@@ -8,13 +8,15 @@ import im1 from '../img/kids2.jpg'
 
 function Galeria() {
 
-
+const [modal , setModal] = useState(false);
 
   const handleOnClick = () => {
 
+    
+
     let el = document.querySelector('#galImg');
     el.classList.toggle('modal')
-    el.classList.toggle('drop')
+    setModal(!modal)
 
   }
 
@@ -32,7 +34,7 @@ function Galeria() {
             <div className='gallery-container'>
 
               
-              
+              {modal && <div className='drop'></div>}
               <img id='galImg' src={im1} alt='1' onClick={handleOnClick}></img>
               
              
