@@ -6,6 +6,7 @@ import Image from 'react-bootstrap/Image'
 
 import im1 from '../img/kids2.jpg'
 import im2 from '../img/kids.png'
+import im3 from '../img/headerimg2.jpg'
 
 
 function Galeria() {
@@ -43,7 +44,7 @@ function Galeria() {
               <div className='drop-enlarge'></div>
               <img id='galImg' src={im1} alt='1' onClick={handleOnClick}></img>
               <img id='galImg2' src={im2} alt='2' onClick={handleOnClick}></img>
-              <img id='galImg2' src={im2} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg2' src={im3} alt='2' onClick={handleOnClick}></img>
           
              
               
