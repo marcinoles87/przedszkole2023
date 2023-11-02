@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image'
 
 import im1 from '../img/kids2.jpg'
 import im2 from '../img/kids.png'
@@ -14,18 +13,12 @@ function Galeria() {
   const handleOnClick = (e) => {
     
     let el = e.target
-
     const drop = document.querySelector('.drop-enlarge')
-      
-    
     el.classList.toggle('modal')
     drop.classList.toggle('drop')
   
     }
   
-
-  
-
   return (
     <div id='gallery'>
       <Container>
@@ -38,18 +31,10 @@ function Galeria() {
           <Row>
             <Col>
             <div className='gallery-container'>
-
-              
-            
               <div className='drop-enlarge'></div>
               <img id='galImg' src={im1} alt='1' onClick={handleOnClick}></img>
-              <img id='galImg2' src={im2} alt='2' onClick={handleOnClick}></img>
-              <img id='galImg2' src={im3} alt='2' onClick={handleOnClick}></img>
-          
-             
-              
-             
-              
+              <img id='galImg' src={im2} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
             </div>
             </Col>
           </Row>

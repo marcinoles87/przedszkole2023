@@ -2,6 +2,10 @@
     scroll-behavior: smooth;
 }
 
+h1{
+    font-family: 'Playfair Display', serif;;
+}
+
 img{
     width: 100%;
 }
@@ -24,8 +28,8 @@ img{
     justify-content: center;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    left: 0;
+    /* transform: translate(-50% , -50%); */
     text-align: center;
     align-items: center;
     color:white;
@@ -182,7 +186,7 @@ img{
     width: 95vw;
     height: 95vh;
     border: 2px solid rgb(0, 0, 0);
-    background: rgba(46, 46, 46, 0.5);
+    background: rgba(46, 46, 46, 0.812);
     z-index: 1;
 }
 
