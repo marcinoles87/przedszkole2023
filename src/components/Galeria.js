@@ -10,15 +10,17 @@ function Galeria() {
 
 const [modal , setModal] = useState(false);
 
-  const handleOnClick = () => {
+  const handleOnClick = (e) => {
 
-    
+    console.log(e.target.alt)
 
     let el = document.querySelector('#galImg');
     el.classList.toggle('modal')
     setModal(!modal)
 
   }
+
+  
 
   return (
     <div id='gallery'>
@@ -36,6 +38,9 @@ const [modal , setModal] = useState(false);
               
               {modal && <div className='drop'></div>}
               <img id='galImg' src={im1} alt='1' onClick={handleOnClick}></img>
+              <img id='galImg' src={im1} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im1} alt='3' onClick={handleOnClick}></img>
+              <img id='galImg' src={im1} alt='4' onClick={handleOnClick}></img>
               
              
               
