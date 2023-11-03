@@ -29,6 +29,7 @@ function Navbars() {
           <Nav.Link href="#info">Informacje</Nav.Link>
           <Nav.Link href="#gallery">Galeria</Nav.Link>
           <Nav.Link href="#contact">Kontakt</Nav.Link>
+          <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Grupa 1</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Grupa 2</NavDropdown.Item>
