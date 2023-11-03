@@ -6,6 +6,9 @@ h1 , h2{
     font-family: 'Playfair Display', serif;;
 }
 
+h1{
+    border-bottom: 2px solid green ; 
+}
 img{
     width: 100%;
 }

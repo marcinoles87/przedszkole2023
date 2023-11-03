@@ -23,11 +23,11 @@ function Contact() {
 
                     <div className='contact-info'>
                         <h4>Godziny pracy sekretariatu</h4>
-                        <p>Poniedziałek	8:00 - 16:00</p>
-                        <p> Wtorek	8:00 - 16:00</p>
-                        <p>Środa	8:00 - 16:00</p>
-                        <p>Czawartek	8:00 - 16:00</p>
-                        <p>Piątek	8:00 - 16:00</p>
+                        <p>Poniedziałek	8:00 - 15:00</p>
+                        <p> Wtorek	8:00 - 15:00</p>
+                        <p>Środa	8:00 - 15:00</p>
+                        <p>Czawartek	8:00 - 15:00</p>
+                        <p>Piątek	8:00 - 15:00</p>
                     </div>
                     
                     
