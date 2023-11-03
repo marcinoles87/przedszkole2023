@@ -2,7 +2,7 @@
     scroll-behavior: smooth;
 }
 
-h1{
+h1 , h2{
     font-family: 'Playfair Display', serif;;
 }
 
@@ -27,10 +27,10 @@ img{
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 20%;
+    left: 20%;
     /* transform: translate(-50% , -50%); */
-    text-align: center;
+    text-align: left;
     align-items: center;
     color:white;
     background-color: black;
@@ -38,11 +38,15 @@ img{
     border-radius: 20px;
 }
 
-.main-info h1 , h2{
-    color:rgb(193, 193, 193);
-    font: bold;
-    
+.main-info h1{
+    font-size: 80px;
 }
+
+.main-info h2{
+    font: 30px;
+}
+
+
 
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;

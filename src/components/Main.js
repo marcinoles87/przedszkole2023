@@ -16,11 +16,11 @@ function Main() {
             <Col id='main' md={12} lg={12}>
                 
                 <div className='main-info'>
-                    <h1>Witamy na naszej Stronie !</h1>
-                    <h4>Z kazdym dniem staramy sie dokladac
-                      wszelkich staran aby Wasze dzieci czuly sie
-                      u Nas w przedszkolu jak najlepiej !
-                    </h4>
+                    <h1> " Przedszkole to drugi dom</h1>
+                    <h2>przedszkole jest miejscem, w którym  <br></br> 
+                      spędzają dużo czasu, uczą się i rozwijają, <br></br>
+                      a nauczyciele pełnią rolę rodziców... "
+                    </h2>
                 </div>
               
                 
