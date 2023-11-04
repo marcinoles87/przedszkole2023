@@ -11,7 +11,7 @@ import logo from '../img/logo.png'
 
 function Navbars() {
   return (
-    <Navbar expand="lg"  bg="dark" data-bs-theme="white" >
+    <Navbar expand="lg"  bg="primary" data-bs-theme="dark">
     <Container>
       <Navbar.Brand href="#home">
         <img src={logo} alt='logo' 
@@ -20,7 +20,7 @@ function Navbars() {
               className="d-inline-block align-top"></img>
               
       </Navbar.Brand>
-      <h3>Przedszkole pod " Modrzewiem " nr 111 w Krakowie</h3>
+      <h3 style={{color:'white'}}>Przedszkole pod " Modrzewiem " nr 111 w Krakowie</h3>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">
