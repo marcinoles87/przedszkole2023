@@ -16,9 +16,9 @@ function Contact() {
               
 
                 <div className='contact-info'>
-                    <i className="fa fa-house fa-2xl"></i><p>Adres : os na Stoku 1</p>
+                    <i className="fa fa-house fa-2xl"></i><p>Adres : os na Stoku 21 31-704 Kraków</p>
                     <i className="fa fa-envelope fa-2xl"></i><p>Email : przedszkole111@wp.pl</p> 
-                    <i className="fa fa-phone fa-2xl"></i><p> Telefon : 12-666-666-666</p>
+                    <i className="fa fa-phone fa-2xl"></i><p> Telefon : tel./fax (12) 645-14-80</p>
                 </div>
 
                     <div className='contact-info'>
@@ -38,7 +38,10 @@ function Contact() {
             </Col>
 
             <Col>
+            <a href='https://www.google.com/maps/place/Przedszkole+Samorz%C4%85dowe.+Pod+Modrzewiem/@50.095767,20.052561,17z/data=!3m1!4b1!4m6!3m5!1s0x47164563bb6776a5:0x6fff9981726cd395!8m2!3d50.095767!4d20.0551359!16s%2Fg%2F1tfll51w?entry=ttu'>
                 <img src={mapa} alt='mapa'></img>
+                </a>
+                
             </Col>
         </Row>
     </Container>

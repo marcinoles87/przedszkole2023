@@ -17,7 +17,7 @@ function Main() {
                 
                 <div className='main-info'>
                     <h1> " Przedszkole to drugi dom</h1>
-                    <h2>przedszkole jest miejscem, w którym  <br></br> 
+                    <h2>w którym Wasze dzieci <br></br> 
                       spędzają dużo czasu, uczą się i rozwijają, <br></br>
                       a nauczyciele pełnią rolę rodziców... "
                     </h2>

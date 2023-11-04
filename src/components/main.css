@@ -9,6 +9,7 @@ h1 , h2{
 h1{
     border-bottom: 2px solid green ; 
 }
+
 img{
     width: 100%;
 }
@@ -30,10 +31,10 @@ img{
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 20%;
     /* transform: translate(-50% , -50%); */
-    text-align: left;
+    text-align: center;
     align-items: center;
     color:white;
     background-color: black;
@@ -45,9 +46,7 @@ img{
     font-size: 80px;
 }
 
-.main-info h2{
-    font: 30px;
-}
+
 
 
 
