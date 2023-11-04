@@ -28,14 +28,14 @@ function Navbars() {
           <Nav.Link href="#about">Nasze przedszkole</Nav.Link>
           <Nav.Link href="#info">Informacje</Nav.Link>
           <Nav.Link href="#gallery">Galeria</Nav.Link>
-          <Nav.Link href="#contact">Kontakt</Nav.Link>
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Grupa 1</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Grupa 2</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Grupa 3</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.4">Grupa 4</NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> 
+          <Nav.Link href="#contact">Kontakt</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
