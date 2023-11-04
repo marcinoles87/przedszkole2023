@@ -8,14 +8,17 @@ import './main.css'
 
 function Main() {
 
-window.onscroll = function () {handleOnScrool()}
+// window.onscroll = function () {handleOnScrool()}
 
 const handleOnScrool = () => {
  
   let elMain = document.querySelector('.main-info')
+
+  console.log(document.documentElement.scrollTop)
+  console.log(document.body.scrollTop)
  
 
-  if(document.documentElement.scrollTop > 0){
+  if(document.documentElement.scrollTop > 10){
     elMain.classList.add('visibleMain')
   }else{
     elMain.classList.remove('visibleMain')
