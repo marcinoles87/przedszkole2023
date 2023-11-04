@@ -11,7 +11,7 @@ import logo from '../img/logo.png'
 
 function Navbars() {
   return (
-    <Navbar expand="lg"  bg="primary" data-bs-theme="dark">
+    <Navbar expand="lg"  bg="success" data-bs-theme="dark">
     <Container>
       <Navbar.Brand href="#home">
         <img src={logo} alt='logo' 

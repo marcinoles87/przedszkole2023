@@ -3,13 +3,27 @@ import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 
-
-import img1 from '../img/headerimg2.jpg'
-
 import './main.css'
 
 
 function Main() {
+
+window.onscroll = function () {handleOnScrool()}
+
+const handleOnScrool = () => {
+ 
+  let elMain = document.querySelector('.main-info')
+ 
+
+  if(document.documentElement.scrollTop > 0){
+    elMain.classList.add('visibleMain')
+  }else{
+    elMain.classList.remove('visibleMain')
+  }
+
+}
+
+
   return (
     <Container>
         <Row>
