@@ -8,23 +8,27 @@ import './main.css'
 
 function Main() {
 
-// window.onscroll = function () {handleOnScrool()}
 
-const handleOnScrool = () => {
+
+const onScrool = () => {
+
+  const scrolled = window.scrollY
  
   let elMain = document.querySelector('.main-info')
 
-  console.log(document.documentElement.scrollTop)
-  console.log(document.body.scrollTop)
+  console.log(scrolled);
+ 
  
 
-  if(document.documentElement.scrollTop > 10){
+  if(scrolled > 5){
     elMain.classList.add('visibleMain')
   }else{
     elMain.classList.remove('visibleMain')
   }
 
 }
+
+window.addEventListener('scroll' , onScrool)
 
 
   return (

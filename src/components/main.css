@@ -44,7 +44,8 @@ img{
     background-color: black;
     background: rgba(0, 0, 0, 0.450);
     border-radius: 20px;
-    opacity: 1;
+    transform: translateY(-80px);
+    opacity: 0;
     transition: 1.5s all;
 }
 
