@@ -32,8 +32,13 @@ function Galeria() {
             <Col>
             <div className='gallery-container'>
               <div className='drop-enlarge'></div>
-              <img id='galImg' src={im1} alt='1' onClick={handleOnClick}></img>
-              <img id='galImg' src={im2} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='1' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
+              <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
               <img id='galImg' src={im3} alt='2' onClick={handleOnClick}></img>
             
             </div>
