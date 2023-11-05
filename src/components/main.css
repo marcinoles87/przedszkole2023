@@ -223,5 +223,13 @@ img{
     transform: translate(-50%,-50%);
 }
 
+/*jadlospis*/
+
+.jadlospis h1{
+    margin: 50px 0;
+    text-align: center;
+
+}
+
 
 
