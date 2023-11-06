@@ -4,46 +4,42 @@ import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import ActualCard from './ActualCard'
 import img1 from '../img/kids.png'
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useState } from 'react'
 
 
 function Actual() {
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+  
+
     const actual = [
         {
-            title: "Development and FrontEnd" ,
+            title: "Jedzenie" ,
             descirption : "build app " ,
-            imgUrl : img1
+            imgUrl : img1 ,
+            info : 'sssssssss'
         },
 
         {
-            title: "Development and FrontEnd" ,
+            title: "Wycieczka" ,
             descirption : "build app " ,
-            imgUrl : img1
+            imgUrl : img1,
+            info : 'bbbbbbbbb'
         },
 
         {
-            title: "Development and FrontEnd" ,
+            title: "Rodzice" ,
             descirption : "build app " ,
-            imgUrl : img1
+            imgUrl : img1,
+            info : 'aaaaaaaaa'
         },
 
-        {
-            title: "Development and FrontEnd" ,
-            descirption : "build app " ,
-            imgUrl : img1
-        } ,
-
-        {
-            title: "Development and FrontEnd" ,
-            descirption : "build app " ,
-            imgUrl : img1
-        } ,
-
-        {
-            title: "Development and FrontEnd" ,
-            descirption : "build app " ,
-            imgUrl : img1
-        }
+        
     ]
   return (
     <Container id='info'>
@@ -56,9 +52,21 @@ function Actual() {
         <Row>
             {actual.map( (item) => {
                 return(
+                    <>
                     <Col md={4} className="d-flex justify-content-center">
-                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl}></ActualCard>
+                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow}></ActualCard>
                     </Col>
+                   
+                          <Offcanvas show={show} onHide={handleClose}>
+                          <Offcanvas.Header closeButton>
+                            <Offcanvas.Title>{item.title}</Offcanvas.Title>
+                          </Offcanvas.Header>
+                          <Offcanvas.Body>
+                            {item.info}
+                          </Offcanvas.Body>
+                        </Offcanvas>
+                        </>
+                    
                 )
             })}
            

@@ -2,31 +2,16 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import cardImg from '../img/headerimg.jpg'
-import Offcanvas from 'react-bootstrap/Offcanvas';
+
 import { useState } from 'react';
 
-function ActualCard({title,text,image}) {
+function ActualCard({title,text,image,show,setShow}) {
 
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
-  const aktualnosci = [
-    {
-      title :'jedzenie' ,
-      data : 'dzis' ,
-      info : 'dddddddddddddddddddd ',
-     
-    },
-
-    {
-      title :'wycieczka' ,
-      data : 'dzis' ,
-      info : 'bbbbbbbbbbb ',
-     
-    }
-  ]
+   
+    const handleShow = () => setShow(true);
+ 
     
   return (
     <>
@@ -42,17 +27,7 @@ function ActualCard({title,text,image}) {
     </Card>
 
 
-    {aktualnosci.map( (item) => {
-      return(
-        <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>{item.title}</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          {item.info}
-        </Offcanvas.Body>
-      </Offcanvas>
-      ) } ) }
+    
   
     
 

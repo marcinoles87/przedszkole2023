@@ -16,15 +16,11 @@ const onScrool = () => {
  
   let elMain = document.querySelector('.main-info')
 
-  console.log(scrolled);
- 
- 
-
-  if(scrolled > 5){
-    elMain.classList.add('visibleMain')
-  }else{
-    elMain.classList.remove('visibleMain')
-  }
+      if(scrolled > 5){
+        elMain.classList.add('visibleMain')
+      }else{
+        elMain.classList.remove('visibleMain')
+      }
 
 }
 
