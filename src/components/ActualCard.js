@@ -2,15 +2,20 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import cardImg from '../img/headerimg.jpg'
-
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react';
 
-function ActualCard({title,text,image,show,setShow}) {
+
+
+function ActualCard({title,text,image,info}) {
 
 
 
-   
-    const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+    
  
     
   return (
@@ -23,8 +28,17 @@ function ActualCard({title,text,image,show,setShow}) {
           {text}
         </Card.Text>
         <Button variant="primary" onClick={handleShow}>Go somewhere</Button>
-      </Card.Body>
+        </Card.Body>
     </Card>
+
+    <Offcanvas show={show} onHide={handleClose}>
+                          <Offcanvas.Header closeButton>
+                            <Offcanvas.Title>{title}</Offcanvas.Title>
+                          </Offcanvas.Header>
+                          <Offcanvas.Body>
+                            {info}
+                          </Offcanvas.Body>
+                        </Offcanvas>
 
 
     

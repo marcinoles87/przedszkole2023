@@ -6,6 +6,7 @@ import ActualCard from './ActualCard'
 import img1 from '../img/kids.png'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
+import Button from 'react-bootstrap/esm/Button'
 
 
 function Actual() {
@@ -14,6 +15,7 @@ function Actual() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
 
   
 
@@ -50,21 +52,15 @@ function Actual() {
             </Col>
         </Row>
         <Row>
-            {actual.map( (item) => {
+            {actual.map( (item,index) => {
                 return(
                     <>
                     <Col md={4} className="d-flex justify-content-center">
-                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow}></ActualCard>
+                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info}></ActualCard>
+                    
                     </Col>
                    
-                          <Offcanvas show={show} onHide={handleClose}>
-                          <Offcanvas.Header closeButton>
-                            <Offcanvas.Title>{item.title}</Offcanvas.Title>
-                          </Offcanvas.Header>
-                          <Offcanvas.Body>
-                            {item.info}
-                          </Offcanvas.Body>
-                        </Offcanvas>
+                     
                         </>
                     
                 )
