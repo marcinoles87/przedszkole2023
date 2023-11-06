@@ -13,7 +13,7 @@ function AboutUs() {
     let el = document.querySelector('#about-info')
     let el2 = document.querySelector('#about-info2')
 
-    if(document.documentElement.scrollTop > 1700){
+    if(document.documentElement.scrollTop > 1300){
         el.classList.add('visible')
         el2.classList.add('visible')
     }else{
