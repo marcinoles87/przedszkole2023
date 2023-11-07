@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Navbars></Navbars>
-      <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'black' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
+      <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
       <Main></Main>
       <Actual></Actual>
       <AboutUs></AboutUs>

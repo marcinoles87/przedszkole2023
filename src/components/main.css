@@ -245,4 +245,26 @@ img{
 }
 
 
+@media screen and (max-width:430px) {
+
+    .main-info{
+        position: relative;
+        top:25%;
+        left: 0;
+    }
+
+    .main-info h1{
+        font-size: 40px;
+    }
+    
+    #galImg{
+        width: 40%;
+    }
+
+    .offcanvas-body{
+        height: 70%;
+    }
+}
+
+
 
