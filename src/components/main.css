@@ -245,7 +245,12 @@ img{
 }
 
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:450px) {
+
+    #nav-container{
+        text-align: center;
+        justify-content: center;
+    }
 
     .main-info{
         position: relative;
