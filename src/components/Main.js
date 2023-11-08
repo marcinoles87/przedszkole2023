@@ -45,19 +45,21 @@ window.addEventListener('scroll' , onScrool)
         </Row>
 
         <Row>
-          <Col> <h2>Opłaty za korzystanie z przedszkola</h2>
-          <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:
-<p>Dzienna stawka żywieniowa wynosi:</p>
-<ul>
-  <li>3 posiłki (śniadanie, obiad, podwieczorek) - 100% 10,00 zł</li>
-• 2 posiłki (śniadanie, obiad) - 75 % 7,50 zł
-• 2 posiłki (obiad, podwieczorek) - 85 % 8,50 zł
-• 1 posiłek (obiad) - 60 % 6,00 zł</ul>
-
-Miesięczna opłata za świadczenia wynosi:
-• 1,30 zł za każdą dodatkową godzinę, ponad 5 bezpłatnych godzin
-• 0,65 zł dla rodzin objętych programem „Krakowska Karta Rodzinna 3 +” lub „Kraków dla Rodziny N” </p>
+          <Col> 
+            <h2>Opłaty za korzystanie z przedszkola</h2>
+            <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
+            <p>Dzienna stawka żywieniowa wynosi:</p>
+            <ul>
+              <li>3 posiłki (śniadanie, obiad, podwieczorek) - 100% 10,00 zł</li>
+              <li>2 posiłki (śniadanie, obiad) - 75 % 7,50 zł</li>
+              <li>2 posiłki (obiad, podwieczorek) - 85 % 8,50 zł</li>
+              <li> 1 posiłek (obiad) - 60 % 6,00 zł</li>
+            </ul>
+            <p>Miesięczna opłata za świadczenia wynosi:
+            • 1,30 zł za każdą dodatkową godzinę, ponad 5 bezpłatnych godzin
+            • 0,65 zł dla rodzin objętych programem „Krakowska Karta Rodzinna 3 +” lub „Kraków dla Rodziny N” </p>
          </Col>
+         
           <Col> Ważne informacje :
           <h3>Grypa w przedszkolu</h3>
           <p>Szanowni Rodzice zachęcamy do zapoznania sie z Ogólnopolskim Program Zwalczania Grypy. Broszura do pobrania w formacie pdf pdf A tutaj link do strony programu.</p>
