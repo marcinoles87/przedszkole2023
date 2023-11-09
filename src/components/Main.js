@@ -44,7 +44,7 @@ window.addEventListener('scroll' , onScrool)
             </Col>
         </Row>
 
-        <Row>
+        <Row className='main-info-container'>
           <Col> 
             <h2>Opłaty za korzystanie z przedszkola</h2>
             <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
@@ -60,7 +60,7 @@ window.addEventListener('scroll' , onScrool)
             • 0,65 zł dla rodzin objętych programem „Krakowska Karta Rodzinna 3 +” lub „Kraków dla Rodziny N” </p>
          </Col>
          
-          <Col> Ważne informacje :
+          <Col className='main-info2'> <h2>Ważne informacje</h2>>
           <h3>Grypa w przedszkolu</h3>
           <p>Szanowni Rodzice zachęcamy do zapoznania sie z Ogólnopolskim Program Zwalczania Grypy. Broszura do pobrania w formacie pdf pdf A tutaj link do strony programu.</p>
           </Col>

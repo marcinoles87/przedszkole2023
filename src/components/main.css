@@ -61,6 +61,14 @@ img{
     transition: 1.5s all;
 }
 
+.main-info2{
+    
+}
+
+.main-info-container{
+    margin-top: 50px;
+}
+
 .main-info h1{
     font-size: 80px;
 }
