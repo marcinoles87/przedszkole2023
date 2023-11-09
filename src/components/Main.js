@@ -44,7 +44,7 @@ window.addEventListener('scroll' , onScrool)
             </Col>
         </Row>
 
-        <Row className='main-info-container'>
+        <Row id='main-info-container'>
           <Col> 
             <h2>Opłaty za korzystanie z przedszkola</h2>
             <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
@@ -55,9 +55,11 @@ window.addEventListener('scroll' , onScrool)
               <li>2 posiłki (obiad, podwieczorek) - 85 % 8,50 zł</li>
               <li> 1 posiłek (obiad) - 60 % 6,00 zł</li>
             </ul>
-            <p>Miesięczna opłata za świadczenia wynosi:
-            • 1,30 zł za każdą dodatkową godzinę, ponad 5 bezpłatnych godzin
-            • 0,65 zł dla rodzin objętych programem „Krakowska Karta Rodzinna 3 +” lub „Kraków dla Rodziny N” </p>
+            <p>Miesięczna opłata za świadczenia wynosi: </p>
+            <p>• 1,30 zł za każdą dodatkową godzinę,</p> 
+            <p>• 0,65 zł dla rodzin objętych programem „Krakowska Karta Rodzinna 3 +” lub „Kraków dla Rodziny N” </p>
+            <p>• ponad 5 bezpłatnych godzin , miedzy 8:00-13:00</p>
+            
          </Col>
          
           <Col className='main-info2'> <h2>Ważne informacje</h2>>
