@@ -61,12 +61,18 @@ img{
     transition: 1.5s all;
 }
 
-.main-info2{
-    
+
+
+.main-info-container{
+    margin-top: 50px !important;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 1s ease all;
 }
 
-#main-info-container{
-    margin-top: 50px;
+.visible-main-info-container{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .main-info h1{
@@ -81,6 +87,23 @@ img{
 
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
+}
+
+.main-info2{
+    border: 2px solid red;
+    animation: danger infinite 3s;
+}
+
+@keyframes danger {
+    0%{
+        border: 2px solid red;
+
+    }
+    100%{
+        border: 10px solid rgb(255, 255, 255);
+
+    }
+    
 }
 
 
