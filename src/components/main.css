@@ -89,13 +89,10 @@ img{
     justify-content: flex-end;
 }
 
-.main-info2{
-    
-}
+
 
 .main-info2 div{
     text-align: center;
-    border: 2px solid red;
     border-radius: 200px;
     animation: danger infinite 3s;
     width: 80%;
@@ -109,13 +106,12 @@ img{
 
 @keyframes danger {
     0%{
-        border: 2px solid red;
-        background-color: red;
+        background-color: rgb(246, 116, 116);
 
     }
     100%{
         background-color: white;
-        border: 5px solid rgb(255, 255, 255);
+        
 
     }
     
