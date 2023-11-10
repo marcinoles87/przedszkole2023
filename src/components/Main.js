@@ -75,8 +75,10 @@ window.addEventListener('scroll' , onScrool)
          </Col>
          
           <Col className='main-info2'> <h2>Ważne informacje</h2>
-          <h3>Grypa w przedszkolu</h3>
-          <p>Szanowni Rodzice zachęcamy do zapoznania sie z Ogólnopolskim Program Zwalczania Grypy. Broszura do pobrania w formacie pdf pdf A tutaj link do strony programu.</p>
+          <div>
+              <h3>Grypa w przedszkolu</h3>
+              <p>Szanowni Rodzice zachęcamy do zapoznania sie z Ogólnopolskim Program Zwalczania Grypy. Broszura do pobrania w formacie pdf pdf A tutaj link do strony programu.</p>
+          </div>
           </Col>
         </Row>
     </Container>

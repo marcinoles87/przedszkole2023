@@ -90,17 +90,32 @@ img{
 }
 
 .main-info2{
-    border: 2px solid red;
-    animation: danger infinite 3s;
+    
 }
+
+.main-info2 div{
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 200px;
+    animation: danger infinite 3s;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @keyframes danger {
     0%{
         border: 2px solid red;
+        background-color: red;
 
     }
     100%{
-        border: 10px solid rgb(255, 255, 255);
+        background-color: white;
+        border: 5px solid rgb(255, 255, 255);
 
     }
     
