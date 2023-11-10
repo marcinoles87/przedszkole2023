@@ -151,21 +151,11 @@ img{
 
 .contact-form img{
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.contact-info ul {
-    list-style-type: none;
-    background-color: rgb(56, 183, 243);
-    border-radius: 20px;
-}
-
-.contact-info ul li{
-    font-size: larger;
-    padding: 10px;
-}
 
 .contact-form a img{
     position: relative;
