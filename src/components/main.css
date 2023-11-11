@@ -306,7 +306,28 @@ img{
     .offcanvas-body{
         height: 70%;
     }
+
+    p{
+        font-size: smaller;
+    }
+
+    .d-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form a img{
+      position:relative;
+      top:100px;
+      left: 205px;
+      width: 80%;
+      
+
+    }
+  
 }
+
+
 
 
 

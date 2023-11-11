@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/esm/Container'
 
 function Jadlospis() {
   return (
-    <Container className='jadlospis'>
+    <Container id='jadlospis' className='jadlospis'>
  
         <h1>Jadłospis</h1>
         <Table striped bordered hover variant="success" style={{textAlign:'center'}}>
