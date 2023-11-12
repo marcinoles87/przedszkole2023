@@ -17,7 +17,7 @@ const onScrool = () => {
   let elMain = document.querySelector('.main-info');
   let elMain2 = document.querySelector('.main-info-container')
 
-  console.log(elMain2)
+  
 
       if(scrolled > 5){
         elMain.classList.add('visibleMain')
