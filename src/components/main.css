@@ -316,9 +316,14 @@ img{
         align-items: center;
     }
 
+    #about .row{
+        flex-direction: column;
+
+    }
+
     .contact-form a img{
       position:relative;
-      top:14vh;
+      top:20vh;
       left: 50vw;
       width: 80%;
       
