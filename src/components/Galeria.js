@@ -10,20 +10,15 @@ import im3 from '../img/headerimg2.jpg'
 
 function Galeria() {
 
-
-  console.log(window.screen.availWidth)
   const handleOnClick = (e) => {
 
-    let widthScreen = window.screen.availWidth
+   
     let el = e.target
     const drop = document.querySelector('.drop-enlarge')
     el.classList.toggle('modal')
     drop.classList.toggle('drop')
 
-      if(widthScreen ){
-        el.classList.toggle('modalPhone')
-      }
-    }
+  }
 
     
   

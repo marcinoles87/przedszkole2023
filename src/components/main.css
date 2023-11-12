@@ -90,7 +90,6 @@ img{
 }
 
 
-
 .main-info2 div{
     text-align: center;
     border-radius: 200px;
@@ -273,6 +272,10 @@ img{
     transform: translate(-50%,-50%);
 }
 
+.modalPhone{
+    width: 80%;
+}
+
 /*jadlospis*/
 
 .jadlospis h1{
@@ -300,7 +303,8 @@ img{
     }
     
     #galImg{
-        width: 40%;
+        width: 80%;
+        
     }
 
     .offcanvas-body{

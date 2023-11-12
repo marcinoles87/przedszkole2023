@@ -5,11 +5,21 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+  import { useNavigate } from 'react-router-dom';
 import logo from '../img/logo.png'
+import Dania from './pages/Dania'
 
 
 function Navbars() {
+
+    const navigate = useNavigate();
+  
+    const handleSubmit = (event) => {
+      event.preventDefault();
+  
+      navigate('./pages/Dania.js');
+    }
+
   return (
     <Navbar expand="lg"  bg="success" data-bs-theme="dark">
     <Container id='nav-container'>
@@ -30,8 +40,8 @@ function Navbars() {
           <Nav.Link href="#gallery">Galeria</Nav.Link>
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
-            <NavDropdown.Item href="./pages/Dania">Grupa 1</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Grupa 2</NavDropdown.Item>
+            <NavDropdown.Item href="./pages/Dania" onClick={handleSubmit}>Grupa 1</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2" >Grupa 2</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Grupa 3</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.4">Grupa 4</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.4">Grupa 5</NavDropdown.Item>
