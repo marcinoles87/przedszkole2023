@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marcinoles87/przedszkole2023/static/css/main.81a6d0e7.css",
-    "main.js": "/marcinoles87/przedszkole2023/static/js/main.26c35991.js",
+    "main.js": "/marcinoles87/przedszkole2023/static/js/main.02cb3ae3.js",
     "static/media/kids.png": "/marcinoles87/przedszkole2023/static/media/kids.6947b23f94d04db6f215.png",
     "static/media/logo.png": "/marcinoles87/przedszkole2023/static/media/logo.a494ef2c5533dc594896.png",
     "static/media/headerimg2.jpg": "/marcinoles87/przedszkole2023/static/media/headerimg2.d55117f0530a85ce988e.jpg",
@@ -10,10 +10,10 @@
     "static/media/mapa.png": "/marcinoles87/przedszkole2023/static/media/mapa.c1df36252763b9d664f7.png",
     "index.html": "/marcinoles87/przedszkole2023/index.html",
     "main.81a6d0e7.css.map": "/marcinoles87/przedszkole2023/static/css/main.81a6d0e7.css.map",
-    "main.26c35991.js.map": "/marcinoles87/przedszkole2023/static/js/main.26c35991.js.map"
+    "main.02cb3ae3.js.map": "/marcinoles87/przedszkole2023/static/js/main.02cb3ae3.js.map"
   },
   "entrypoints": [
     "static/css/main.81a6d0e7.css",
-    "static/js/main.26c35991.js"
+    "static/js/main.02cb3ae3.js"
   ]
 }
