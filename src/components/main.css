@@ -352,6 +352,11 @@ img{
         justify-content: center;
         align-items: center;
     }
+
+    .jadlospis{
+        position: relative;
+        top:100px;
+    }
   
 }
 
