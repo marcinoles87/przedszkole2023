@@ -284,6 +284,18 @@ img{
 
 }
 
+@media screen and (max-width:1024px) {
+
+    .main-info{
+        left: 15%;
+    }
+
+    .main-info h1{
+        font-size: 60px;
+    }
+    
+}
+
 
 @media screen and (max-width:450px) {
 
@@ -332,6 +344,13 @@ img{
       width: 80%;
       
 
+    }
+
+    .main-info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   
 }
