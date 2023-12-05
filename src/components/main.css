@@ -282,6 +282,11 @@ img{
     text-align: center;
 }
 
+.events-event{
+    display: flex;
+    flex-direction: row;
+}
+
 /*jadlospis*/
 
 .jadlospis h1{
