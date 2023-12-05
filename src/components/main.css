@@ -276,6 +276,12 @@ img{
     width: 80%;
 }
 
+/* wydarzenia */ 
+
+.events-container{
+    text-align: center;
+}
+
 /*jadlospis*/
 
 .jadlospis h1{

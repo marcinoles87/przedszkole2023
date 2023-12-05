@@ -9,6 +9,7 @@ import Jadlospis from './components/Jadlospis.js';
 import Main from './components/Main';
 import Navbars from './components/Navbars.js'
 import Button from 'react-bootstrap/esm/Button.js';
+import Events from './components/Events.js';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Main></Main>
       <Actual></Actual>
       <AboutUs></AboutUs>
+      <Events></Events>
       <Galeria></Galeria>
       <Jadlospis></Jadlospis>
       <Contact></Contact>
