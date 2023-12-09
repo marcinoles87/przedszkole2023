@@ -35,7 +35,7 @@ function Navbars() {
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
            <Link to={'/grupa1'}><NavDropdown.Item>Grupa 1</NavDropdown.Item></Link> 
-            <NavDropdown.Item href="./pages/Grupa2" >Grupa 2</NavDropdown.Item>
+            <NavDropdown.Item href="./pages/Grupa2" ><Link to={'/grupa2'}></Link></NavDropdown.Item>
             <NavDropdown.Item href="./pages/Grupa3">Grupa 3</NavDropdown.Item>
             <NavDropdown.Item href="./pages/Grupa4">Grupa 4</NavDropdown.Item>
           </NavDropdown> 

@@ -11,6 +11,9 @@ import Navbars from './components/Navbars.js'
 import Button from 'react-bootstrap/esm/Button.js';
 import Events from './components/Events.js';
 import Grupa1 from './components/pages/Grupa1.js';
+import Grupa2 from './components/pages/Grupa2.js';
+import Grupa3 from './components/pages/Grupa3.js'
+import Grupa4 from './components/pages/Grupa4.js'
 
 
 
@@ -41,9 +44,9 @@ function App() {
     
       />
       <Route path='/grupa1' element={<Grupa1></Grupa1>}></Route>
-      <Route path='/grupa2' element={<Grupa1></Grupa1>}></Route>
-      <Route path='/grupa3' element={<Grupa1></Grupa1>}></Route>
-      <Route path='/grupa4' element={<Grupa1></Grupa1>}></Route>
+      <Route path='/grupa2' element={<Grupa2></Grupa2>}></Route>
+      <Route path='/grupa3' element={<Grupa3></Grupa3>}></Route>
+      <Route path='/grupa4' element={<Grupa4></Grupa4>}></Route>
      
      
       </Routes>
