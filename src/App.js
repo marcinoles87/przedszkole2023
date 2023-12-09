@@ -1,5 +1,5 @@
 
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Router, Routes , Link } from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs';
 import Actual from './components/Actual';
@@ -26,6 +26,18 @@ function App() {
 
   return (
     <div className="App">
+
+<ul>
+        <li>
+          <Link to="">Route1</Link>
+        </li>
+        <li>
+          <Link to="/grupa1">Route2</Link>
+        </li>
+        <li>
+          <Link to="/grupa2">Route3</Link>
+        </li>
+      </ul>
    
 
    <Routes>
