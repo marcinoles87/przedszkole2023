@@ -11,8 +11,9 @@ import logo from '../img/logo.png'
 
 function Navbars() {
 
-  function change (){
-   window.location.replace('./pages/myszki.html')
+  function change (e){
+   e.preventDefault()
+   window.location = 'https://www.google.com'
   }
 
   
