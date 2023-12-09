@@ -5,15 +5,16 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../img/logo.png'
+import logo from '../img/logo.png';
+
 
 
 
 function Navbars() {
 
   function change (e){
-   e.preventDefault()
-   window.location = 'https://www.google.com'
+   e.preventDefault(e)
+   window.location.href = './pages/Dania'
   }
 
   
@@ -32,12 +33,12 @@ function Navbars() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">
           
-          <Nav.Link href="#about" onClick={change}>Nasze przedszkole</Nav.Link>
+          <Nav.Link href="#about" >Nasze przedszkole</Nav.Link>
           <Nav.Link href="#info">Informacje</Nav.Link>
           <Nav.Link href="#gallery">Galeria</Nav.Link>
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
-            <NavDropdown.Item href="myszki.html">Grupa 1</NavDropdown.Item>
+            <NavDropdown.Item  onClick={change}>Grupa 1</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2" >Grupa 2</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Grupa 3</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.4">Grupa 4</NavDropdown.Item>
