@@ -23,7 +23,23 @@ function App() {
   return (
     <div className="App">
    
-      <Navbars></Navbars>
+
+   <Routes>
+      <Route path='/' element={<Navbars></Navbars>}>
+      <Route path='/' element={<Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>}></Route>
+      <Route element={<Main></Main>}></Route>
+      <Route element={<Actual></Actual>}></Route>
+      <Route element={<AboutUs></AboutUs>}></Route>
+      <Route element={<Events></Events>}></Route>
+      <Route element={<Galeria></Galeria>}></Route>
+      <Route element={<Jadlospis></Jadlospis>}></Route>
+      <Route element={<Contact></Contact>}></Route>
+      </Route>
+     
+      </Routes>
+
+
+      {/* <Route><Navbars></Navbars></Route>
       <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
       <Main></Main>
       <Actual></Actual>
@@ -31,8 +47,7 @@ function App() {
       <Events></Events>
       <Galeria></Galeria>
       <Jadlospis></Jadlospis>
-      <Contact></Contact>
-      
+      <Contact></Contact> */}
     </div>
   );
 }

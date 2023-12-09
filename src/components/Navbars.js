@@ -14,7 +14,8 @@ function Navbars() {
 
   function change (e){
    e.preventDefault(e)
-   window.location.href = './pages/Dania'
+   const redirectPage = './pages/Dania'
+   window.location.href = redirectPage
   }
 
   
