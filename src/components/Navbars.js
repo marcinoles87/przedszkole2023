@@ -6,17 +6,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../img/logo.png';
+import { Link } from 'react-router-dom';
 
 
 
 
 function Navbars() {
-
-  function change (e){
-   e.preventDefault(e)
-   const redirectPage = './pages/Dania'
-   window.location.href = redirectPage
-  }
 
   
   return (
@@ -39,11 +34,10 @@ function Navbars() {
           <Nav.Link href="#gallery">Galeria</Nav.Link>
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
-            <NavDropdown.Item  onClick={change}>Grupa 1</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2" >Grupa 2</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Grupa 3</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4">Grupa 4</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4">Grupa 5</NavDropdown.Item>
+           <Link to={'/grupa1'}><NavDropdown.Item>Grupa 1</NavDropdown.Item></Link> 
+            <NavDropdown.Item href="./pages/Grupa2" >Grupa 2</NavDropdown.Item>
+            <NavDropdown.Item href="./pages/Grupa3">Grupa 3</NavDropdown.Item>
+            <NavDropdown.Item href="./pages/Grupa4">Grupa 4</NavDropdown.Item>
           </NavDropdown> 
           <Nav.Link href="#contact">Kontakt</Nav.Link>
         </Nav>
