@@ -29,15 +29,16 @@ function Navbars() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">
           
+          
           <Nav.Link href="#about" >Nasze przedszkole</Nav.Link>
           <Nav.Link href="#info">Informacje</Nav.Link>
           <Nav.Link href="#gallery">Galeria</Nav.Link>
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
-           <Link to={'/grupa1'}><NavDropdown.Item>Grupa 1</NavDropdown.Item></Link> 
-            <NavDropdown.Item href="./pages/Grupa2" ><Link to={'/grupa2'}></Link></NavDropdown.Item>
-            <NavDropdown.Item href="./pages/Grupa3">Grupa 3</NavDropdown.Item>
-            <NavDropdown.Item href="./pages/Grupa4">Grupa 4</NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa1'}>Grupa 1</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa2'}>Grupa 2 </Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa3'}>Grupa 3</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa4'}>Grupa 4</Link></NavDropdown.Item>
           </NavDropdown> 
           <Nav.Link href="#contact">Kontakt</Nav.Link>
         </Nav>
