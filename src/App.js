@@ -29,38 +29,26 @@ function App() {
    
 
    <Routes>
-      <Route path='' element={
+        <Route  path='*' element={
       <>
-      <Navbars link={Link}></Navbars>
-      <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
-      <Main></Main>
-      <Actual></Actual>
-      <AboutUs></AboutUs>
-      <Events></Events>
-      <Galeria></Galeria>
-      <Jadlospis></Jadlospis>
-      <Contact></Contact>
-      </>}
-    
-      />
-      <Route path='/grupa1' element={<Grupa1></Grupa1>}></Route>
-      <Route path='/grupa2' element={<Grupa2></Grupa2>}></Route>
-      <Route path='/grupa3' element={<Grupa3></Grupa3>}></Route>
-      <Route path='/grupa4' element={<Grupa4></Grupa4>}></Route>
-     
-     
+          <Navbars link={Link}></Navbars>
+          <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
+          <Main></Main>
+          <Actual></Actual>
+          <AboutUs></AboutUs>
+          <Events></Events>
+          <Galeria></Galeria>
+          <Jadlospis></Jadlospis>
+          <Contact></Contact>
+      </>
+      }/>
+      
+        <Route path='/grupa1' element={<Grupa1></Grupa1>}></Route>
+        <Route path='/grupa2' element={<Grupa2></Grupa2>}></Route>
+        <Route path='/grupa3' element={<Grupa3></Grupa3>}></Route>
+        <Route path='/grupa4' element={<Grupa4></Grupa4>}></Route>
+
       </Routes>
-
-
-      {/* <Route><Navbars></Navbars></Route>
-      <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
-      <Main></Main>
-      <Actual></Actual>
-      <AboutUs></AboutUs>
-      <Events></Events>
-      <Galeria></Galeria>
-      <Jadlospis></Jadlospis>
-      <Contact></Contact> */}
     </div>
   );
 }

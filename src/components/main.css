@@ -292,6 +292,20 @@ img{
 
 }
 
+/*events*/
+
+.events-container{
+    margin-top: 30px;
+}
+
+.events-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
 @media screen and (max-width:1024px) {
 
     .main-info{
@@ -364,6 +378,11 @@ img{
     .jadlospis{
         position: relative;
         top:100px;
+    }
+
+    .events-element{
+        display: flex;
+        flex-direction: column;
     }
   
 }

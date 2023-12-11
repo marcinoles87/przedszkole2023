@@ -31,7 +31,7 @@ function Events() {
   return (
     <div className='events-container'>
         <h1>Nadchodzące wydarzenia w naszym przedszkolu</h1>
-        <div className='events-event'>
+        <div className='events-element'>
            
            <div>
             {event.map( (item) => {
