@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './styleGrup.css'
+
 
 function Grupa1() {
 
@@ -35,6 +37,10 @@ function Grupa1() {
   return (
     <>
     <div>Grupa1</div>
+    <div className='group-header'>
+      <h2>Co nowego w grupie 1</h2>
+
+    </div>
     <div className='group-container'>
       {wydarzenia.map( (item) => {
         return(
