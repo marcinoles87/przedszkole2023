@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
@@ -8,39 +8,38 @@ import './main.css'
 
 function Main() {
 
-
-
-const onScrool = () => {
-
- 
-
-  const scrolled = window.scrollY
- 
-  let elMain = document.querySelector('.main-info');
-  let elMain2 = document.querySelector('.main-info-container')
-
+  
+ const [scrol  , setScroll] = useEffect(true)
   
 
-      if(scrolled > 5){
-        elMain.classList.add('visibleMain')
+    const onScrool = () => {
+
+      const scrolled = window.scrollY
+     
+      let elMain = document.querySelector('.main-info');
+      let elMain2 = document.querySelector('.main-info-container')
+    
       
-      }else{
-        elMain.classList.remove('visibleMain')
-      }
+    
+          if(scrolled > 5){
+            elMain.classList.add('visibleMain')
+          
+          }else{
+            elMain.classList.remove('visibleMain')
+          }
+    
+          if(scrolled >650){
+            elMain2.classList.add('visible-main-info-container')
+          }
+          else{
+            elMain2.classList.remove('visible-main-info-container')
+    
+          }}
 
-      if(scrolled >650){
-        elMain2.classList.add('visible-main-info-container')
-      }
-      else{
-        elMain2.classList.remove('visible-main-info-container')
+          window.addEventListener('scroll' , onScrool)
 
-      }
+    
 
-
-
-}
-
-window.addEventListener('scroll' , onScrool)
 
 
 
