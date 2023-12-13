@@ -12,6 +12,8 @@ function Main() {
 
 const onScrool = () => {
 
+ 
+
   const scrolled = window.scrollY
  
   let elMain = document.querySelector('.main-info');
@@ -21,13 +23,15 @@ const onScrool = () => {
 
       if(scrolled > 5){
         elMain.classList.add('visibleMain')
+      
       }else{
         elMain.classList.remove('visibleMain')
       }
 
       if(scrolled >650){
         elMain2.classList.add('visible-main-info-container')
-      }else{
+      }
+      else{
         elMain2.classList.remove('visible-main-info-container')
 
       }
@@ -37,6 +41,7 @@ const onScrool = () => {
 }
 
 window.addEventListener('scroll' , onScrool)
+
 
 
   return (

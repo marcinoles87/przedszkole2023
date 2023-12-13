@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,7 +6,11 @@ import Col from 'react-bootstrap/Col';
 
 function AboutUs() {  
  
- window.onscroll =function() {myFunction()};
+  const [activeScroll , setActive] = useState(true)
+
+ 
+    
+     window.onscroll =function() {myFunction()};
   
   const myFunction = () => {
 
@@ -15,12 +19,17 @@ function AboutUs() {
 
     if(document.documentElement.scrollTop > 1300){
         el.classList.add('visible')
-        el2.classList.add('visible')
-    }else{
+        el2.classList.add('visible')   
+    }
+    else{
         el.classList.remove('visible')
         el2.classList.remove('visible')
       }
-    }
+  }
+  
+
+
+  
     
    
 
