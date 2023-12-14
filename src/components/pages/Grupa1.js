@@ -45,13 +45,13 @@ function Grupa1() {
     
     <div className='group-header'>
       <h2>Co nowego w grupie 1</h2>
-      <img></img>
+     
 
     </div>
     <div className='group-container'>
       {wydarzenia.map( (item, index) => {
         return(
-          <div key={index}>
+          <div className='group-element' key={index}>
            <h1>{item.name}</h1>
            <h3>{item.data}</h3>
            <p>{item.description}</p>
