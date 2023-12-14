@@ -34,23 +34,23 @@ function Events() {
         <div className='events-element'>
            
            <div>
-            {event.map( (item) => {
+            {event.map( (item , index) => {
                 return(
-                    <>
+                    <div key={index}>
                      <h5>{item.month}</h5>
                      <p>{item.data} - {item.name}</p>
-                    </>
+                    </div>
                 )
             })}
             </div>
 
             <div>
-            {event.map( (item) => {
+            {event.map( (item , index) => {
                 return(
-                    <>
+                    < div key={index}>
                      <h5>{item.month}</h5>
                      <p>{item.data} - {item.name}</p>
-                    </>
+                    </div>
                 )
             })}
             </div>

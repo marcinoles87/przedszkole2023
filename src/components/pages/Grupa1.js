@@ -6,6 +6,8 @@ import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
 
 function Grupa1() {
 
+
+
   const wydarzenia = [ 
     {
       name : 'Wyjscie do kina' ,
@@ -47,14 +49,14 @@ function Grupa1() {
 
     </div>
     <div className='group-container'>
-      {wydarzenia.map( (item) => {
+      {wydarzenia.map( (item, index) => {
         return(
-          <>
+          <div key={index}>
            <h1>{item.name}</h1>
            <h3>{item.data}</h3>
            <p>{item.description}</p>
           <img src={item.img1}></img>
-          </>
+          </div>
         )
       })}
     </div>

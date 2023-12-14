@@ -2,55 +2,53 @@ import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
+import { Fade } from "react-awesome-reveal";
 
 import './main.css'
 
 
 function Main() {
 
-  const [scroll , setScroll] = useState(0)
 
     
   const onScrool = () => {
 
-      setScroll(window.scrollY )
+      // setScroll(window.scrollY )
       // const scrolled = window.scrollY
-      let elMain = document.querySelector('.main-info');
-      let elMain2 = document.querySelector('.main-info-container')
+      // let elMain = document.querySelector('.main-info');
+      // let elMain2 = document.querySelector('.main-info-container')
     
       
-          if(scroll > 5){
-            elMain.classList.add('visibleMain')
+      //     if(scrolled > 5){
+      //       elMain.classList.add('visibleMain')
             
           
-          }else{
-            elMain.classList.remove('visibleMain')
-          }
+      //     }else{
+      //       elMain.classList.remove('visibleMain')
+      //     }
     
-          if(scroll >650){
-            elMain2.classList.add('visible-main-info-container')
+      //     if(scrolled>650){
+      //       elMain2.classList.add('visible-main-info-container')
             
-          }
-          else{
-            elMain2.classList.remove('visible-main-info-container')
+      //     }
+      //     else{
+      //       elMain2.classList.remove('visible-main-info-container')
     
-          }}
+      //     }}
 
-          window.addEventListener('scroll' , onScrool)
+          // window.addEventListener('scroll' , onScrool)
 
-
-
-    
-
-
+  }
 
 
   return (
-    <Container onScroll={onScrool}>
+    <Container>
+      <Fade>
         <Row>
+          
             <Col id='main' md={12} lg={12}>
                 
-                <div className='main-info'>
+                <div className='main-info visibleMain'>
                     <h1> " Przedszkole to drugi dom</h1>
                     <h2>w którym Wasze dzieci <br></br> 
                       spędzają dużo czasu, uczą się i rozwijają, <br></br>
@@ -60,9 +58,10 @@ function Main() {
               
                 
             </Col>
+            
         </Row>
 
-        <Row className='main-info-container'>
+        <Row className='main-info-container visible-main-info-container'>
           <Col> 
             <h2>Opłaty za korzystanie z przedszkola</h2>
             <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
@@ -87,6 +86,8 @@ function Main() {
           </div>
           </Col>
         </Row>
+        </Fade>
+        
     </Container>
   )
 }

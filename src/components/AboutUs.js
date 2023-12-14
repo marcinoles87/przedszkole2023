@@ -2,44 +2,19 @@ import React, { useState } from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Fade } from 'react-awesome-reveal';
 
 
 function AboutUs() {  
- 
-  const [activeScroll , setActive] = useState(true)
-
- 
-    
-     window.onscroll =function() {myFunction()};
-  
-  const myFunction = () => {
-
-    let el = document.querySelector('#about-info')
-    let el2 = document.querySelector('#about-info2')
-
-    if(document.documentElement.scrollTop > 1300){
-        el.classList.add('visible')
-        el2.classList.add('visible')   
-    }
-    else{
-        el.classList.remove('visible')
-        el2.classList.remove('visible')
-      }
-  }
-  
-
-
-  
-    
-   
 
   return (
     <Container id='about'>
+      <Fade>
        <Row>
         
         
       <Col>
-          <div className='about-info' id='about-info'>
+          <div className='about-info visible' id='about-info'>
             <h3>O  Nas</h3>
             <p>Przedszkole usytuowane jest w budynku piętrowym, wolnostojącym. Dysponuje kilkoma jasnymi obszernymi salami zajęć, łazienkami i dużą szatnią. Na naszym terenie znajduje się piękny, zmodernizowany ogród bogaty w zieleń. Dodatkowo posiadamy bogatą bazę dydaktyczną oraz sprzęt sportowy.Naszym celem jest wspomaganie i ukierunkowanie rozwoju dziecka zgodnie z jego wrodzonym potencjałem w relacjach ze środowiskiem społeczno-kulturowym i przyrodniczym.</p>
 
@@ -56,7 +31,7 @@ function AboutUs() {
 
       <Col>
 
-        <div className='about-info2' id='about-info2'>
+        <div className='about-info2 visible' id='about-info2'>
            <h3>Jeśli wybierając przedszkole dla swojego dziecka pragniecie aby:</h3>
             <ul>
                   <li>zapewniło wysoki poziom wychowania i kształcenia</li>
@@ -82,6 +57,7 @@ function AboutUs() {
 
        
        </Row>
+       </Fade>
       </Container>
   )
 }
