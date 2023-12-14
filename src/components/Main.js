@@ -10,7 +10,8 @@ function Main() {
 
   const [scroll , setScroll] = useState(0)
 
-    const onScrool = () => {
+    
+  const onScrool = () => {
 
       setScroll(window.scrollY )
       // const scrolled = window.scrollY
@@ -20,7 +21,7 @@ function Main() {
       
           if(scroll > 5){
             elMain.classList.add('visibleMain')
-            console.log(scroll)
+            
           
           }else{
             elMain.classList.remove('visibleMain')
@@ -28,7 +29,7 @@ function Main() {
     
           if(scroll >650){
             elMain2.classList.add('visible-main-info-container')
-            console.log(scroll)
+            
           }
           else{
             elMain2.classList.remove('visible-main-info-container')
@@ -45,7 +46,7 @@ function Main() {
 
 
   return (
-    <Container>
+    <Container onScroll={onScrool}>
         <Row>
             <Col id='main' md={12} lg={12}>
                 
