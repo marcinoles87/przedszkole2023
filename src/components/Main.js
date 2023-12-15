@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
-import { Fade , Slide} from "react-awesome-reveal";
+import { Fade , Slide, Zoom} from "react-awesome-reveal";
 
 import './main.css'
 
@@ -43,7 +43,7 @@ function Main() {
 
   return (
     <Container>
-      <Slide>
+      <Zoom triggerOnce={true}>
         <Row>
           
             <Col id='main' md={12} lg={12}>
@@ -86,7 +86,7 @@ function Main() {
           </div>
           </Col>
         </Row>
-        </Slide>
+        </Zoom>
         
     </Container>
   )
