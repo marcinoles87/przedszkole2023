@@ -1,21 +1,23 @@
 .group-header{
     display: flex;
     flex-direction: row;
-    color:rgb(105, 105, 196);
+    color:rgb(80, 213, 135);
     margin: 50px;
     
     
 }
 
 .group-header h2{
-    width: 50%;
+    width: 40%;
+    font-family: 'Ubuntu';
+    font-weight: 600;
     font-size: 70px;
+    
 }
 
-.group-container img{
-    background-color: aquamarine;
-    width: 30%;
-    object-fit: contain;
+.group-images img{
+    width: 20%;
+  
 }
 
 .group-container{
@@ -31,7 +33,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid rgb(25, 139, 193);
-    border-radius: 30px;
     margin: 20px;
+}
+
+.group-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+button{
+    color:white;
+    background-color: green;
+    text-decoration:none;
 }

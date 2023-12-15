@@ -18,7 +18,7 @@ function Main() {
           
        
             <Col id='main' md={12} lg={12}>
-            <Fade duration={2000}>
+            <Fade duration={1000}>
                 <div className='main-info visibleMain'>
                     <h1> " Przedszkole to drugi dom</h1>
                     <h2>w którym Wasze dzieci <br></br> 
