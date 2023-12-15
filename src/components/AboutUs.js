@@ -9,7 +9,7 @@ function AboutUs() {
 
   return (
     <Container id='about'>
-      <Fade>
+      <Fade delay={500}>
        <Row>
         
         

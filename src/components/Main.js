@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
-import { Fade , Slide, Zoom} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 import './main.css'
 
@@ -10,44 +10,15 @@ import './main.css'
 function Main() {
 
 
-    
-  const onScrool = () => {
-
-      // setScroll(window.scrollY )
-      // const scrolled = window.scrollY
-      // let elMain = document.querySelector('.main-info');
-      // let elMain2 = document.querySelector('.main-info-container')
-    
-      
-      //     if(scrolled > 5){
-      //       elMain.classList.add('visibleMain')
-            
-          
-      //     }else{
-      //       elMain.classList.remove('visibleMain')
-      //     }
-    
-      //     if(scrolled>650){
-      //       elMain2.classList.add('visible-main-info-container')
-            
-      //     }
-      //     else{
-      //       elMain2.classList.remove('visible-main-info-container')
-    
-      //     }}
-
-          // window.addEventListener('scroll' , onScrool)
-
-  }
-
 
   return (
     <Container>
-      <Zoom triggerOnce={true}>
+       
         <Row>
           
+       
             <Col id='main' md={12} lg={12}>
-                
+            <Fade duration={2000}>
                 <div className='main-info visibleMain'>
                     <h1> " Przedszkole to drugi dom</h1>
                     <h2>w którym Wasze dzieci <br></br> 
@@ -55,14 +26,16 @@ function Main() {
                       a nauczyciele pełnią rolę rodziców... "
                     </h2>
                 </div>
+              </Fade>
               
                 
             </Col>
-            
+           
         </Row>
-
+<Fade  delay={500}>
         <Row className='main-info-container visible-main-info-container'>
-          <Col> 
+          
+          <Col > 
             <h2>Opłaty za korzystanie z przedszkola</h2>
             <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
             <p>Dzienna stawka żywieniowa wynosi:</p>
@@ -79,6 +52,7 @@ function Main() {
             
          </Col>
          
+         
           <Col className='main-info2'> <h2>Ważne informacje</h2>
           <div>
               <h3>Grypa w przedszkolu</h3>
@@ -86,7 +60,8 @@ function Main() {
           </div>
           </Col>
         </Row>
-        </Zoom>
+        </Fade>
+        
         
     </Container>
   )
