@@ -15,7 +15,7 @@ function Navbars() {
 
   
   return (
-    <Navbar expand="lg"  bg="success" data-bs-theme="dark">
+    <Navbar expand="lg"  bg="success" data-bs-theme="dark" >
     <Container id='nav-container'>
       <Navbar.Brand href="#home">
         <img src={logo} alt='logo' 
@@ -35,10 +35,10 @@ function Navbars() {
           <Nav.Link href="#gallery">Galeria</Nav.Link>
           <Nav.Link href="#jadlospis">Jadłospis</Nav.Link>
           <NavDropdown title="Grupy" id="basic-nav-dropdown">
-            <NavDropdown.Item><Link to={'/grupa1'}>Grupa 1</Link></NavDropdown.Item>
-            <NavDropdown.Item><Link to={'/grupa2'}>Grupa 2 </Link></NavDropdown.Item>
-            <NavDropdown.Item><Link to={'/grupa3'}>Grupa 3</Link></NavDropdown.Item>
-            <NavDropdown.Item><Link to={'/grupa4'}>Grupa 4</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa1'} className='navbar-link'>Grupa 1</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa2'} className='navbar-link'>Grupa 2 </Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa3'} className='navbar-link'>Grupa 3</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa4'} className='navbar-link'>Grupa 4</Link></NavDropdown.Item>
           </NavDropdown> 
           <Nav.Link href="#contact">Kontakt</Nav.Link>
         </Nav>

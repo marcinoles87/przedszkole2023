@@ -22,7 +22,18 @@ img{
     
 }
 
+/*navbar*/
 
+.navbar-link{
+    text-decoration: none;
+    color:white;
+    transition: 0.5s ease;
+    
+}
+
+.navbar-link:hover{
+    font-size: larger;
+}
 
 /* main-info */
 
@@ -319,7 +330,7 @@ img{
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
 
     #nav-container{
         text-align: center;
@@ -328,8 +339,9 @@ img{
 
     .main-info{
         position: relative;
-        top:25%;
+        top:25vw;
         left: 0;
+        justify-content:unset;
     }
 
     .main-info h1{
@@ -361,9 +373,9 @@ img{
 
     .contact-form a img{
       position:relative;
-      top:20vh;
+      top:17vh;
       left: 50vw;
-      width: 80%;
+      width: 70%;
       
 
     }
