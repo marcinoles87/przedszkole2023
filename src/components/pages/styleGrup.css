@@ -44,15 +44,17 @@
     
 }
 
-button{
+.group-button{
     
     position:fixed;
     top:10px;
     right: 20px;
+    padding: 8px;
     color:white;
-    background-color: green;
+    font-family: 'Ubuntu';
+    background-color: rgb(80, 213, 135);
     text-decoration:none;
-    box-shadow: green 20px 20px 20px 0;
+    border-radius: 20px;
     
 }
 
