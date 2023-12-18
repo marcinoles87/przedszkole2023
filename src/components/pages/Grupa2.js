@@ -4,7 +4,9 @@ import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
 import { Link } from 'react-router-dom';
 
 function Grupa2() {
-  
+
+
+
   const wydarzenia = [ 
     {
       name : 'Wyjscie do kina' ,
@@ -39,7 +41,7 @@ function Grupa2() {
   ]
   return (
     <>
-    
+
     <div className='group-header'>
       <h2>Co nowego w grupie 2</h2>
      
@@ -52,15 +54,20 @@ function Grupa2() {
            <h1>{item.name}</h1>
            <h3>{item.data}</h3>
            <p>{item.description}</p>
-          <img src={item.img1}></img>
+
+            <div className='group-images'>
+              <img src={item.img1} alt='kids'></img>
+              <img src={item.img1} alt='kids'></img>
+              <img src={item.img1} alt='kids'></img>
+              </div>
+         
           </div>
         )
       })}
     </div>
-   <button><Link to={'/'}>powrot do strony glownej</Link></button>
+   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
 
    </>
   )
 }
-
 export default Grupa2
