@@ -37,6 +37,7 @@
 }
 
 .group-images{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -56,5 +57,27 @@
     text-decoration:none;
     border-radius: 20px;
     
+}
+
+@media screen and (max-width:550px) {
+
+    .group-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .group-header h2{
+        font-size: 30px;
+        
+    }
+
+    .group-button{
+    
+      font-size: 10px;
+        
+    }
+
 }
 
