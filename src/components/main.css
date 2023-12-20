@@ -332,6 +332,10 @@ img{
 
 @media screen and (max-width:550px) {
 
+    #main{
+        height: 77vh;
+    }
+
     #nav-container{
         text-align: center;
         justify-content: center;
@@ -378,6 +382,11 @@ img{
       width: 70%;
       
 
+    }
+
+    .contact-form{
+        position:relative;
+        top:100px;
     }
 
     .main-info-container{
