@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './styleGrup.css'
 import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
+import img2 from '/web frontend/projekty React/przedszkole2023/src/img/kids2.jpg'
+import img3 from '/web frontend/projekty React/przedszkole2023/src/img/logo3.png'
 
 
 function Grupa1() {
@@ -13,14 +15,19 @@ function Grupa1() {
       name : 'Wyjscie do kina' ,
       data : '12-12-2023' ,
       description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
+      img1 : img1,
+      img2 : img2,
+      img3 : img3
     },
 
     {
       name : 'Wyjscie do kina' ,
       data : '12-12-2023' ,
       description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
+      img1 : img1 ,
+      img2 : img2 ,
+      img3 : img3
+
 
     },
 
@@ -28,7 +35,9 @@ function Grupa1() {
       name : 'Wyjscie do kina' ,
       data : '12-12-2023' ,
       description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
+      img1 : img1,
+      img2 : img2,
+      img3 : img3
 
     },
 
@@ -36,7 +45,9 @@ function Grupa1() {
       name : 'Wyjscie do kina' ,
       data : '12-12-2023' ,
       description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
+      img1 : img1,
+      img2 : img2,
+      img3 : img3
 
     }
   ]
@@ -58,8 +69,8 @@ function Grupa1() {
 
             <div className='group-images'>
               <img src={item.img1} alt='kids'></img>
-              <img src={item.img1} alt='kids'></img>
-              <img src={item.img1} alt='kids'></img>
+              <img src={item.img2} alt='kids'></img>
+              <img src={item.img3} alt='kids'></img>
               </div>
          
           </div>
