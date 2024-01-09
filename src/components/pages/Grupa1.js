@@ -8,6 +8,14 @@ import img3 from '/web frontend/projekty React/przedszkole2023/src/img/logo3.png
 
 function Grupa1() {
 
+  const handleOnClickGroup = (e) => {
+
+   
+    let el = e.target
+    el.classList.toggle('img-modal')
+
+  }
+
 
 
   const wydarzenia = [ 
@@ -68,16 +76,17 @@ function Grupa1() {
            <p>{item.description}</p>
 
             <div className='group-images'>
-              <img src={item.img1} alt='kids'></img>
-              <img src={item.img2} alt='kids'></img>
-              <img src={item.img3} alt='kids'></img>
+            
+              <img src={item.img1} alt='kids1' onClick={handleOnClickGroup} className='img-group'></img>
+              <img src={item.img2} alt='kids2' onClick={handleOnClickGroup} className='img-group'></img>
+              <img src={item.img3} alt='kids3' onClick={handleOnClickGroup} className='img-group'></img>
               </div>
          
           </div>
         )
       })}
     </div>
-   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
+   <button className='group-button'><Link to={'*'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
 
    </>
   )

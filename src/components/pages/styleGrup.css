@@ -59,6 +59,10 @@
     
 }
 
+.img-modal{
+    transform: scale(1.8);
+}
+
 @media screen and (max-width:550px) {
 
     .group-header{

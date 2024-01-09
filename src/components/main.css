@@ -254,7 +254,7 @@ img{
 
 .gallery-container img{
     width: 23%;
-    transition: 0.3 ease;
+    cursor: pointer;
 
 }
 
