@@ -5,6 +5,14 @@ import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
 
 function Grupa4() {
 
+  const handleOnClickGroup = (e) => {
+
+   
+    let el = e.target
+    el.classList.toggle('img-modal')
+
+  }
+
 
 
   const wydarzenia = [ 

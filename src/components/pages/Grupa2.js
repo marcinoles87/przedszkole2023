@@ -5,6 +5,14 @@ import { Link } from 'react-router-dom';
 
 function Grupa2() {
 
+  const handleOnClickGroup = (e) => {
+
+   
+    let el = e.target
+    el.classList.toggle('img-modal')
+
+  }
+
 
 
   const wydarzenia = [ 
@@ -15,29 +23,7 @@ function Grupa2() {
       img1 : img1
     },
 
-    {
-      name : 'Wyjscie do kina' ,
-      data : '12-12-2023' ,
-      description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
-
-    },
-
-    {
-      name : 'Wyjscie do kina' ,
-      data : '12-12-2023' ,
-      description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
-
-    },
-
-    {
-      name : 'Wyjscie do kina' ,
-      data : '12-12-2023' ,
-      description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
-
-    }
+   
   ]
   return (
     <>
@@ -56,9 +42,9 @@ function Grupa2() {
            <p>{item.description}</p>
 
             <div className='group-images'>
-              <img src={item.img1} alt='kids'></img>
-              <img src={item.img1} alt='kids'></img>
-              <img src={item.img1} alt='kids'></img>
+              <img src={item.img1} alt='kids'onClick={handleOnClickGroup}></img>
+              <img src={item.img1} alt='kids' onClick={handleOnClickGroup}></img>
+              <img src={item.img1} alt='kids' onClick={handleOnClickGroup}></img>
               </div>
          
           </div>

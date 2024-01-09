@@ -60,6 +60,11 @@
 }
 
 .img-modal{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
     transform: scale(1.8);
 }
 
