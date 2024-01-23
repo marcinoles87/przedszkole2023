@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/przedszkole2023/static/css/main.90dcf0dc.css",
-    "main.js": "/przedszkole2023/static/js/main.c2d6834f.js",
+    "main.js": "/przedszkole2023/static/js/main.12590fb7.js",
     "static/media/kids.png": "/przedszkole2023/static/media/kids.6947b23f94d04db6f215.png",
     "static/media/logo.png": "/przedszkole2023/static/media/logo.a494ef2c5533dc594896.png",
     "static/media/headerimg2.jpg": "/przedszkole2023/static/media/headerimg2.d55117f0530a85ce988e.jpg",
@@ -11,10 +11,10 @@
     "static/media/logo3.png": "/przedszkole2023/static/media/logo3.bf23c34de98f126c9244.png",
     "index.html": "/przedszkole2023/index.html",
     "main.90dcf0dc.css.map": "/przedszkole2023/static/css/main.90dcf0dc.css.map",
-    "main.c2d6834f.js.map": "/przedszkole2023/static/js/main.c2d6834f.js.map"
+    "main.12590fb7.js.map": "/przedszkole2023/static/js/main.12590fb7.js.map"
   },
   "entrypoints": [
     "static/css/main.90dcf0dc.css",
-    "static/js/main.c2d6834f.js"
+    "static/js/main.12590fb7.js"
   ]
 }
