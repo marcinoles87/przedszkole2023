@@ -86,7 +86,7 @@ function Grupa1() {
         )
       })}
     </div>
-   <button className='group-button'><Link to={'*'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
+   <button className='group-button'><Link to={'*'} style={ {color:'white' , textDecoration:'none' , padding:'10px'}}>Powrot do strony glownej</Link></button>
 
    </>
   )
