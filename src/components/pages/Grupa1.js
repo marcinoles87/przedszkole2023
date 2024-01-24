@@ -11,8 +11,10 @@ function Grupa1() {
   const handleOnClickGroup = (e) => {
 
    
-    let el = e.target
+    let el = e.target;
+    console.log(el)
     el.classList.toggle('img-modal')
+    console.log(el)
 
   }
 
@@ -86,7 +88,7 @@ function Grupa1() {
         )
       })}
     </div>
-   <button className='group-button'><Link to={'*'} style={ {color:'white' , textDecoration:'none' , padding:'10px'}}>Powrot do strony glownej</Link></button>
+   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none' , padding:'10px'}}>Powrot do strony glownej</Link></button>
 
    </>
   )
