@@ -51,11 +51,11 @@ function Jadlospis() {
                   <th>Obiad</th>
                 </tr>
                 </thead>
-          {meals.map( (meals) => {
+          {meals.map( (meals , index) => {
             return(
 <>  
                
-                <tbody>
+                <tbody key={index}>
                 <tr>
                   <th>Poniedzialek</th>
                   <th>{meals.śniadanie}</th>

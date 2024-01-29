@@ -99,15 +99,16 @@ img{
 
 
 .main-info2 div{
-    text-align: center;
-    border-radius: 200px;
-    animation: danger infinite 3s;
+    
     width: 80%;
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    border-radius: 200px;
+    animation: danger infinite 3s;
 }
 
 
@@ -344,6 +345,10 @@ img{
 
 @media screen and (max-width:550px) {
 
+    h1 h2{
+        font-size: smaller;
+    }
+
     #main{
         height: 77vh;
     }
@@ -358,6 +363,14 @@ img{
         top:25vw;
         left: 0;
         justify-content:unset;
+    }
+
+    .main-info2 col{
+        text-align: center;
+    }
+
+    .main-info2 div{
+        margin-left: 10%;
     }
 
     .main-info h1{

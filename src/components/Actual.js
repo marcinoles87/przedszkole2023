@@ -55,7 +55,7 @@ function Actual() {
             {actual.map( (item,index) => {
                 return(
                     <>
-                    <Col md={4} className="d-flex justify-content-center">
+                    <Col md={4} className="d-flex justify-content-center" key={index}>
                     <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info}></ActualCard>
                     
                     </Col>
