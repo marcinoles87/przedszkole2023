@@ -43,52 +43,32 @@ function Jadlospis() {
  
         <h1>Jadłospis</h1>
         <Table striped bordered hover variant="success" style={{textAlign:'center'}}>
-            <thead> 
-              <tr>
-                <th>Dzień</th>
-                <th>Sniadanie</th>
-                <th>II Sniadanie</th>
-                <th>Obiad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Poniedzialek</th>
-                <th>jablko , mus , herbatka</th>
-                <th>jalbko , chrupki kukurydziane , napoj</th>
-                <th>zupa kalafiorowa , ziemniaki , kotlet , surowka</th>
-              </tr>
+        <thead> 
+                <tr>
+                  <th>Dzień</th>
+                  <th>Sniadanie</th>
+                  <th>II Sniadanie</th>
+                  <th>Obiad</th>
+                </tr>
+                </thead>
+          {meals.map( (meals) => {
+            return(
+<>  
+               
+                <tbody>
+                <tr>
+                  <th>Poniedzialek</th>
+                  <th>{meals.śniadanie}</th>
+                  <th>{meals.podwieczorek}</th>
+                  <th>{meals.obiad}</th>
+                </tr> 
+                </tbody>
 
-              <tr>
-                <th>Wtorek</th>
-                <th>jablko , mus , herbatka</th>
-                <th>jalbko , chrupki kukurydziane , napoj</th>
-                <th>zupa kalafiorowa , ziemniaki , kotlet , surowka</th>
-              </tr>
+                </>
+            )
+          })}
+            
 
-              <tr>
-                <th>Sroda</th>
-                <th>jablko , mus , herbatka</th>
-                <th>jalbko , chrupki kukurydziane , napoj</th>
-                <th>zupa kalafiorowa , ziemniaki , kotlet , surowka</th>
-              </tr>
-
-              <tr>
-                <th>Czwartek</th>
-                <th>jablko , mus , herbatka</th>
-                <th>jalbko , chrupki kukurydziane , napoj</th>
-                <th>zupa kalafiorowa , ziemniaki , kotlet , surowka</th>
-              </tr>
-
-              <tr>
-                <th>Piatek</th>
-                <th>jablko , mus , herbatka</th>
-                <th>jalbko , chrupki kukurydziane , napoj</th>
-                <th>zupa kalafiorowa , ziemniaki , kotlet , surowka</th>
-              </tr>
-
-             
-            </tbody>
         </Table>
     </Container>
 
