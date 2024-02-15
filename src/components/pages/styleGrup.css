@@ -9,6 +9,13 @@
     
 }
 
+.addNews-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .group-header h2{
     width: 40%;
@@ -92,6 +99,16 @@
     
       font-size: 10px;
         
+    }
+
+    .addNews-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .addNews-container input{
+        margin: 2px;
     }
 
   

@@ -10,85 +10,64 @@ import JSONDATA from './wydarzenia/wydarzeniaGrup.json'
 
 function Grupa1() {
 
-const [ newsArray , setNewsArray] = useState([])
+const obj = JSONDATA
+console.log(obj)
+
+const wydarzenia = [ 
+  {
+    name : 'Wyjscie do kina' ,
+    data : '12-12-2023' ,
+    description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
+    img1 : img1,
+    img2 : img2,
+    img3 : img3
+
+  },]
+
+const [ newsArray , setNewsArray] = useState(wydarzenia)
  
-// const obj = JSONDATA
-// console.log(obj)
+
 
 const addArticle = (e) => {
 
   const title = document.querySelector('.input-title').value;
   const text = document.querySelector('.input-text').value;
   const dataNow = new Date().toLocaleString();
-  const obj = { title: title , news : text , date: dataNow }
+  const obj = { name: title , description : text , data: dataNow }
   newsArray.push(obj)
 
   const upDateArray = [...newsArray]
-  
+
+  upDateArray.reverse()
   setNewsArray(upDateArray)
-  
+
 }
 
-console.log(newsArray)
   
 
   const handleOnClickGroup = (e) => {
-
    
     let el = e.target;
-    console.log(el)
     el.classList.toggle('img-modal')
-    console.log(el)
 
   }
 
 
-
-  const wydarzenia = [ 
-    {
-      name : 'Wyjscie do kina' ,
-      data : '12-12-2023' ,
-      description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1,
-      img2 : img2,
-      img3 : img3
-
-    },]
   return (
     <>
 
     <div className='group-header'>
-
-
-
       <h2 className='group-h'>Co nowego w grupie 1</h2>
-
-    
-
-    
-     
-
     </div>
 
-    <div className='addarticle-container'>
+    <div className='addNews-container'>
         <input placeholder='add Title' className='input-title'></input>
         <input placeholder='add text' className='input-text'></input>
         <button onClick={addArticle}>Add</button>
     </div>
     <div className='group-container'>
 
-      {newsArray.map( (item , index) => {
-        return(
-          <>
-            {item.name}
-            {item.date}
-            {item.news}
-            {}
-          </>
-        )
-      })}
-
-      {wydarzenia.map( (item, index) => {
+      {newsArray.map( (item, index) => {
         return(
           <div className='group-element' key={index}>
            <h1>{item.name}</h1>
