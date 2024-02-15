@@ -3,15 +3,21 @@
     flex-direction: row;
     color:rgb(80, 213, 135);
     margin: 50px;
+    background-image: url('./imgGroup/tloGrupa.jpg');
+    height: 30vh;
     
     
 }
+
 
 .group-header h2{
     width: 40%;
     font-family: 'Ubuntu';
     font-weight: 600;
     font-size: 70px;
+    color:rgb(17, 254, 120);
+    text-shadow: 2px 2px black;
+    
     
 }
 

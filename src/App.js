@@ -36,7 +36,7 @@ function App() {
           <Main></Main>
           <Actual></Actual>
           <AboutUs></AboutUs>
-          <Events></Events>
+          {/* <Events></Events> */}
           <Galeria></Galeria>
           <Jadlospis></Jadlospis>
           <Contact></Contact>
