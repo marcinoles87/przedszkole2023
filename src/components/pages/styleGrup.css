@@ -81,6 +81,13 @@
     transform: scale(1.8);
 }
 
+.password-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .password-field button{
     width: 30px;
     height: 30px;

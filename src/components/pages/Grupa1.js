@@ -41,7 +41,7 @@ const addArticle = (e) => {
 
   upDateArray.reverse()
   setNewsArray(upDateArray)
-
+  setPassword(false)
   
 
 }
@@ -56,8 +56,10 @@ const addArticle = (e) => {
   }
 
   const passwordCheck = (e) => {
-    const pass = document.querySelector('.password')
-    console.log(pass.value)
+    const pass = document.querySelector('.password').value
+    if(pass === 'monika'){
+      setPassword(true)
+    }
   }
 
 
