@@ -81,6 +81,11 @@
     transform: scale(1.8);
 }
 
+.password-field button{
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (max-width:550px) {
 
     .group-header{

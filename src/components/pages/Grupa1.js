@@ -24,7 +24,8 @@ const wydarzenia = [
 
   },]
 
-const [ newsArray , setNewsArray] = useState(wydarzenia)
+const [ newsArray , setNewsArray] = useState(wydarzenia);
+const [ password , setPassword] = useState(false)
  
 
 
@@ -41,6 +42,8 @@ const addArticle = (e) => {
   upDateArray.reverse()
   setNewsArray(upDateArray)
 
+  
+
 }
 
   
@@ -52,6 +55,11 @@ const addArticle = (e) => {
 
   }
 
+  const passwordCheck = (e) => {
+    const pass = document.querySelector('.password')
+    console.log(pass.value)
+  }
+
 
   return (
     <>
@@ -60,11 +68,19 @@ const addArticle = (e) => {
       <h2 className='group-h'>Co nowego w grupie 1</h2>
     </div>
 
-    <div className='addNews-container'>
+    <div className='password-field'>
+      <input className='password' placeholder='admin field'></input>
+      <button onClick={passwordCheck}></button>
+    </div>
+
+    {password ? <div className='addNews-container'>
         <input placeholder='add Title' className='input-title'></input>
         <input placeholder='add text' className='input-text'></input>
         <button onClick={addArticle}>Add</button>
-    </div>
+    </div> 
+    
+    : '' }
+   
     <div className='group-container'>
 
       {newsArray.map( (item, index) => {
