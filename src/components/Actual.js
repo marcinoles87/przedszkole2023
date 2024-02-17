@@ -6,6 +6,7 @@ import ActualCard from './ActualCard'
 import img1 from '../img/kids.png'
 import kadra from '../img/kadra.png'
 import rodzice from '../img/rodzice.jpg'
+import jedzenie from '../img/jedzenie.png'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
@@ -25,7 +26,7 @@ function Actual() {
         {
             title: "Jedzenie" ,
             descirption : " informacje na temat żywienia " ,
-            imgUrl : img1 ,
+            imgUrl : jedzenie ,
             info : 'sssssssss'
         },
 
