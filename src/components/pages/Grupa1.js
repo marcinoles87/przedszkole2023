@@ -43,7 +43,6 @@ const addArticle = (e) => {
   setNewsArray(upDateArray)
   setPassword(false)
   
-
 }
 
   
@@ -71,7 +70,7 @@ const addArticle = (e) => {
     </div>
 
     <div className='password-field'>
-      <input className='password' placeholder='admin field'></input>
+      <input className='password' placeholder='admin field' type='password'></input>
       <button onClick={passwordCheck}></button>
     </div>
 

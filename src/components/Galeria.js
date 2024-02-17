@@ -39,10 +39,6 @@ function Galeria() {
               <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
               <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
               <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
             
             </div>
             </Col>

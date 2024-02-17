@@ -20,7 +20,7 @@ function ActualCard({title,text,image,info}) {
     
   return (
     <>
-        <Card style={{ width: '18rem' , marginBottom:20}}>
+        <Card style={{ width: '18rem' , marginBottom:20 , alignContent: 'center'}}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>

@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import ActualCard from './ActualCard'
 import img1 from '../img/kids.png'
+import kadra from '../img/kadra.png'
+import rodzice from '../img/rodzice.jpg'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
@@ -22,23 +24,23 @@ function Actual() {
     const actual = [
         {
             title: "Jedzenie" ,
-            descirption : "build app " ,
+            descirption : " informacje na temat żywienia " ,
             imgUrl : img1 ,
             info : 'sssssssss'
         },
 
         {
-            title: "Wycieczka" ,
-            descirption : "build app " ,
-            imgUrl : img1,
+            title: "Dla rodzicow " ,
+            descirption : "wsluchaj sie w swoje dziecko ... " ,
+            imgUrl : rodzice,
             info : 'bbbbbbbbb'
         },
 
         {
-            title: "Rodzice" ,
-            descirption : "build app " ,
-            imgUrl : img1,
-            info : 'aaaaaaaaa'
+            title: "Kadra" ,
+            descirption : "kadra naszego przedszkola " ,
+            imgUrl : kadra,
+            info : 'Dyrektor : Małgorzata XXX , grupa 1 : XX XXXXX , grupa 2 : XXXXXX  , grupa 3 XXX XXXX'
         },
 
         
@@ -55,7 +57,7 @@ function Actual() {
             {actual.map( (item,index) => {
                 return(
                     <>
-                    <Col md={4} className="d-flex justify-content-center" key={index}>
+                    <Col md={4} className="d-flex justify-content-center " key={index}>
                     <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info}></ActualCard>
                     
                     </Col>

@@ -9,7 +9,6 @@ import Jadlospis from './components/Jadlospis.js';
 import Main from './components/Main';
 import Navbars from './components/Navbars.js'
 import Button from 'react-bootstrap/esm/Button.js';
-import Events from './components/Events.js';
 import Grupa1 from './components/pages/Grupa1.js';
 import Grupa2 from './components/pages/Grupa2.js';
 import Grupa3 from './components/pages/Grupa3.js'
@@ -36,7 +35,6 @@ function App() {
           <Main></Main>
           <Actual></Actual>
           <AboutUs></AboutUs>
-          {/* <Events></Events> */}
           <Galeria></Galeria>
           <Jadlospis></Jadlospis>
           <Contact></Contact>
