@@ -23,8 +23,7 @@ function App() {
     window.scrollTo(0,0)
   }
 
-  console.log(projectStorage)
-  console.log(projectFirestore)
+
 
 
   return (
