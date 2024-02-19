@@ -13,6 +13,7 @@ import Grupa1 from './components/pages/Grupa1.js';
 import Grupa2 from './components/pages/Grupa2.js';
 import Grupa3 from './components/pages/Grupa3.js'
 import Grupa4 from './components/pages/Grupa4.js'
+import { projectStorage , projectFirestore } from './firebase/config.js';
 
 
 
@@ -21,6 +22,9 @@ function App() {
   const handleOnClick = () => {
     window.scrollTo(0,0)
   }
+
+  console.log(projectStorage)
+  console.log(projectFirestore)
 
 
   return (
