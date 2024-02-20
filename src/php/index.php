@@ -1,0 +1,3 @@
+<?php
+
+?mySqli = new mySqli
