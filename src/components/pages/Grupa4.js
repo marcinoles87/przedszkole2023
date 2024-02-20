@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styleGrup.css'
 import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
@@ -13,6 +13,21 @@ function Grupa4() {
 
   }
 
+  const [inputs , setInputs] = useState({});
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    
+    setInputs( values => ( {values , [name] : value}))
+
+    
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(inputs)
+  }
+
 
   return (
     <>
@@ -25,7 +40,22 @@ function Grupa4() {
 
     <div className='group-container'>
     
-      
+      <form onSubmit={handleSubmit}>
+
+      <label>Nazwa wydarzenia</label>
+      <input type='text' name='wydarzenie' onChange={handleChange}/>
+      <br/>
+
+      <label>Data</label>
+      <input type='date' name='date' onChange={handleChange}/>
+      <br/>
+      <label>Opis</label>
+      <input type='text' name='opis' onChange={handleChange}/>
+      <br/>
+
+      <button>Zapisz</button>
+
+      </form>
 
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
