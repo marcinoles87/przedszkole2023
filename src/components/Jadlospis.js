@@ -53,7 +53,7 @@ function Jadlospis() {
                 </thead>
           {meals.map( (meals , index) => {
             return(
-<>  
+
                
                 <tbody key={index}>
                 <tr>
@@ -64,7 +64,7 @@ function Jadlospis() {
                 </tr> 
                 </tbody>
 
-                </>
+                
             )
           })}
             
