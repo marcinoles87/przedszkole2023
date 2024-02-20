@@ -21,7 +21,7 @@ function Grupa4() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3306/api/' , inputs)
+    // axios.post('http://localhost:3306/api/' , inputs)
     
   }
 

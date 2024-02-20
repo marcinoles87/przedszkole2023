@@ -27,7 +27,7 @@ function ActualCard({title,text,image,info}) {
         <Card.Text>
           {text}
         </Card.Text>
-        <Button variant="primary" onClick={handleShow}>Clik to go</Button>
+        <Button variant="primary" onClick={handleShow}>Czytaj więcej</Button>
         </Card.Body>
     </Card>
 
