@@ -15,11 +15,12 @@ console.log(db)
 
 const saveDataToFireStore = async () => {
 
-  const docRef = await addDoc(collection(db,'images'), {
+  const docRef = await addDoc(collection(db,'newText'), {
     text : inputField1 ,
     description : inputField2
 
-  })
+  });
+  alert('data base update')
 
 
 }
@@ -34,7 +35,17 @@ const saveDataToFireStore = async () => {
 
     </div>
     <div className='group-container'>
-     
+    <label>Nazwa wydarzenia</label>
+      <input type='text' name='wydarzenie' value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
+      <br/>
+
+      <label>Nazwa wydarzenia</label>
+      <input type='text' name='wydarzenie' value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+      <br/>
+
+      <button onClick={saveDataToFireStore}>Zapisz</button>
+
+      
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
 
