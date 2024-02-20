@@ -22,9 +22,7 @@ function App() {
   const handleOnClick = () => {
     window.scrollTo(0,0)
   }
-
-
-
+  
 
   return (
     <div className="App">

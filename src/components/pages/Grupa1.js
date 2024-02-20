@@ -5,18 +5,18 @@ import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
 import img2 from '/web frontend/projekty React/przedszkole2023/src/img/kids2.jpg'
 import img3 from '/web frontend/projekty React/przedszkole2023/src/img/logo3.png'
 
-import JSONDATA from './wydarzenia/wydarzeniaGrup.json'
+import JSONDATA from './wydarzenia/wydarzeniaGrupa1.json'
 
 
 function Grupa1() {
 
 const obj = JSONDATA
-console.log(obj)
+console.log(obj.name)
 
 const wydarzenia = [ 
   {
     name : 'Wyjscie do kina' ,
-    data : '12-12-2023' ,
+    data : obj.name ,
     description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
     img1 : img1,
     img2 : img2,
