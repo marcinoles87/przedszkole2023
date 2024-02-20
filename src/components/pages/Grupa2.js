@@ -31,29 +31,19 @@ const saveDataToFireStore = async () => {
 
 const handlefetchData = async () =>{
 
-  const docRef = doc(db , 'newText' , 'v7MEMlhG5jJ7hZf2ITBV')
 
+  const docRef = doc(db , 'newText' , 'v7MEMlhG5jJ7hZf2ITBV')
   getDoc(docRef)
-  .then( (doc) => {
-    
-    
-    
+  .then( (doc) =>{
+    console.log(doc.data())
+    setFirestoreValue(doc.data())
   })
 
-  // const querySnapshot = await getDoc(collection(db,'newText'));
-  // const temporaryArray = [];
 
-  // console.log(querySnapshot)
-
-  // querySnapshot.forEach( (doc) => {
-  //   temporaryArray.push(doc.data());
-
-  // })
-
-  // console.log(temporaryArray)
-  // setFirestoreValue(temporaryArray)
 
 }
+
+console.log(firestoreValues)
 
 
   return (
@@ -80,13 +70,13 @@ const handlefetchData = async () =>{
       <button onClick={saveDataToFireStore}>Zapisz</button>
       <button onClick={handlefetchData}>Pokaz wydarzenia</button>
 
-     {firestoreValues.map( (item , index) => {
+     {firestoreValues.map( (item) => {
       return(
         <>
-         <div className='group-element' key={index}>
-           <h1>{item.inputField1}</h1>
-           <h3>{item.inputField2}</h3>
-           <p>{item.inputField3}</p>
+         <div className='group-element'>
+           <h1>{item.data}</h1>
+           <h3>{item.text}</h3>
+           <p>{item.description}</p>
            </div>
         </>
       )
