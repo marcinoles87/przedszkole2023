@@ -1,27 +1,21 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styleGrup.css'
-import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
+
+
 
 function Grupa4() {
 
-  const handleOnClickGroup = (e) => {
-
-   
-    let el = e.target
-    el.classList.toggle('img-modal')
-
-  }
 
   const [inputs , setInputs] = useState({});
 
   const handleChange = (e) => {
+
     const name = e.target.name;
     const value = e.target.value;
     
-    setInputs( values => ( {values , [name] : value}))
+    setInputs( values => ( {...values , [name] : value}))
 
-    
   }
   const handleSubmit = (e) => {
     e.preventDefault();
