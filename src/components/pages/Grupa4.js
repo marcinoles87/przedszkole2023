@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styleGrup.css'
+import axios from 'axios'
 
 
 
@@ -19,7 +20,9 @@ function Grupa4() {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputs)
+
+    axios.post('https//:localhost')
+    
   }
 
 
