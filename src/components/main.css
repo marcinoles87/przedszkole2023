@@ -257,6 +257,7 @@ img{
 
 .gallery-container img{
     width: 23%;
+    height: 90%;
     cursor: pointer;
 
 }
@@ -381,6 +382,7 @@ img{
     
     #galImg{
         width: 80%;
+        
         
     }
 

@@ -3,9 +3,10 @@ import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import im1 from '../img/kids2.jpg'
-import im2 from '../img/kids.png'
-import im3 from '../img/headerimg2.jpg'
+import im1 from '../img/wejscie.jpg'
+import im2 from '../img/przod.jpg'
+import im3 from '../img/sala1.jpg'
+import im4 from '../img/sala2.jpg'
 
 
 function Galeria() {
@@ -36,9 +37,9 @@ function Galeria() {
             <div className='gallery-container'>
               <div className='drop-enlarge'></div>
               <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
-              <img id='galImg' src={im3} alt='przedszkole' onClick={handleOnClick}></img>
+              <img id='galImg' src={im2} alt='przedszkole' onClick={handleOnClick}></img>
+              <img id='galImg' src={im1} alt='przedszkole' onClick={handleOnClick}></img>
+              <img id='galImg' src={im4} alt='przedszkole' onClick={handleOnClick}></img>
             
             </div>
             </Col>
