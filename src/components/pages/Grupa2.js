@@ -18,7 +18,7 @@ console.log(db)
 
 const saveDataToFireStore = async () => {
 
-  const docRef = await addDoc(collection(db,'newText'), {
+  const docRef = await addDoc(collection(db,'grupa2'), {
     text : inputField1 ,
     date : inputField2 ,
     description : inputField3
@@ -31,7 +31,7 @@ const saveDataToFireStore = async () => {
 
 const handlefetchData = async () =>{
 
-  const querySnapShot = await getDocs(collection(db,"newText"));
+  const querySnapShot = await getDocs(collection(db,"grupa2"));
   const temporaryBase = []
   console.log(querySnapShot)
 
@@ -43,8 +43,6 @@ const handlefetchData = async () =>{
 
 
 }
-
-
 
 console.log(firestoreValues)
 
@@ -60,11 +58,11 @@ console.log(firestoreValues)
     <div className='group-container'>
     <label>Nazwa wydarzenia</label>
       <input type='text'  value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
-      <br/>
+      
 
       <label>Data</label>
       <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
-      <br/>
+      
 
       <label>Opis</label>
       <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
@@ -80,8 +78,8 @@ console.log(firestoreValues)
       return(
         <>
          <div className='group-element'>
-           <h1>{item.data}</h1>
-           <h3>{item.text}</h3>
+           <h1>{item.text}</h1>
+           <h3>{item.date}</h3>
            <p>{item.description}</p>
            </div>
         </>

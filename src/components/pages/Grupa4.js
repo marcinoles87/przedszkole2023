@@ -1,64 +1,100 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './styleGrup.css'
-import axios from 'axios'
-
+import React, { useState } from 'react';
+import './styleGrup.css';
+import { Link } from 'react-router-dom';
+import { getFirestore , getDoc , collection, addDoc , doc, getDocs } from 'firebase/firestore';
 
 
 function Grupa4() {
 
+const [inputField1 , setInputField1] = useState('')
+const [inputField2 , setInputField2] = useState('')
+const [inputField3 , setInputField3] = useState('')
 
-  const [inputs , setInputs] = useState({});
+const [firestoreValues , setFirestoreValue ] = useState([])
 
-  const handleChange = (e) => {
+const db = getFirestore();
 
-    const name = e.target.name;
-    const value = e.target.value;
-    
-    setInputs( values => ( {...values , [name] : value}))
+console.log(db)
 
-  }
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const saveDataToFireStore = async () => {
 
-    // axios.post('http://localhost:3306/api/' , inputs)
-    
-  }
+  const docRef = await addDoc(collection(db,'grupa4'), {
+    text : inputField1 ,
+    date : inputField2 ,
+    description : inputField3
+
+  });
+  alert('data base update')
+
+
+}
+
+const handlefetchData = async () =>{
+
+  const querySnapShot = await getDocs(collection(db,"grupa4"));
+  const temporaryBase = []
+  console.log(querySnapShot)
+
+  querySnapShot.forEach( (doc) => {
+    temporaryBase.push(doc.data())
+  });
+
+  setFirestoreValue(temporaryBase)
+
+
+}
+
+console.log(firestoreValues)
 
 
   return (
     <>
 
     <div className='group-header'>
-
       <h2>Co nowego w grupie 4</h2>
+     
 
-     </div>
-
+    </div>
     <div className='group-container'>
-    
-      <form onSubmit={handleSubmit}>
-
-      <label>Nazwa wydarzenia</label>
-      <input type='text' name='wydarzenie' onChange={handleChange}/>
-      <br/>
+    <label>Nazwa wydarzenia</label>
+      <input type='text'  value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
+      
 
       <label>Data</label>
-      <input type='date' name='date' onChange={handleChange}/>
-      <br/>
+      <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+      
+
       <label>Opis</label>
-      <input type='text' name='opis' onChange={handleChange}/>
+      <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
       <br/>
 
-      <button>Zapisz</button>
+      <button onClick={saveDataToFireStore}>Zapisz</button>
+      <button onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+      
+      <div className='group-container'>
+     {firestoreValues && firestoreValues.map( (item) => {
 
-      </form>
+      
+      return(
+        <>
+         <div className='group-element'>
+           <h1>{item.text}</h1>
+           <h3>{item.date}</h3>
+           <p>{item.description}</p>
+           </div>
+        </>
+      )
+    
+})}
 
+</div>
+    
+    
+      
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
 
    </>
   )
-} 
-
+}
 export default Grupa4

@@ -1,36 +1,52 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './styleGrup.css'
-import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
+import React, { useState } from 'react';
+import './styleGrup.css';
+import { Link } from 'react-router-dom';
+import { getFirestore , getDoc , collection, addDoc , doc, getDocs } from 'firebase/firestore';
+
+
 function Grupa3() {
 
-  const handleOnClickGroup = (e) => {
+const [inputField1 , setInputField1] = useState('')
+const [inputField2 , setInputField2] = useState('')
+const [inputField3 , setInputField3] = useState('')
 
-   
-    let el = e.target
-    el.classList.toggle('img-modal')
+const [firestoreValues , setFirestoreValue ] = useState([])
 
-  }
+const db = getFirestore();
+
+console.log(db)
+
+const saveDataToFireStore = async () => {
+
+  const docRef = await addDoc(collection(db,'grupa3'), {
+    text : inputField1 ,
+    date : inputField2 ,
+    description : inputField3
+
+  });
+  alert('data base update')
 
 
+}
 
-  const wydarzenia = [ 
-    {
-      name : 'Wyjscie do kina' ,
-      data : '12-12-2023' ,
-      description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
-    },
+const handlefetchData = async () =>{
 
-    {
-      name : 'Wyjscie do kina' ,
-      data : '12-12-2023' ,
-      description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-      img1 : img1
+  const querySnapShot = await getDocs(collection(db,"grupa3"));
+  const temporaryBase = []
+  console.log(querySnapShot)
 
-    },
+  querySnapShot.forEach( (doc) => {
+    temporaryBase.push(doc.data())
+  });
 
-  ]
+  setFirestoreValue(temporaryBase)
+
+
+}
+
+console.log(firestoreValues)
+
+
   return (
     <>
 
@@ -40,27 +56,45 @@ function Grupa3() {
 
     </div>
     <div className='group-container'>
-      {wydarzenia.map( (item, index) => {
-        return(
-          <div className='group-element' key={index}>
-           <h1>{item.name}</h1>
-           <h3>{item.data}</h3>
-           <p>{item.description}</p>
+    <label>Nazwa wydarzenia</label>
+      <input type='text'  value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
+      <br/>
 
-            <div className='group-images'>
-              <img src={item.img1} alt='kids' onClick={handleOnClickGroup}></img>
-              <img src={item.img1} alt='kids' onClick={handleOnClickGroup}></img>
-              <img src={item.img1} alt='kids' onClick={handleOnClickGroup}></img>
-              </div>
-         
-          </div>
-        )
-      })}
+      <label>Data</label>
+      <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+      <br/>
+
+      <label>Opis</label>
+      <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
+      <br/>
+
+      <button onClick={saveDataToFireStore}>Zapisz</button>
+      <button onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+      
+      <div className='group-container'>
+     {firestoreValues && firestoreValues.map( (item) => {
+
+      
+      return(
+        <>
+         <div className='group-element'>
+           <h1>{item.text}</h1>
+           <h3>{item.date}</h3>
+           <p>{item.description}</p>
+           </div>
+        </>
+      )
+    
+})}
+
+</div>
+    
+    
+      
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
 
    </>
   )
 }
-
 export default Grupa3
