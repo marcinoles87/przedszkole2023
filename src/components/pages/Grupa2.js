@@ -42,15 +42,6 @@ const handlefetchData = async () =>{
   setFirestoreValue(temporaryBase)
 
 
-
-  // const docRef = doc(db , 'newText' , 'v7MEMlhG5jJ7hZf2ITBV')
-  // getDoc(docRef)
-  // .then( (doc) =>{
-  //   console.log(doc.data())
-  //   setFirestoreValue(doc.data())
-  // })
-
- 
 }
 
 
@@ -80,9 +71,12 @@ console.log(firestoreValues)
       <br/>
 
       <button onClick={saveDataToFireStore}>Zapisz</button>
-      <button onClick={handlefetchData}>Pokaz wydarzenia</button>
+      <button onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+      
+      <div className='group-container'>
+     {firestoreValues && firestoreValues.map( (item) => {
 
-     {/* {firestoreValues && firestoreValues.map( (item) => {
+      
       return(
         <>
          <div className='group-element'>
@@ -93,7 +87,9 @@ console.log(firestoreValues)
         </>
       )
     
-})} */}
+})}
+
+</div>
     
      
 
