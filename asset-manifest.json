@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/przedszkole2023/static/css/main.690aa6a8.css",
-    "main.js": "/przedszkole2023/static/js/main.044e1efc.js",
-    "static/media/kids.png": "/przedszkole2023/static/media/kids.6947b23f94d04db6f215.png",
-    "static/media/logo.png": "/przedszkole2023/static/media/logo.a494ef2c5533dc594896.png",
-    "static/media/headerimg2.jpg": "/przedszkole2023/static/media/headerimg2.d55117f0530a85ce988e.jpg",
-    "static/media/headerimg.jpg": "/przedszkole2023/static/media/headerimg.a577f5da2b2b6c531e8e.jpg",
-    "static/media/kids2.jpg": "/przedszkole2023/static/media/kids2.88d1ebfb4799fd10b9a8.jpg",
-    "static/media/mapa.png": "/przedszkole2023/static/media/mapa.c1df36252763b9d664f7.png",
-    "static/media/logo3.png": "/przedszkole2023/static/media/logo3.bf23c34de98f126c9244.png",
-    "index.html": "/przedszkole2023/index.html",
-    "main.690aa6a8.css.map": "/przedszkole2023/static/css/main.690aa6a8.css.map",
-    "main.044e1efc.js.map": "/przedszkole2023/static/js/main.044e1efc.js.map"
+    "main.css": "./static/css/main.84aa3149.css",
+    "main.js": "./static/js/main.a7dc382b.js",
+    "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
+    "static/media/logo.png": "./static/media/logo.a494ef2c5533dc594896.png",
+    "static/media/tloGrupa.jpg": "./static/media/tloGrupa.cadc1fadc907c798c70c.jpg",
+    "static/media/headerimg2.jpg": "./static/media/headerimg2.d55117f0530a85ce988e.jpg",
+    "static/media/headerimg.jpg": "./static/media/headerimg.a577f5da2b2b6c531e8e.jpg",
+    "static/media/kids2.jpg": "./static/media/kids2.88d1ebfb4799fd10b9a8.jpg",
+    "static/media/jedzenie.png": "./static/media/jedzenie.8e4fa74b80dd884e1edb.png",
+    "static/media/mapa.png": "./static/media/mapa.c1df36252763b9d664f7.png",
+    "static/media/logo3.png": "./static/media/logo3.bf23c34de98f126c9244.png",
+    "static/media/kadra.png": "./static/media/kadra.cc6c07f23d603c77d8ab.png",
+    "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
+    "index.html": "./index.html",
+    "main.84aa3149.css.map": "./static/css/main.84aa3149.css.map",
+    "main.a7dc382b.js.map": "./static/js/main.a7dc382b.js.map"
   },
   "entrypoints": [
-    "static/css/main.690aa6a8.css",
-    "static/js/main.044e1efc.js"
+    "static/css/main.84aa3149.css",
+    "static/js/main.a7dc382b.js"
   ]
 }
