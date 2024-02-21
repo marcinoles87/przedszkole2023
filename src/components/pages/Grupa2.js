@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore , getDoc , collection, addDoc , doc } from 'firebase/firestore';
+import { getFirestore , getDoc , collection, addDoc , doc, getDocs } from 'firebase/firestore';
 
 
 function Grupa2() {
@@ -31,17 +31,22 @@ const saveDataToFireStore = async () => {
 
 const handlefetchData = async () =>{
 
-
-  const docRef = doc(db , 'newText' , 'v7MEMlhG5jJ7hZf2ITBV')
-  getDoc(docRef)
-  .then( (doc) =>{
-    console.log(doc.data())
-    setFirestoreValue(doc.data())
-  })
+  const querySnapShot = await getDocs(collection(db,"newText"))
+  console.log(querySnapShot)
 
 
 
+  // const docRef = doc(db , 'newText' , 'v7MEMlhG5jJ7hZf2ITBV')
+  // getDoc(docRef)
+  // .then( (doc) =>{
+  //   console.log(doc.data())
+  //   setFirestoreValue(doc.data())
+  // })
+
+ 
 }
+
+
 
 console.log(firestoreValues)
 
@@ -70,7 +75,7 @@ console.log(firestoreValues)
       <button onClick={saveDataToFireStore}>Zapisz</button>
       <button onClick={handlefetchData}>Pokaz wydarzenia</button>
 
-     {firestoreValues.map( (item) => {
+     {/* {firestoreValues && firestoreValues.map( (item) => {
       return(
         <>
          <div className='group-element'>
@@ -81,7 +86,7 @@ console.log(firestoreValues)
         </>
       )
     
-})}
+})} */}
     
      
 
