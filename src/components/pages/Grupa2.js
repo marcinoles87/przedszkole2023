@@ -31,8 +31,15 @@ const saveDataToFireStore = async () => {
 
 const handlefetchData = async () =>{
 
-  const querySnapShot = await getDocs(collection(db,"newText"))
+  const querySnapShot = await getDocs(collection(db,"newText"));
+  const temporaryBase = []
   console.log(querySnapShot)
+
+  querySnapShot.forEach( (doc) => {
+    temporaryBase.push(doc.data())
+  });
+
+  setFirestoreValue(temporaryBase)
 
 
 
