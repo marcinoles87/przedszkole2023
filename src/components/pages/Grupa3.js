@@ -6,11 +6,21 @@ import { getFirestore , getDoc , collection, addDoc , doc, getDocs } from 'fireb
 
 function Grupa3() {
 
+  
+
 const [inputField1 , setInputField1] = useState('')
 const [inputField2 , setInputField2] = useState('')
 const [inputField3 , setInputField3] = useState('')
-
 const [firestoreValues , setFirestoreValue ] = useState([])
+const [password , setPassword] = useState(false)
+
+const passwordCheck = (e) => {
+  const pass = document.querySelector('.password').value
+  if(pass === 'monikaK'){
+    setPassword(true)
+  }
+}
+
 
 const db = getFirestore();
 
@@ -44,7 +54,7 @@ const handlefetchData = async () =>{
 
 }
 
-console.log(firestoreValues)
+
 
 
   return (
@@ -55,21 +65,38 @@ console.log(firestoreValues)
      
 
     </div>
-    <div className='group-container'>
-    <label>Nazwa wydarzenia</label>
-      <input type='text'  value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
-      <br/>
 
-      <label>Data</label>
-      <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
-      <br/>
+    <div className='password-field'>
+      <input className='password' placeholder='admin field' type='password'></input>
+      <button onClick={passwordCheck}></button>
+    </div>
 
-      <label>Opis</label>
-      <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
-      <br/>
+  
 
-      <button onClick={saveDataToFireStore}>Zapisz</button>
-      <button onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+    {password ? 
+    <> 
+     <div className='group-container'>
+          <label>Nazwa wydarzenia</label>
+          <input type='text'  value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
+          
+
+          <label>Data</label>
+          <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+          
+
+          <label>Opis</label>
+          <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
+          <br/>
+
+          <button onClick={saveDataToFireStore}>Zapisz</button>
+      </div>
+      </>
+      : ''}
+
+      <div className='group-btn'>
+         <button  onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+      </div>
+     
       
       <div className='group-container'>
      {firestoreValues && firestoreValues.map( (item) => {
@@ -87,9 +114,11 @@ console.log(firestoreValues)
     
 })}
 
-</div>
+
     
-    
+     
+
+     
       
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
