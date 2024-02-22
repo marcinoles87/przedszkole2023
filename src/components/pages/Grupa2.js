@@ -3,6 +3,8 @@ import './styleGrup.css';
 import { Link } from 'react-router-dom';
 import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
+import  {v4} from 'uuid'
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 
 
 function Grupa2() {
@@ -25,18 +27,6 @@ const passwordCheck = (e) => {
   }
 }
 
-const saveDataToFireStore = async () => {
-
-  const docRef = await addDoc(collection(db,'grupa2'), {
-    text : inputField1 ,
-    date : inputField2 ,
-    description : inputField3
-
-  });
-  alert('data base update')
-
-
-}
 
 const handlefetchData = async () =>{
 
@@ -49,13 +39,34 @@ const handlefetchData = async () =>{
   });
 
   setFirestoreValue(temporaryBase)
-
-
 }
 
 const handleUpload = (e) => {
   console.log(e.target.files[0])
+  const imgs = ref(projectStorage , `imagesGrupa2/${v4()}`);
+  uploadBytes(imgs,e.target.files[0]).then(data =>{
+    
+    getDownloadURL(data.ref).then(val =>{
+      
+      setImgs(val)
+    })
+  })
 }
+
+const saveDataToFireStore = async () => {
+
+  const docRef = await addDoc(collection(db,'grupa2'), {
+    text : inputField1 ,
+    date : inputField2 ,
+    imgUrl : imgs,
+    description : inputField3
+
+  });
+  alert('data base update')
+
+
+}
+
 
 
   return (
@@ -100,7 +111,6 @@ const handleUpload = (e) => {
       <div className='group-btn'>
          <button  onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
       </div>
-     
       
       <div className='group-container'>
      {firestoreValues && firestoreValues.map( (item) => {
@@ -111,6 +121,7 @@ const handleUpload = (e) => {
          <div className='group-element'>
            <h1>{item.text}</h1>
            <h3>{item.date}</h3>
+           <img src={item.imgUrl} alt='img_grupa2'></img>
            <p>{item.description}</p>
            </div>
         </>
