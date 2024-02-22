@@ -62,6 +62,7 @@
 .img-group{
     width: 60%;
     height: 200px;
+    margin: 10px;
 }
 
 .group-button{
@@ -121,6 +122,13 @@
 .group-btn button{
     padding: 5px;
     border-radius: 10px;
+}
+
+.group-element-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
