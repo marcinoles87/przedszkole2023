@@ -109,6 +109,12 @@
     align-items: center;
     padding: 10px;
     margin-top: 10px;
+    
+}
+
+.group-btn button{
+    padding: 5px;
+    border-radius: 10px;
 }
 
 

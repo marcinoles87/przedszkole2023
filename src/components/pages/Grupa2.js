@@ -14,6 +14,8 @@ const [inputField3 , setInputField3] = useState('')
 const [firestoreValues , setFirestoreValue ] = useState([])
 const [password , setPassword] = useState(false)
 
+console.log(firestoreValues)
+
 const passwordCheck = (e) => {
   const pass = document.querySelector('.password').value
   if(pass === 'monikaK'){
@@ -23,8 +25,6 @@ const passwordCheck = (e) => {
 
 
 const db = getFirestore();
-
-console.log(db)
 
 const saveDataToFireStore = async () => {
 
@@ -68,7 +68,7 @@ const handlefetchData = async () =>{
 
     <div className='password-field'>
       <input className='password' placeholder='admin field' type='password'></input>
-      <button onClick={passwordCheck}></button>
+      <button onClick={passwordCheck}>V</button>
     </div>
 
   
