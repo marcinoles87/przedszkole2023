@@ -121,7 +121,7 @@ const saveDataToFireStore = async () => {
          <div className='group-element'>
            <h1>{item.text}</h1>
            <h3>{item.date}</h3>
-           <img src={item.imgUrl} alt='img_grupa2'></img>
+           <img src={item.imgUrl} alt='img_grupa2' className='img-group'></img>
            <p>{item.description}</p>
            </div>
         </>
