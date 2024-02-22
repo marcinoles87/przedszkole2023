@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 
 firebase.initializeApp(firebaseConfig)
 
-const projectStorage = getStorage();
+const projectStorage = getStorage(app);
 const projectFirestore = getFirestore(app);
 
 

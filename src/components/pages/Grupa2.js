@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
 import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
+import { projectStorage } from '../../firebase/config';
 
 
 function Grupa2() {
@@ -11,6 +12,9 @@ const [inputField2 , setInputField2] = useState('')
 const [inputField3 , setInputField3] = useState('')
 const [firestoreValues , setFirestoreValue ] = useState([])
 const [password , setPassword] = useState(false)
+
+const [imgs , setImgs] = useState('')
+
 
 const db = getFirestore();
 
@@ -38,7 +42,7 @@ const handlefetchData = async () =>{
 
   const querySnapShot = await getDocs(collection(db,"grupa2"));
   const temporaryBase = []
-  console.log(querySnapShot)
+  
 
   querySnapShot.forEach( (doc) => {
     temporaryBase.push(doc.data())
@@ -49,7 +53,9 @@ const handlefetchData = async () =>{
 
 }
 
-
+const handleUpload = (e) => {
+  console.log(e.target.files[0])
+}
 
 
   return (
@@ -77,6 +83,9 @@ const handlefetchData = async () =>{
 
           <label>Data</label>
           <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+
+          
+          <input type='file' onChange={ (e) => handleUpload(e)}></input>
           
 
           <label>Opis</label>
