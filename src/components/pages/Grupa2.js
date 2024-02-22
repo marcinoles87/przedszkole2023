@@ -64,6 +64,12 @@ const saveDataToFireStore = async () => {
   });
   alert('data base update')
 
+}
+
+const handleModal = (e) => {
+   
+  let el = e.target;
+  el.classList.toggle('img-modal')
 
 }
 
@@ -121,7 +127,7 @@ const saveDataToFireStore = async () => {
          <div className='group-element'>
            <h1>{item.text}</h1>
            <h3>{item.date}</h3>
-           <img src={item.imgUrl} alt='img_grupa2' className='img-group'></img>
+           <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
            <p>{item.description}</p>
            </div>
         </>

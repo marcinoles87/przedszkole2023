@@ -28,21 +28,18 @@
     
 }
 
-.img-group {
-    width: 30%;
-    height: 30%;
 
-  
-}
 
 .group-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .group-element{
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +59,11 @@
     
 }
 
+.img-group{
+    width: 60%;
+    height: 200px;
+}
+
 .group-button{
     
     position:fixed;
@@ -78,11 +80,13 @@
 
 .img-modal{
     position: fixed;
-    top: 40%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    transform: scale(1.8);
+    width: 60%;
+    height: 70%;
+
 }
 
 .password-field{
@@ -138,9 +142,15 @@
         text-align: center;
         margin: 0;
     }
+
+
     .group-header h2{
         font-size: 30px;
         
+    }
+
+    .group-container{
+        flex-direction: column;
     }
 
     .group-button{
@@ -161,6 +171,24 @@
 
     .password-field{
         margin-top: 19px;
+    }
+
+    .img-group{
+        width: 70vw;
+        height: auto;
+    }
+
+  
+
+    .img-modal{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        width: 75%;
+        height: 40%;
+    
     }
 
   
