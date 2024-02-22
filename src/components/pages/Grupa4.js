@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore , getDoc , collection, addDoc , doc, getDocs } from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
+import { projectStorage } from '../../firebase/config';
+import  {v4} from 'uuid'
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 
 
 function Grupa4() {
-
-  
 
 const [inputField1 , setInputField1] = useState('')
 const [inputField2 , setInputField2] = useState('')
 const [inputField3 , setInputField3] = useState('')
 const [firestoreValues , setFirestoreValue ] = useState([])
 const [password , setPassword] = useState(false)
+
+const [imgs , setImgs] = useState('')
+
+
+const db = getFirestore();
 
 const passwordCheck = (e) => {
   const pass = document.querySelector('.password').value
@@ -22,15 +28,37 @@ const passwordCheck = (e) => {
 }
 
 
-const db = getFirestore();
+const handlefetchData = async () =>{
 
-console.log(db)
+  const querySnapShot = await getDocs(collection(db,"grupa4"));
+  const temporaryBase = []
+  
+
+  querySnapShot.forEach( (doc) => {
+    temporaryBase.push(doc.data())
+  });
+
+  setFirestoreValue(temporaryBase)
+}
+
+const handleUpload = (e) => {
+  console.log(e.target.files[0])
+  const imgs = ref(projectStorage , `imagesGrupa4/${v4()}`);
+  uploadBytes(imgs,e.target.files[0]).then(data =>{
+    
+    getDownloadURL(data.ref).then(val =>{
+      
+      setImgs(val)
+    })
+  })
+}
 
 const saveDataToFireStore = async () => {
 
   const docRef = await addDoc(collection(db,'grupa4'), {
     text : inputField1 ,
     date : inputField2 ,
+    imgUrl : imgs,
     description : inputField3
 
   });
@@ -38,22 +66,6 @@ const saveDataToFireStore = async () => {
 
 
 }
-
-const handlefetchData = async () =>{
-
-  const querySnapShot = await getDocs(collection(db,"grupa4"));
-  const temporaryBase = []
-  console.log(querySnapShot)
-
-  querySnapShot.forEach( (doc) => {
-    temporaryBase.push(doc.data())
-  });
-
-  setFirestoreValue(temporaryBase)
-
-
-}
-
 
 
 
@@ -82,6 +94,9 @@ const handlefetchData = async () =>{
 
           <label>Data</label>
           <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+
+          
+          <input type='file' onChange={ (e) => handleUpload(e)}></input>
           
 
           <label>Opis</label>
@@ -96,7 +111,6 @@ const handlefetchData = async () =>{
       <div className='group-btn'>
          <button  onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
       </div>
-     
       
       <div className='group-container'>
      {firestoreValues && firestoreValues.map( (item) => {
@@ -107,6 +121,7 @@ const handlefetchData = async () =>{
          <div className='group-element'>
            <h1>{item.text}</h1>
            <h3>{item.date}</h3>
+           <img src={item.imgUrl} alt='img_grupa4' className='img-group'></img>
            <p>{item.description}</p>
            </div>
         </>
