@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore , getDoc , collection, addDoc , doc, getDocs } from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
 
 
 function Grupa2() {
-
-  
 
 const [inputField1 , setInputField1] = useState('')
 const [inputField2 , setInputField2] = useState('')
@@ -22,7 +20,6 @@ const passwordCheck = (e) => {
     setPassword(true)
   }
 }
-
 
 const saveDataToFireStore = async () => {
 
