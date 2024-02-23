@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "./static/css/main.510a8201.css",
-    "main.js": "./static/js/main.d15bb74e.js",
+    "main.css": "./static/css/main.4749e69c.css",
+    "main.js": "./static/js/main.c1448bf8.js",
     "static/media/sala1.jpg": "./static/media/sala1.6480ecd42fd8d3c318a3.jpg",
     "static/media/sala2.jpg": "./static/media/sala2.81d70fc2dff286e6c2d5.jpg",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
-    "static/media/logo.png": "./static/media/logo.a494ef2c5533dc594896.png",
     "static/media/tloGrupa.jpg": "./static/media/tloGrupa.cadc1fadc907c798c70c.jpg",
     "static/media/headerimg2.jpg": "./static/media/headerimg2.d55117f0530a85ce988e.jpg",
     "static/media/przod.jpg": "./static/media/przod.d55117f0530a85ce988e.jpg",
     "static/media/wejscie.jpg": "./static/media/wejscie.c3916493e3c9f9a7bc91.jpg",
     "static/media/headerimg.jpg": "./static/media/headerimg.a577f5da2b2b6c531e8e.jpg",
     "static/media/kids2.jpg": "./static/media/kids2.88d1ebfb4799fd10b9a8.jpg",
+    "static/media/logo1.jpg": "./static/media/logo1.f701a398ce711978c5a9.jpg",
     "static/media/jedzenie.png": "./static/media/jedzenie.8e4fa74b80dd884e1edb.png",
     "static/media/mapa.png": "./static/media/mapa.c1df36252763b9d664f7.png",
     "static/media/logo3.png": "./static/media/logo3.bf23c34de98f126c9244.png",
     "static/media/kadra.png": "./static/media/kadra.cc6c07f23d603c77d8ab.png",
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "index.html": "./index.html",
-    "main.510a8201.css.map": "./static/css/main.510a8201.css.map",
-    "main.d15bb74e.js.map": "./static/js/main.d15bb74e.js.map"
+    "main.4749e69c.css.map": "./static/css/main.4749e69c.css.map",
+    "main.c1448bf8.js.map": "./static/js/main.c1448bf8.js.map"
   },
   "entrypoints": [
-    "static/css/main.510a8201.css",
-    "static/js/main.d15bb74e.js"
+    "static/css/main.4749e69c.css",
+    "static/js/main.c1448bf8.js"
   ]
 }
