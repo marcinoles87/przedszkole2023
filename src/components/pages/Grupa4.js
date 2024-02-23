@@ -22,7 +22,7 @@ const db = getFirestore();
 
 const passwordCheck = (e) => {
   const pass = document.querySelector('.password').value
-  if(pass === 'monikaK'){
+  if(pass === 'monika'){
     setPassword(true)
   }
 }
