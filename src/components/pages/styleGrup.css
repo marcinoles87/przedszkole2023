@@ -182,7 +182,7 @@
     }
 
     .img-group{
-        width: 70vw;
+        width: 30vw;
         height: auto;
     }
 
@@ -195,7 +195,7 @@
         transform: translate(-50%,-50%);
         z-index: 1;
         width: 75%;
-        height: 40%;
+        height: 60%;
     
     }
 

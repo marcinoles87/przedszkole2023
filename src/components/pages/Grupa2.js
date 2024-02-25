@@ -153,10 +153,6 @@ const handleModal = (e) => {
 })}
 
 
-    
-     
-
-     
       
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
