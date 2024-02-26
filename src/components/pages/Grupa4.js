@@ -125,7 +125,7 @@ const handleModal = (e) => {
         <>
          <div className='group-element'>
            <h1>{item.text}</h1>
-           <h3>{item.date}</h3>
+           <p>{item.date}</p>
            <img src={item.imgUrl} alt='img_grupa4' className='img-group'  onClick={handleModal}></img>
            <p>{item.description}</p>
            </div>

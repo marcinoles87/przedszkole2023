@@ -88,7 +88,7 @@ const addArticle = (e) => {
         return(
           <div className='group-element' key={index}>
            <h1>{item.name}</h1>
-           <h3>{item.data}</h3>
+           <p>{item.data}</p>
            <p>{item.description}</p>
 
             <div className='group-images'>
