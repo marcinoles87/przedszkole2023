@@ -16,6 +16,7 @@ const [firestoreValues , setFirestoreValue ] = useState([])
 const [password , setPassword] = useState(false)
 
 const [imgs , setImgs] = useState('')
+const [imgs2 , setImgs2] = useState('')
 
 
 const db = getFirestore();
@@ -42,13 +43,23 @@ const handlefetchData = async () =>{
 }
 
 const handleUpload = (e) => {
-  console.log(e.target.files[0])
-  const imgs = ref(projectStorage , `imagesGrupa4/${v4()}`);
+  
+  const imgs = ref(projectStorage , `imagesGrupa2/${v4()}`);
+
   uploadBytes(imgs,e.target.files[0]).then(data =>{
-    
     getDownloadURL(data.ref).then(val =>{
-      
       setImgs(val)
+    })
+  })
+}
+
+const handleUpload2 = (e) => {
+  
+  const imgs = ref(projectStorage , `imagesGrupa4/${v4()}`);
+
+  uploadBytes(imgs,e.target.files[0]).then(data =>{
+    getDownloadURL(data.ref).then(val =>{
+      setImgs2(val)
     })
   })
 }
@@ -59,10 +70,12 @@ const saveDataToFireStore = async () => {
     text : inputField1 ,
     date : inputField2 ,
     imgUrl : imgs,
+    imgUrl2 : imgs2,
     description : inputField3
 
   });
   alert('data base update')
+
 }
 
 const handleModal = (e) => {
@@ -71,6 +84,8 @@ const handleModal = (e) => {
   el.classList.toggle('img-modal')
 
 }
+
+console.log(firestoreValues.sort())
 
 
 
@@ -102,6 +117,7 @@ const handleModal = (e) => {
 
           
           <input type='file' onChange={ (e) => handleUpload(e)}></input>
+          <input type='file' onChange={ (e) => handleUpload2(e)}></input>
           
 
           <label>Opis</label>
@@ -127,7 +143,11 @@ const handleModal = (e) => {
            <h1>{item.text}</h1>
            <p>{item.date}</p>
            <p>{item.description}</p>
-           <img src={item.imgUrl} alt='img_grupa4' className='img-group'  onClick={handleModal}></img>
+           <div className='group-element-images'>
+              <img src={item.imgUrl} alt='img_grupa4' className='img-group' onClick={handleModal}></img>
+             <img src={item.imgUrl2} alt='img_grupa4' className='img-group' onClick={handleModal}></img>
+           </div>
+           
            
            </div>
         </>
@@ -136,10 +156,6 @@ const handleModal = (e) => {
 })}
 
 
-    
-     
-
-     
       
     </div>
    <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
