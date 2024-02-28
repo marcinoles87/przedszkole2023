@@ -27,14 +27,14 @@ function Actual() {
             title: "Jedzenie" ,
             descirption : " informacje na temat żywienia " ,
             imgUrl : jedzenie ,
-            info : 'sssssssss'
+            info : 'Informacje na temat żywienia :'
         },
 
         {
             title: "Dla rodzicow " ,
-            descirption : "wsluchaj sie w swoje dziecko ... " ,
+            descirption : "Rekrutacja do przedszkola ... " ,
             imgUrl : rodzice,
-            info : 'bbbbbbbbb'
+            info : 'Rekrutacja na rok 2024 '
         },
 
         {
