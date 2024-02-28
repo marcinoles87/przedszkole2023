@@ -440,7 +440,11 @@ img{
   
 }
 
+@media screen and (max-width:350px) {
 
+    .contact-form a img{
+        top:17vw;
+    }
 
-
+}
 
