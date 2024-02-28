@@ -321,6 +321,16 @@ img{
     margin-top: 30px;
 }
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    
+}
+
 @media screen and (max-width:1300px) {
 
     .main-info{
