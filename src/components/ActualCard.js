@@ -37,6 +37,7 @@ function ActualCard({title,text,image,info}) {
                           </Offcanvas.Header>
                           <Offcanvas.Body>
                             {info}
+                            
                           </Offcanvas.Body>
                         </Offcanvas>
 

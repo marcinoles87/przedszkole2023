@@ -1,3 +1,25 @@
+.rekrutacja-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.rekrutacja-container h1{
+    width: 70%;
+}
+
+.rekrutacja-info{
+    text-align: left;
+    width: 60%;
+    font-size: larger;
+}
+
+
+
 .group-header{
     display: flex;
     flex-direction: row;
@@ -151,6 +173,12 @@
         align-items: center;
         text-align: center;
         margin: 0;
+    }
+
+    .rekrutacja-info {
+        text-align: left;
+        width: 92%;
+        font-size: large;
     }
 
 

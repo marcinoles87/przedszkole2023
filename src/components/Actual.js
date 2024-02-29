@@ -12,6 +12,7 @@ import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
 
 
+
 function Actual() {
 
     const [show, setShow] = useState(false);
@@ -27,21 +28,24 @@ function Actual() {
             title: "Jedzenie" ,
             descirption : " informacje na temat żywienia " ,
             imgUrl : jedzenie ,
-            info : 'Informacje na temat żywienia :'
+            info : 'Informacje na temat żywienia :',
+            
         },
 
         {
             title: "Dla rodzicow " ,
             descirption : "Rekrutacja do przedszkola ... " ,
             imgUrl : rodzice,
-            info : 'Rekrutacja na rok 2024 '
+            info : 'Rekrutacja na rok 2024 ',
+            
         },
 
         {
             title: "Kadra" ,
             descirption : "kadra naszego przedszkola " ,
             imgUrl : kadra,
-            info : 'Dyrektor : Małgorzata XXX , grupa 1 : XX XXXXX , grupa 2 : XXXXXX  , grupa 3 XXX XXXX'
+            info : 'Dyrektor : Małgorzata XXX , grupa 1 : XX XXXXX , grupa 2 : XXXXXX  , grupa 3 XXX XXXX' ,
+            
         },
 
         
@@ -59,7 +63,7 @@ function Actual() {
                 return(
                     <>
                     <Col md={4} className="d-flex justify-content-center " key={index}>
-                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info}></ActualCard>
+                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info} ></ActualCard>
                     
                     </Col>
                    
