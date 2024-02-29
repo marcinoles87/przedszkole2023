@@ -40,10 +40,12 @@ function Main() {
             <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
             <p>Dzienna stawka żywieniowa wynosi:</p>
             <ul>
-              <li>3 posiłki (śniadanie, obiad, podwieczorek) - 100% 10,00 zł</li>
-              <li>2 posiłki (śniadanie, obiad) - 75 % 7,50 zł</li>
-              <li>2 posiłki (obiad, podwieczorek) - 85 % 8,50 zł</li>
-              <li> 1 posiłek (obiad) - 60 % 6,00 zł</li>
+              <li> 3,3 zł - I śniadanie</li>
+              <li>2,2 zł - II śniadanie</li>
+              <li>5,5 zł - obiad</li>
+           
+
+
             </ul>
             <p>Miesięczna opłata za świadczenia wynosi: </p>
             <p>• 1,30 zł za każdą dodatkową godzinę,</p> 

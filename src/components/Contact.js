@@ -17,7 +17,7 @@ function Contact() {
 
                 <div className='contact-info'>
                     <i className="fa fa-house fa-2xl"></i><p>Adres : os na Stoku 21 31-704 Kraków</p>
-                    <i className="fa fa-envelope fa-2xl"></i><p>Email : przedszkole111@wp.pl</p> 
+                    <i className="fa fa-envelope fa-2xl"></i><p>Email : p111@mjo.krakow.pl </p> 
                     <i className="fa fa-phone fa-2xl"></i><p> Telefon : tel./fax (12) 645-14-80</p>
                 </div>
 
