@@ -9,8 +9,7 @@ import Jadlospis from './components/Jadlospis.js';
 import Main from './components/Main';
 import Navbars from './components/Navbars.js'
 import Button from 'react-bootstrap/esm/Button.js';
-
-
+import Rekrutacja from './components/pages/Rekrutacja.js';
 
 import Grupa1 from './components/pages/Grupa1.js';
 import Grupa2 from './components/pages/Grupa2.js';
@@ -50,6 +49,8 @@ function App() {
         <Route path='/grupa2' element={<Grupa2></Grupa2>}></Route>
         <Route path='/grupa3' element={<Grupa3></Grupa3>}></Route>
         <Route path='/grupa4' element={<Grupa4></Grupa4>}></Route>
+        <Route path='/rekrutacja' element={<Rekrutacja></Rekrutacja>}></Route>
+
 
       </Routes>
     </div>

@@ -1,111 +1,164 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './styleGrup.css'
-import img1 from '/web frontend/projekty React/przedszkole2023/src/img/kids.png'
-import img2 from '/web frontend/projekty React/przedszkole2023/src/img/kids2.jpg'
-import img3 from '/web frontend/projekty React/przedszkole2023/src/img/logo3.png'
-
-import JSONDATA from './wydarzenia/wydarzeniaGrupa1.json'
+import React, { useState } from 'react';
+import './styleGrup.css';
+import { Link } from 'react-router-dom';
+import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
+import { projectStorage } from '../../firebase/config';
+import  {v4} from 'uuid'
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 
 
 function Grupa1() {
 
-const obj = JSONDATA
-console.log(obj.name)
+const [inputField1 , setInputField1] = useState('')
+const [inputField2 , setInputField2] = useState('')
+const [inputField3 , setInputField3] = useState('')
+const [firestoreValues , setFirestoreValue ] = useState([])
+const [password , setPassword] = useState(false)
 
-const wydarzenia = [ 
-  {
-    name : 'Wyjscie do kina' ,
-    data : obj.name ,
-    description : ' lorem ipsum lorem ipsum lorem ipsum lorem ipsum vlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' ,
-    img1 : img1,
-    img2 : img2,
-    img3 : img3
-
-  },]
-
-const [ newsArray , setNewsArray] = useState(wydarzenia);
-const [ password , setPassword] = useState(false)
- 
+const [imgs , setImgs] = useState('')
+const [imgs2 , setImgs2] = useState('')
 
 
-const addArticle = (e) => {
+const db = getFirestore();
 
-  const title = document.querySelector('.input-title').value;
-  const text = document.querySelector('.input-text').value;
-  const dataNow = new Date().toLocaleString();
-  const obj = { name: title , description : text , data: dataNow }
-  newsArray.push(obj)
-
-  const upDateArray = [...newsArray]
-
-  upDateArray.reverse()
-  setNewsArray(upDateArray)
-  setPassword(false)
-  
+const passwordCheck = (e) => {
+  const pass = document.querySelector('.password').value
+  if(pass === 'monika'){
+    setPassword(true)
+  }
 }
 
+
+const handlefetchData = async () =>{
+
+  const querySnapShot = await getDocs(collection(db,"grupa1"));
+  const temporaryBase = []
   
 
-  const handleOnClickGroup = (e) => {
+  querySnapShot.forEach( (doc) => {
+    temporaryBase.push(doc.data())
+  });
+
+  setFirestoreValue(temporaryBase)
+}
+
+const handleUpload = (e) => {
+  
+  const imgs = ref(projectStorage , `imagesGrupa1/${v4()}`);
+
+  uploadBytes(imgs,e.target.files[0]).then(data =>{
+    getDownloadURL(data.ref).then(val =>{
+      setImgs(val)
+    })
+  })
+}
+
+const handleUpload2 = (e) => {
+  
+  const imgs = ref(projectStorage , `imagesGrupa1/${v4()}`);
+
+  uploadBytes(imgs,e.target.files[0]).then(data =>{
+    getDownloadURL(data.ref).then(val =>{
+      setImgs2(val)
+    })
+  })
+}
+
+const saveDataToFireStore = async () => {
+
+  const docRef = await addDoc(collection(db,'grupa1'), {
+    text : inputField1 ,
+    date : inputField2 ,
+    imgUrl : imgs,
+    imgUrl2 : imgs2,
+    description : inputField3
+
+  });
+  alert('data base update')
+
+}
+
+const handleModal = (e) => {
    
-    let el = e.target;
-    el.classList.toggle('img-modal')
+  let el = e.target;
+  el.classList.toggle('img-modal')
 
-  }
+}
 
-  const passwordCheck = (e) => {
-    const pass = document.querySelector('.password').value
-    if(pass === 'monika'){
-      setPassword(true)
-    }
-  }
 
 
   return (
     <>
 
     <div className='group-header'>
-      <h2 className='group-h'>Co nowego w grupie 1</h2>
+      <h2>Co nowego w grupie 1</h2>
+     
+
     </div>
 
     <div className='password-field'>
       <input className='password' placeholder='admin field' type='password'></input>
-      <button onClick={passwordCheck}></button>
+      <button onClick={passwordCheck}>V</button>
     </div>
 
-    {password ? <div className='addNews-container'>
-        <input placeholder='add Title' className='input-title'></input>
-        <input placeholder='add text' className='input-text'></input>
-        <button onClick={addArticle}>Add</button>
-    </div> 
-    
-    : '' }
-   
-    <div className='group-container'>
+  
 
-      {newsArray.map( (item, index) => {
-        return(
-          <div className='group-element' key={index}>
-           <h1>{item.name}</h1>
-           <p>{item.data}</p>
+    {password ? 
+    <> 
+     <div className='group-container'>
+          <label>Nazwa wydarzenia</label>
+          <input type='text'  value={inputField1} onChange={ (e) =>setInputField1(e.target.value)}/>
+          
+
+          <label>Data</label>
+          <input type='date'value={inputField2} onChange={ (e) =>setInputField2(e.target.value)}/>
+
+          
+          <input type='file' onChange={ (e) => handleUpload(e)}></input>
+          <input type='file' onChange={ (e) => handleUpload2(e)}></input>
+          
+
+          <label>Opis</label>
+          <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
+          <br/>
+
+          <button onClick={saveDataToFireStore}>Zapisz</button>
+      </div>
+      </>
+      : ''}
+
+      <div className='group-btn'>
+         <button  onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+      </div>
+      
+      <div className='group-container'>
+     {firestoreValues && firestoreValues.map( (item) => {
+
+      
+      return(
+        <>
+         <div className='group-element'>
+           <h1>{item.text}</h1>
+           <p>{item.date}</p>
            <p>{item.description}</p>
+           <div className='group-element-images'>
+              <img src={item.imgUrl} alt='img_grupa1' className='img-group' onClick={handleModal}></img>
+             <img src={item.imgUrl2} alt='img_grupa1' className='img-group' onClick={handleModal}></img>
+           </div>
+           
+           
+           </div>
+        </>
+      )
+    
+})}
 
-            <div className='group-images'>
-            
-              <img src={item.img1} alt='kids1' onClick={handleOnClickGroup} className='img-group'></img>
-              <img src={item.img2} alt='kids2' onClick={handleOnClickGroup} className='img-group'></img>
-              <img src={item.img3} alt='kids3' onClick={handleOnClickGroup} className='img-group'></img>
-              </div>
-         
-          </div>
-        )
-      })}
+
+      
     </div>
-   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none' , padding:'10px'}}>Powrot do strony glownej</Link></button>
+   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
 
    </>
   )
 }
-
 export default Grupa1
