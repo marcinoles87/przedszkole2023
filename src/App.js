@@ -15,6 +15,7 @@ import Grupa1 from './components/pages/Grupa1.js';
 import Grupa2 from './components/pages/Grupa2.js';
 import Grupa3 from './components/pages/Grupa3.js'
 import Grupa4 from './components/pages/Grupa4.js'
+import Grupa5 from './components/pages/Grupa5.js'
 import { projectStorage , projectFirestore } from './firebase/config.js';
 
 
@@ -49,6 +50,7 @@ function App() {
         <Route path='/grupa2' element={<Grupa2></Grupa2>}></Route>
         <Route path='/grupa3' element={<Grupa3></Grupa3>}></Route>
         <Route path='/grupa4' element={<Grupa4></Grupa4>}></Route>
+        <Route path='/grupa5' element={<Grupa5></Grupa5>}></Route>
         <Route path='/rekrutacja' element={<Rekrutacja></Rekrutacja>}></Route>
 
 
