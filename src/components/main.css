@@ -411,7 +411,7 @@ img{
       position:relative;
       top:12vh;
       left: 50vw;
-      width: 70%;
+      width: 60%;
       
 
     }
@@ -443,7 +443,7 @@ img{
 @media screen and (max-width:350px) {
 
     .contact-form a img{
-        top:17vw;
+        top:30vw;
     }
 
 }

@@ -40,6 +40,7 @@ function Navbars() {
             <NavDropdown.Item><Link to={'/grupa2'} className='navbar-link'>Grupa 2 </Link></NavDropdown.Item>
             <NavDropdown.Item><Link to={'/grupa3'} className='navbar-link'>Grupa 3</Link></NavDropdown.Item>
             <NavDropdown.Item><Link to={'/grupa4'} className='navbar-link'>Grupa 4</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to={'/grupa5'} className='navbar-link'>Grupa 5</Link></NavDropdown.Item>
           </NavDropdown> 
           <Nav.Link href="#contact">Kontakt</Nav.Link>
         </Nav>

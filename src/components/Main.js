@@ -59,6 +59,7 @@ function Main() {
           <div>
               <h3>Grypa w przedszkolu</h3>
               <p>Szanowni Rodzice zachęcamy do zapoznania sie z Ogólnopolskim Program Zwalczania Grypy. Broszura do pobrania w formacie pdf pdf A tutaj link do strony programu.</p>
+              <a href="./doc/ref.doc">example</a>
           </div>
           </Col>
         </Row>
