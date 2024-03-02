@@ -22,14 +22,17 @@ function Actual() {
     const handleShow = () => setShow(true);
 
 
-  
+  console.log(doc)
+
+  const link = <a href={doc}> link</a>
 
     const actual = [
         {
             title: "Jedzenie" ,
             descirption : " informacje na temat żywienia " ,
             imgUrl : jedzenie ,
-            info : 'Informacje na temat żywienia :',
+            info : 'W kontekście jedzenia w przedszkolu warto zwrócić uwagę, że posiłki powinny być odpowiednio zbilansowane pod względem wartości odżywczych i dostosowane do potrzeb rozwojowych dzieci. Ważne jest, aby promować zdrowe nawyki żywieniowe od najmłodszych lat, oferując świeże i różnorodne posiłki, które będą wspierać rozwój fizyczny i umysłowy maluchów. Ponadto, bezpieczeństwo żywności i higiena podczas przygotowywania posiłków w placówce przedszkolnej są kluczowe dla zapewnienia dobrej kondycji zdrowotnej dzieci i uniknięcia problemów związanych z zatruciami pokarmowymi. Dlatego od samego początku preferujemy zdrowe zbilansowane posiłki dla naszych podopiecznych przygotowane w naszej przedszkolnej kuchni . ',
+            link :''
             
         },
 
@@ -37,7 +40,8 @@ function Actual() {
             title: "Dla rodzicow " ,
             descirption : "Rekrutacja do przedszkola ... " ,
             imgUrl : rodzice,
-            info : 'Rekrutacja na rok 2024 , chcesz wiecej informacji klikij w link lub przejdz do zakladki REKRUTACJa na stronie głównej' + {doc},
+            info : `Rekrutacja na rok 2024 , aby uzyskać więcej informacji kliknij w link lub przejdż do zakładki REKRUTACJA na stronie głównej ` ,
+            link : link
             
         },
 
@@ -46,6 +50,8 @@ function Actual() {
             descirption : "kadra naszego przedszkola " ,
             imgUrl : kadra,
             info : 'Dyrektor : Małgorzata XXX , grupa 1 : XX XXXXX , grupa 2 : XXXXXX  , grupa 3 XXX XXXX' ,
+            link : ''
+            
             
         },
 
@@ -64,7 +70,7 @@ function Actual() {
                 return(
                     <>
                     <Col md={4} className="d-flex justify-content-center " key={index}>
-                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info} ></ActualCard>
+                    <ActualCard  title={item.title} text={item.descirption} image={item.imgUrl} show={show} setShow={setShow} info={item.info} link={item.link}></ActualCard>
                     
                     </Col>
                    

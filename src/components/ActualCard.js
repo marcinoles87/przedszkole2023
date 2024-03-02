@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-function ActualCard({title,text,image,info}) {
+function ActualCard({title,text,image,info,link}) {
 
 
 
@@ -36,7 +36,8 @@ function ActualCard({title,text,image,info}) {
                             <Offcanvas.Title>{title}</Offcanvas.Title>
                           </Offcanvas.Header>
                           <Offcanvas.Body>
-                            {info}
+                            {info} <br></br>
+                            {link}
                             
                           </Offcanvas.Body>
                         </Offcanvas>

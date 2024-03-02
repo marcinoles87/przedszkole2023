@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/esm/Col';
 import { Fade } from "react-awesome-reveal";
 
 import './main.css'
-import doc from './doc/rek.doc'
+
 
 
 function Main() {
@@ -59,8 +59,8 @@ function Main() {
           <Col className='main-info2'> <h2>Ważne informacje</h2>
           <div>
               <h3>Grypa w przedszkolu</h3>
-              <p>Szanowni Rodzice zachęcamy do zapoznania sie z Ogólnopolskim Program Zwalczania Grypy. Broszura do pobrania w formacie pdf pdf A tutaj link do strony programu.</p>
-              <a href={doc} target="_blank" rel="alternate" media="print">example</a>mjj
+              <p>Szanowni Rodzice w trosce o bezpieczeństwo wszystkich pracowników i dzieci w przedszkolu  zachęcamy do zapoznania sie z  <a href='https://opzg.opzci.pl/'>Ogólnopolskim Program Zwalczania Grypy</a></p>
+             
               
 
           </div>
