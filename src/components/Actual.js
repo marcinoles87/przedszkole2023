@@ -10,6 +10,7 @@ import jedzenie from '../img/jedzenie.png'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
+import doc from './doc/rek.doc'
 
 
 
@@ -36,7 +37,7 @@ function Actual() {
             title: "Dla rodzicow " ,
             descirption : "Rekrutacja do przedszkola ... " ,
             imgUrl : rodzice,
-            info : 'Rekrutacja na rok 2024 ',
+            info : 'Rekrutacja na rok 2024 , chcesz wiecej informacji klikij w link lub przejdz do zakladki REKRUTACJa na stronie głównej' + {doc},
             
         },
 
