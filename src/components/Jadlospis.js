@@ -8,35 +8,35 @@ import Container from 'react-bootstrap/esm/Container'
 function Jadlospis() {
 
   const meals = [
-    {
-      śniadanie : 'chleb , ogorek , szynka' ,
-      podwieczorek : 'mus jablkowy , herbatka' ,
-      obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
-    } ,
+    // {
+    //   śniadanie : 'chleb , ogorek , szynka' ,
+    //   podwieczorek : 'mus jablkowy , herbatka' ,
+    //   obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
+    // } ,
 
-    {
-      śniadanie : 'chleb , ogorek , szynka' ,
-      podwieczorek : 'mus jablkowy , herbatka' ,
-      obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
-    } ,
+    // {
+    //   śniadanie : 'chleb , ogorek , szynka' ,
+    //   podwieczorek : 'mus jablkowy , herbatka' ,
+    //   obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
+    // } ,
 
-    {
-      śniadanie : 'chleb , ogorek , szynka' ,
-      podwieczorek : 'mus jablkowy , herbatka' ,
-      obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
-    } ,
+    // {
+    //   śniadanie : 'chleb , ogorek , szynka' ,
+    //   podwieczorek : 'mus jablkowy , herbatka' ,
+    //   obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
+    // } ,
 
-    {
-      śniadanie : 'chleb , ogorek , szynka' ,
-      podwieczorek : 'mus jablkowy , herbatka' ,
-      obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
-    } , 
+    // {
+    //   śniadanie : 'chleb , ogorek , szynka' ,
+    //   podwieczorek : 'mus jablkowy , herbatka' ,
+    //   obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
+    // } , 
 
-    {
-      śniadanie : 'chleb , ogorek , szynka' ,
-      podwieczorek : 'mus jablkowy , herbatka' ,
-      obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
-    } ,
+    // {
+    //   śniadanie : 'chleb , ogorek , szynka' ,
+    //   podwieczorek : 'mus jablkowy , herbatka' ,
+    //   obiad : 'zupa pomidorowa , ziemniaki z kotletem schabowym i surowka' ,
+    // } ,
   ]
   return (
     <Container id='jadlospis' className='jadlospis'>

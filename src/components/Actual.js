@@ -49,7 +49,7 @@ function Actual() {
             title: "Kadra" ,
             descirption : "kadra naszego przedszkola " ,
             imgUrl : kadra,
-            info : 'Dyrektor : Małgorzata XXX , grupa 1 : XX XXXXX , grupa 2 : XXXXXX  , grupa 3 XXX XXXX' ,
+            info : 'Dyrektor : Małgorzata Kudla , grupa 1 :  , grupa 2 :   , grupa 3 : , grupa 4 : , grupa 5 :  , sekretariat : '   ,
             link : ''
             
             

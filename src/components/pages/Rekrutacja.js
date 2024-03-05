@@ -52,6 +52,8 @@ równoznaczne z rezygnacją z przyjęcia dziecka do naszego przedszkola.
   <b>8 maja 2024 r. od godz. 12:00</b> nastąpi ogłoszenie list przyjętych i nieprzyjętych
 oraz liczby wolnych miejsc.    
 </p>
+
+
  
 
 </div>
