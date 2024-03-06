@@ -106,15 +106,13 @@ img{
     height: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     border-radius: 200px;
-    animation: danger infinite 3s;
+    margin-top: 20px;
+    /* animation: danger infinite 3s; */
 }
 
 
-@keyframes danger {
+/* @keyframes danger {
     0%{
         background-color: rgb(246, 116, 116);
 
@@ -123,9 +121,10 @@ img{
         background-color: white;
         
 
-    }
+    } 
+}*/
     
-}
+
 
 
 

@@ -47,9 +47,9 @@ function Actual() {
 
         {
             title: "Kadra" ,
-            descirption : "kadra naszego przedszkola " ,
+            descirption : "Kadra naszego przedszkola " ,
             imgUrl : kadra,
-            info : 'Dyrektor : Małgorzata Kudla , grupa 1 :  , grupa 2 :   , grupa 3 : , grupa 4 : , grupa 5 :  , sekretariat : '   ,
+            info : 'Dyrektor : Małgorzata Kudla , sekretariat : '   ,
             link : ''
             
             
