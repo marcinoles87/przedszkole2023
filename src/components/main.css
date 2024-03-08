@@ -325,11 +325,19 @@ img{
 @media screen and (max-width:1300px) {
 
     .main-info{
-        left: 23%;
+        left: 18vw;
     }
 
     .main-info h1{
         font-size: 60px;
+    }
+    
+}
+
+@media screen  and (min-width:1301px){
+
+    .main-info{
+        left: 15vw;
     }
     
 }
