@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.86e1a180.css",
-    "main.js": "./static/js/main.f02662e7.js",
-    "static/media/sala1.jpg": "./static/media/sala1.6480ecd42fd8d3c318a3.jpg",
-    "static/media/sala2.jpg": "./static/media/sala2.81d70fc2dff286e6c2d5.jpg",
+    "main.css": "./static/css/main.a27346f6.css",
+    "main.js": "./static/js/main.25e9f63c.js",
+    "static/media/sala1.webp": "./static/media/sala1.96e4e00832ee67173711.webp",
+    "static/media/sala2.webp": "./static/media/sala2.10daed87d1ba7bed57f9.webp",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
     "static/media/tloGrupa.jpg": "./static/media/tloGrupa.cadc1fadc907c798c70c.jpg",
     "static/media/headerimg2.jpg": "./static/media/headerimg2.d55117f0530a85ce988e.jpg",
@@ -18,11 +18,11 @@
     "static/media/rek.doc": "./static/media/rek.4085ca5b3f3e564263c3.doc",
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "index.html": "./index.html",
-    "main.86e1a180.css.map": "./static/css/main.86e1a180.css.map",
-    "main.f02662e7.js.map": "./static/js/main.f02662e7.js.map"
+    "main.a27346f6.css.map": "./static/css/main.a27346f6.css.map",
+    "main.25e9f63c.js.map": "./static/js/main.25e9f63c.js.map"
   },
   "entrypoints": [
-    "static/css/main.86e1a180.css",
-    "static/js/main.f02662e7.js"
+    "static/css/main.a27346f6.css",
+    "static/js/main.25e9f63c.js"
   ]
 }
