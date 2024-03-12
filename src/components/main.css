@@ -337,10 +337,22 @@ img{
 @media screen  and (min-width:1301px){
 
     .main-info{
-        left: 15vw;
+        left: 18vw;
     }
     
 }
+
+
+@media screen and (max-width:990px){
+    .main-info{
+        left: 20vw;
+    }
+
+    .main-info h1{
+        font-size: 40px;
+    }
+}
+
 
 @media screen and (max-width:776px) {
 
