@@ -28,7 +28,7 @@ function Actual() {
   console.log(doc)
 
   const link = <a href={doc}> link</a>
-  const kier = <a href={kiermasz}></a>
+  const kier = <a href={kiermasz} alt='kiermasz'>link</a>
 
     const actual = [
 
@@ -36,7 +36,7 @@ function Actual() {
             title: "Kiermasz wiosenny 2024" ,
             descirption : "informacje na temat zbliżającego sie kiermaszu ..." ,
             imgUrl : kiermasz ,
-            info : 'Aby zapoznac sie z informacjami kliknij w link',
+            info : 'Już wkrótce w naszym przedszkolu rozpocznie sie kiermasz wiosenny , więcej informacji pod linkiem ',
             link : kier
 
         },
