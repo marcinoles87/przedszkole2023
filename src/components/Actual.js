@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import ActualCard from './ActualCard'
 import img1 from '../img/kids.png'
+
+import kiermasz from '../img/kiermasz.jpeg'
 import kadra from '../img/kadra.png'
 import rodzice from '../img/rodzice.jpg'
 import jedzenie from '../img/jedzenie.png'
@@ -11,6 +13,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
 import doc from './doc/rek.doc'
+
 
 
 
@@ -25,8 +28,21 @@ function Actual() {
   console.log(doc)
 
   const link = <a href={doc}> link</a>
+  const kier = <a href={kiermasz}></a>
 
     const actual = [
+
+        {
+            title: "Kiermasz wiosenny 2024" ,
+            descirption : "informacje na temat zbliżającego sie kiermaszu ..." ,
+            imgUrl : kiermasz ,
+            info : 'Aby zapoznac sie z informacjami kliknij w link',
+            link : kier
+
+        },
+
+
+
         {
             title: "Jedzenie" ,
             descirption : " informacje na temat żywienia " ,
