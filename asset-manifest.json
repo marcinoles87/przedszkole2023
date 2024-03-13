@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.a27346f6.css",
-    "main.js": "./static/js/main.25e9f63c.js",
-    "static/media/sala1.webp": "./static/media/sala1.96e4e00832ee67173711.webp",
-    "static/media/sala2.webp": "./static/media/sala2.10daed87d1ba7bed57f9.webp",
+    "main.js": "./static/js/main.c973387d.js",
+    "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
+    "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
     "static/media/tloGrupa.jpg": "./static/media/tloGrupa.cadc1fadc907c798c70c.jpg",
     "static/media/headerimg2.jpg": "./static/media/headerimg2.d55117f0530a85ce988e.jpg",
@@ -11,6 +11,7 @@
     "static/media/wejscie.jpg": "./static/media/wejscie.c3916493e3c9f9a7bc91.jpg",
     "static/media/headerimg.jpg": "./static/media/headerimg.a577f5da2b2b6c531e8e.jpg",
     "static/media/kids2.jpg": "./static/media/kids2.88d1ebfb4799fd10b9a8.jpg",
+    "static/media/kiermasz.jpeg": "./static/media/kiermasz.6e980d7a0846ec68f28c.jpeg",
     "static/media/logo1.jpg": "./static/media/logo1.f701a398ce711978c5a9.jpg",
     "static/media/jedzenie.png": "./static/media/jedzenie.8e4fa74b80dd884e1edb.png",
     "static/media/mapa.png": "./static/media/mapa.c1df36252763b9d664f7.png",
@@ -19,10 +20,10 @@
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "index.html": "./index.html",
     "main.a27346f6.css.map": "./static/css/main.a27346f6.css.map",
-    "main.25e9f63c.js.map": "./static/js/main.25e9f63c.js.map"
+    "main.c973387d.js.map": "./static/js/main.c973387d.js.map"
   },
   "entrypoints": [
     "static/css/main.a27346f6.css",
-    "static/js/main.25e9f63c.js"
+    "static/js/main.c973387d.js"
   ]
 }
