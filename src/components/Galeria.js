@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 import im1 from '../img/wejscie.jpg'
 import im2 from '../img/przod.jpg'
-import im3 from '../img/sala1.webp'
+import im3 from '../img/sala1-min.jpg'
 import im4 from '../img/sala2.webp'
 
 
