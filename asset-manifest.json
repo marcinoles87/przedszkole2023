@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a27346f6.css",
-    "main.js": "./static/js/main.c973387d.js",
+    "main.js": "./static/js/main.3bb3a4e9.js",
     "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
     "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
@@ -20,10 +20,10 @@
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "index.html": "./index.html",
     "main.a27346f6.css.map": "./static/css/main.a27346f6.css.map",
-    "main.c973387d.js.map": "./static/js/main.c973387d.js.map"
+    "main.3bb3a4e9.js.map": "./static/js/main.3bb3a4e9.js.map"
   },
   "entrypoints": [
     "static/css/main.a27346f6.css",
-    "static/js/main.c973387d.js"
+    "static/js/main.3bb3a4e9.js"
   ]
 }
