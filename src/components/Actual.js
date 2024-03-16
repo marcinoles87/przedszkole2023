@@ -28,7 +28,7 @@ function Actual() {
   console.log(doc)
 
   const link = <a href={doc}> link</a>
-  const kier = <a href={kiermasz} alt='kiermasz'>link</a>
+  const kier = <a href={kiermasz} >link</a>
 
     const actual = [
 
@@ -65,7 +65,7 @@ function Actual() {
             title: "Kadra" ,
             descirption : "Kadra naszego przedszkola " ,
             imgUrl : kadra,
-            info : 'Dyrektor : Małgorzata Kudla , sekretariat : '   ,
+            info : ' Dyrektor mgr Magdalena Kulpa, referent mgr Katarzyna Dziki.  ' ,
             link : ''
             
             
