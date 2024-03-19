@@ -266,6 +266,22 @@
         
     }
 
+    .dyzur-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .dyzur-link-container{
+        margin-top: 20px;
+    }
+
+    .dyzur-link-container h2{
+        margin: 10px;
+        font-size: 20px;
+    }
+
     
 }
 
