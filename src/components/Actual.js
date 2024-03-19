@@ -13,6 +13,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
 import doc from './doc/rek.doc'
+import dyzur from './pages/Dyzurwakacyjny'
 
 
 
@@ -24,13 +25,13 @@ function Actual() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-
-  console.log(doc)
-
   const link = <a href={doc}> link</a>
   const kier = <a href={kiermasz} >link</a>
+ 
 
     const actual = [
+
+       
 
         {
             title: "Kiermasz wiosenny 2024" ,
