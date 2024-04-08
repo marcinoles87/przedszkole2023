@@ -39,6 +39,10 @@
 
 .rekrutacja-container h1{
     width: 70%;
+    border-radius: 10px;
+    background-color: #59b759;
+    color: white;
+    padding: 9px;
 }
 
 .rekrutacja-info{
