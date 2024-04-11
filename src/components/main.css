@@ -25,9 +25,8 @@ img{
 /* font zoom*/
 
 .zoom{
-    font-size: larger !important;
-    background-color: black;
-    color:yellow
+    font-size: 1.5rem !important;
+   
 }
 
 /*navbar*/
