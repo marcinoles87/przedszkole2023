@@ -24,7 +24,7 @@ function Navbars() {
               className="d-inline-block align-top"></img>
               
       </Navbar.Brand>
-      <h3 style={{color:'white'}}>Samorządowe Przedszkole "Pod Modrzewiem" nr 111 w Krakowie</h3>
+      <h3 style={{color:'white' , fontSize:'20px'}}>Samorządowe Przedszkole "Pod Modrzewiem" nr 111 w Krakowie</h3>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-right">

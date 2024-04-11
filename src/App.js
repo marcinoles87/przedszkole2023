@@ -26,6 +26,15 @@ function App() {
   const handleOnClick = () => {
     window.scrollTo(0,0)
   }
+
+  const handleOnClickFontZoom = () => {
+    const font = document.querySelector('.App')
+    console.log(font)
+
+    font.classList.toggle('zoom')
+  }
+
+
   
 
   return (
@@ -37,6 +46,7 @@ function App() {
       <>
           <Navbars link={Link}></Navbars>
           <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
+          <Button onClick={handleOnClickFontZoom} > <i class="fa-solid fa-font"></i></Button>
           <Main></Main>
           <Actual></Actual>
           <AboutUs></AboutUs>

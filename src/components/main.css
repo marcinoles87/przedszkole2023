@@ -22,6 +22,14 @@ img{
     
 }
 
+/* font zoom*/
+
+.zoom{
+    font-size: larger !important;
+    background-color: black;
+    color:yellow
+}
+
 /*navbar*/
 
 .navbar-link{
