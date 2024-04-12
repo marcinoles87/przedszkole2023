@@ -41,9 +41,20 @@ function App() {
 
   const handleMode = () =>{
     const app = document.querySelector('.App')
+    const mainInfo = document.querySelector('.main-info')
     const contact = document.querySelector('#contact')
+    const nav = document.querySelector('#nav-container')
+    const navSucces = document.querySelector('.bg-success')
+    const aboutInfo =document.querySelector('.about-info')
+    const aboutInfo2 =document.querySelector('.about-info2')
+
     app.classList.toggle('darkMode')
+    mainInfo.classList.toggle('darkMode')
     contact.classList.toggle('darkMode')
+    nav.classList.toggle('darkMode')
+    navSucces.classList.toggle('darkMode')
+    aboutInfo.classList.toggle('darkMode')
+    aboutInfo2.classList.toggle('darkMode')
   }
 
 
@@ -58,10 +69,9 @@ function App() {
       <>
           <Navbars link={Link}></Navbars>
           <div className='invalid'>
-            <p>Ułatwienie dostępu : </p>
-          <Button onClick={handleOnClickFontZoom} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-font fa-xs"></i></Button>
-          <Button onClick={handleOnClickFontZoomx2} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-font fa-2xl"></i></Button>
-          <Button onClick={handleMode} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-circle-half-stroke"></i></Button>
+          <Button onClick={handleOnClickFontZoom} style={ {backgroundColor:'white' , color:'black', border:'0px'}}> <i class="fa-solid fa-font fa-xl"></i></Button>
+          <Button onClick={handleOnClickFontZoomx2} style={ {backgroundColor:'white' , color:'black', border:'0px'}}> <i class="fa-solid fa-font fa-2xl"></i></Button>
+          <Button onClick={handleMode} style={ {backgroundColor:'white' , color:'black', border:'0px'}}> <i class="fa-solid fa-circle-half-stroke"></i></Button>
           </div>
           <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
           
