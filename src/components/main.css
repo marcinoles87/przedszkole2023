@@ -22,11 +22,31 @@ img{
     
 }
 
+.invalid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.invalid 
+
 /* font zoom*/
 
 .zoom{
     font-size: 1.5rem !important;
    
+}
+
+.zoom_x2{
+    font-size: 2rem !important;
+}
+
+/*dark mode*/
+
+.darkMode{
+    background-color: black !important;
+    color:yellow !important;
 }
 
 /*navbar*/
@@ -418,6 +438,7 @@ img{
     .offcanvas-body{
         height: 70%;
     }
+
 
     p{
         font-size: smaller;

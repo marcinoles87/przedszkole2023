@@ -34,6 +34,18 @@ function App() {
     font.classList.toggle('zoom')
   }
 
+  const handleOnClickFontZoomx2 = () => {
+    const font = document.querySelector('.App');
+    font.classList.toggle('zoom_x2')
+  }
+
+  const handleMode = () =>{
+    const app = document.querySelector('.App')
+    const contact = document.querySelector('#contact')
+    app.classList.toggle('darkMode')
+    contact.classList.toggle('darkMode')
+  }
+
 
   
 
@@ -45,8 +57,14 @@ function App() {
         <Route  path='*' element={
       <>
           <Navbars link={Link}></Navbars>
+          <div className='invalid'>
+            <p>Ułatwienie dostępu : </p>
+          <Button onClick={handleOnClickFontZoom} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-font fa-xs"></i></Button>
+          <Button onClick={handleOnClickFontZoomx2} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-font fa-2xl"></i></Button>
+          <Button onClick={handleMode} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-circle-half-stroke"></i></Button>
+          </div>
           <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
-          <Button onClick={handleOnClickFontZoom} style={ {backgroundColor:'white' , color:'black'}}> <i class="fa-solid fa-font"></i></Button>
+          
           <Main></Main>
           <Actual></Actual>
           <AboutUs></AboutUs>

@@ -21,7 +21,7 @@ function ActualCard({title,text,image,info,link}) {
   return (
     <>
         <Card style={{ width: '18rem' , marginBottom:20 , alignContent: 'center'}}>
-      <Card.Img variant="top" src={image} style={{height:'170px' , paddingTop:'10px'}} />
+      <Card.Img variant="top" src={image} style={{height:'170px' , paddingTop:'10px' , objectFit:'contain'}} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
