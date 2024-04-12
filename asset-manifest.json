@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.c26c8ea6.css",
-    "main.js": "./static/js/main.5d19453e.js",
+    "main.css": "./static/css/main.ed2f68c6.css",
+    "main.js": "./static/js/main.6ad3b2df.js",
     "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
     "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
+    "static/media/headerimg2.webp": "./static/media/headerimg2.3339428a107d2038932f.webp",
     "static/media/tloGrupa.jpg": "./static/media/tloGrupa.cadc1fadc907c798c70c.jpg",
-    "static/media/headerimg2.jpg": "./static/media/headerimg2.d55117f0530a85ce988e.jpg",
     "static/media/przod.jpg": "./static/media/przod.d55117f0530a85ce988e.jpg",
     "static/media/wejscie.jpg": "./static/media/wejscie.c3916493e3c9f9a7bc91.jpg",
     "static/media/headerimg.jpg": "./static/media/headerimg.a577f5da2b2b6c531e8e.jpg",
@@ -21,11 +21,11 @@
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "static/media/karta_zapisu.docX": "./static/media/karta_zapisu.e70611d099177ea35bb5.docX",
     "index.html": "./index.html",
-    "main.c26c8ea6.css.map": "./static/css/main.c26c8ea6.css.map",
-    "main.5d19453e.js.map": "./static/js/main.5d19453e.js.map"
+    "main.ed2f68c6.css.map": "./static/css/main.ed2f68c6.css.map",
+    "main.6ad3b2df.js.map": "./static/js/main.6ad3b2df.js.map"
   },
   "entrypoints": [
-    "static/css/main.c26c8ea6.css",
-    "static/js/main.5d19453e.js"
+    "static/css/main.ed2f68c6.css",
+    "static/js/main.6ad3b2df.js"
   ]
 }
