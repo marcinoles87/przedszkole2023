@@ -44,7 +44,7 @@ function App() {
     const mainInfo = document.querySelector('.main-info')
     const contact = document.querySelector('#contact')
     const nav = document.querySelector('#nav-container')
-    const navSucces = document.querySelector('.bg-success')
+    const navSucces = document.querySelector('.nawigacja')
     const aboutInfo =document.querySelector('.about-info')
     const aboutInfo2 =document.querySelector('.about-info2')
 

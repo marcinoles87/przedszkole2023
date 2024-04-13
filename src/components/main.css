@@ -67,7 +67,7 @@ img{
 #main{
     width: 100vw;
     height: 100vh;
-    background-image: url('../img/headerimg2.jpg');
+    background-image: url('../img/headerimg2.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,6 @@ img{
 
 .main-info{
     width: auto;
-    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +120,10 @@ img{
 
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
+}
+
+.nawigacja{
+    background-color:  RGB(40, 167, 69);
 }
 
 

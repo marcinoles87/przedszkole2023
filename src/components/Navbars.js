@@ -15,7 +15,7 @@ function Navbars() {
 
   
   return (
-    <Navbar expand="lg"  bg="success" data-bs-theme="dark" >
+    <Navbar expand="lg"  className='nawigacja' data-bs-theme="dark" >
     <Container id='nav-container'>
       <Navbar.Brand href="#home">
         <img src={logo} alt='logo' 
