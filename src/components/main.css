@@ -3,7 +3,8 @@
 }
 
 h1 , h2{
-    font-family: 'Playfair Display', serif;;
+    font-family: 'Fira Sans', serif;
+    font-weight: 400;
 }
 
 h1{
@@ -110,6 +111,7 @@ img{
 
 .main-info h1{
     font-size: 80px;
+    font-weight: 400;
 }
 
 .visibleMain{

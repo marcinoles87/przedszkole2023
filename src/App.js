@@ -47,6 +47,7 @@ function App() {
     const navSucces = document.querySelector('.nawigacja')
     const aboutInfo =document.querySelector('.about-info')
     const aboutInfo2 =document.querySelector('.about-info2')
+  
 
     app.classList.toggle('darkMode')
     mainInfo.classList.toggle('darkMode')
@@ -55,6 +56,7 @@ function App() {
     navSucces.classList.toggle('darkMode')
     aboutInfo.classList.toggle('darkMode')
     aboutInfo2.classList.toggle('darkMode')
+    
   }
 
 
