@@ -58,9 +58,12 @@ function Main() {
          
           <Col className='main-info2'> <h2>Ważne informacje</h2>
           <div>
-              <h3>Grypa w przedszkolu</h3>
-              <p>Szanowni Rodzice w trosce o bezpieczeństwo wszystkich pracowników i dzieci w przedszkolu  zachęcamy do zapoznania sie z  <a href='https://opzg.opzci.pl/'>Ogólnopolskim Program Zwalczania Grypy</a></p>
-             
+              <h3>INFORMACJA DLA WSZYSTKICH RODZICÓW, KTÓRYCH DZIECI BĘDĄ UCZĘSZCZAĆ DO PRZEDSZKOLA nr 111 OD 1 WRZEŚNIA 2024</h3>
+             <p>
+<b>Od 22 kwietnia do 7 maja 2024 r.</b> rodzice wszystkich dzieci, które będą uczęszczać do przedszkola od 1 września 2024 (dotyczy rodziców dzieci nowych, zakwalifikowanych do przedszkola oraz dzieci kontynuujących) muszą potwierdzić wolę przyjęcia poprzez wypełnienie i podpisanie druku, który będzie dostępny w kancelarii w godzinach od 7:00 do 15:00.
+
+Nie potwierdzenie woli przyjęcia w wyznaczonym terminie będzie równoznaczne z rezygnacją z przyjęcia dziecka do naszego przedszkola.
+<b>8 maja 2024 r. od godz. 9:00 </b>nastąpi ogłoszenie list przyjętych i nieprzyjętych oraz liczby wolnych miejsc.</p>
               
 
           </div>
