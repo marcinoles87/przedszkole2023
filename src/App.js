@@ -81,7 +81,7 @@ function App() {
           <Actual></Actual>
           <AboutUs></AboutUs>
           <Galeria></Galeria>
-          <Jadlospis></Jadlospis>
+          {/* <Jadlospis></Jadlospis> */}
           <Contact></Contact>
         
       </>
