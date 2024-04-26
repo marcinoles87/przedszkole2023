@@ -18,6 +18,7 @@ import Grupa4 from './components/pages/Grupa4.js'
 import Grupa5 from './components/pages/Grupa5.js'
 import { projectStorage , projectFirestore } from './firebase/config.js';
 import Dyzurwakacyjny from './components/pages/Dyzurwakacyjny.js';
+import Wydarzenia from './components/pages/Wydarzenia.js';
 
 
 
@@ -81,6 +82,10 @@ function App() {
           <Actual></Actual>
           <AboutUs></AboutUs>
           <Galeria></Galeria>
+          <div className='wydarzenia'>
+            <Link to={'/wydarzenia'} >Chcesz zobaczyć więcej ? kliknij i zobacz wydarzenia z naszego przedszkola ...</Link>
+
+          </div>
           {/* <Jadlospis></Jadlospis> */}
           <Contact></Contact>
         
@@ -94,6 +99,8 @@ function App() {
         <Route path='/grupa5' element={<Grupa5></Grupa5>}></Route>
         <Route path='/rekrutacja' element={<Rekrutacja></Rekrutacja>}></Route>
         <Route path='/dyzur' element={<Dyzurwakacyjny></Dyzurwakacyjny>}></Route>
+        <Route path='/wydarzenia' element={<Wydarzenia></Wydarzenia>}></Route>
+        
 
 
       </Routes>

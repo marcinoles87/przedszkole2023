@@ -349,6 +349,34 @@ img{
     margin-top: 30px;
 }
 
+.wydarzenia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    transition: 1s ease;
+}
+
+.wydarzenia a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: 1s ease;
+}
+
+.wydarzenia a:hover{
+    background-color: black;
+    color:white;
+}
+
+.wydarzenia:hover{
+    background-color: black;
+}
+
 
 
 @media screen and (max-width:1300px) {
