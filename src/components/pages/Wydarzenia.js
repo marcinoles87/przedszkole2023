@@ -11,12 +11,39 @@ function Wydarzenia() {
 
   const [password , setPassword] = useState(true);
   const [inputField1 , setInputField1] = useState('');
+  const [imgs , setImgs] = useState('');
+
+  const db = getFirestore();
+
+  console.log(db)
 
   console.log(inputField1)
 
-  const saveDataToFireStore = () =>{
-
+  const handleUpload = (e) => {
+  
+    const imgs = ref(projectStorage , `wydarzeniaPrzedszkola2024/${v4()}`);
+  
+    uploadBytes(imgs,e.target.files[0]).then(data =>{
+      getDownloadURL(data.ref).then(val =>{
+        setImgs(val)
+      })
+    })
   }
+
+  
+  
+
+  const saveData =  async () =>{
+      const docRef = await addDoc(collection(db,'wydarzeniaPrzedszkola2024') ,
+    {
+
+      text :inputField1 ,
+      imgUrl : imgs
+
+    })
+  }
+
+  
   return (
     <div className='zdjecia_wydarzenia-container'>
         <h1>Wydarzenia w naszym przedszkolu</h1>
@@ -24,10 +51,10 @@ function Wydarzenia() {
               {password ? 
               <>
                 <input value={inputField1} placeholder='dodaj nagłówek' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
-                <input placeholder='dodaj zdjecie' type='file'></input>
-                <input placeholder='dodaj zdjecie' type='file'></input>
-                <input placeholder='dodaj zdjecie' type='file'></input>
-                <button onClick={saveDataToFireStore}>Zapisz</button>
+
+                <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload(e)}></input>
+            
+                <button onClick={saveData}>Zapisz</button>
                 
               </>
 
