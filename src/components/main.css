@@ -1,3 +1,7 @@
+
+:root{
+    --main-color: rgb(35, 192, 35);
+}
 *{
     scroll-behavior: smooth;
 }
@@ -355,27 +359,26 @@ img{
     align-items: center;
     text-decoration: none;
     color:black;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
     margin: 20px;
     transition: 1s ease;
 }
 
 .wydarzenia a{
+   
     text-decoration: none;
     font-size: 1.4rem;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+    color:black;
     transition: 1s ease;
 }
 
 .wydarzenia a:hover{
-    background-color: black;
+    background-color: var(--main-color);
     color:white;
 }
 
-.wydarzenia:hover{
-    background-color: black;
-}
 
 
 
