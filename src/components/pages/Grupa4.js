@@ -44,7 +44,7 @@ const handlefetchData = async () =>{
 
 const handleUpload = (e) => {
   
-  const imgs = ref(projectStorage , `imagesGrupa2/${v4()}`);
+  const imgs = ref(projectStorage , `imagesGrupa4/${v4()}`);
 
   uploadBytes(imgs,e.target.files[0]).then(data =>{
     getDownloadURL(data.ref).then(val =>{
