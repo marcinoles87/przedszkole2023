@@ -86,7 +86,7 @@ function Wydarzenia() {
   const handleModal = (e) => {
    
     let el = e.target;
-    el.classList.toggle('img-modal2')
+    el.classList.toggle('img-modal')
   
   }
 
