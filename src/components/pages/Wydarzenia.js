@@ -83,6 +83,11 @@ function Wydarzenia() {
     alert('data base update')
   }
 
+  const deleteData = (item) => {
+    
+
+  }
+
   const handleModal = (e) => {
    
     let el = e.target;
@@ -118,7 +123,7 @@ function Wydarzenia() {
 
           <div className='wydarzenia-container'>
 
-            {firestoreValues && firestoreValues.map( (item) => {
+            {firestoreValues && firestoreValues.map( (item , index) => {
 
               return(
                 <div className='wydarzenia-item'>
@@ -130,6 +135,8 @@ function Wydarzenia() {
                         <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img>
                         <img src={item.imgUrl2} alt={item.text} onClick={handleModal}></img>
                         <img src={item.imgUrl3} alt={item.text} onClick={handleModal}></img>
+
+                        <button onClick={deleteData}>Usuń</button>
 
                       </div>
                 
