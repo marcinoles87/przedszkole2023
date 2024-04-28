@@ -69,8 +69,6 @@ function Wydarzenia() {
   }
 
   
-  
-
   const saveData =  async () =>{
       const docRef = await addDoc(collection(db,'wydarzeniaPrzedszkola2024') ,
     {
@@ -85,6 +83,13 @@ function Wydarzenia() {
     alert('data base update')
   }
 
+  const handleModal = (e) => {
+   
+    let el = e.target;
+    el.classList.toggle('img-modal2')
+  
+  }
+
   
   return (
     <div className='zdjecia_wydarzenia-container'>
@@ -95,7 +100,7 @@ function Wydarzenia() {
               <>
                 <input value={inputField1} placeholder='dodaj nagłówek' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
 
-                <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload(e)}></input>
+                <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload(e)} ></input>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload2(e)}></input>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload3(e)}></input>
             
@@ -122,9 +127,9 @@ function Wydarzenia() {
 
                     <div className='wydarzenia-galeria'>
 
-                        <img src={item.imgUrl} alt={item.text}></img>
-                        <img src={item.imgUrl2} alt={item.text}></img>
-                        <img src={item.imgUrl3} alt={item.text}></img>
+                        <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img>
+                        <img src={item.imgUrl2} alt={item.text} onClick={handleModal}></img>
+                        <img src={item.imgUrl3} alt={item.text} onClick={handleModal}></img>
 
                       </div>
                 
