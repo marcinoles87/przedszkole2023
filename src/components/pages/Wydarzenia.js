@@ -39,7 +39,7 @@ function Wydarzenia() {
         setImgs(val)
       })
     })
-    alert('data base update')
+   
   }
 
   
@@ -53,6 +53,8 @@ function Wydarzenia() {
       imgUrl : imgs
 
     })
+
+    alert('data base update')
   }
 
   
