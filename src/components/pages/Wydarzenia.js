@@ -86,9 +86,10 @@ function Wydarzenia() {
             {firestoreValues && firestoreValues.map( (item) => {
 
               return(
-                <div className='wydarzenia_item'>
+                <div className='wydarzenia-item'>
                   <h1>{item.text}</h1>
                   <img src={item.imgUrl} alt={item.text}></img>
+                 
                 </div>
               )
             })}
