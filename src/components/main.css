@@ -386,6 +386,25 @@ img{
     align-items: center;
 }
 
+.wydarzenia-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wydarzenia-item{
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wydarzenia-container img{
+    width: 30%;
+}
+
 
 
 
