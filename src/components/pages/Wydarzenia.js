@@ -12,6 +12,8 @@ function Wydarzenia() {
   const [password , setPassword] = useState(true);
   const [inputField1 , setInputField1] = useState('');
   const [imgs , setImgs] = useState('');
+  const [imgs2 , setImgs2] = useState('');
+  const [imgs3 , setImgs3] = useState('');
   const [firestoreValues , setFirestoreValue] = useState('');
 
   const db = getFirestore();
@@ -42,6 +44,30 @@ function Wydarzenia() {
    
   }
 
+  const handleUpload2 = (e) => {
+  
+    const imgs = ref(projectStorage , `wydarzenia_images/${v4()}`);
+  
+    uploadBytes(imgs,e.target.files[0]).then(data =>{
+      getDownloadURL(data.ref).then(val =>{
+        setImgs2(val)
+      })
+    })
+   
+  }
+
+  const handleUpload3 = (e) => {
+  
+    const imgs = ref(projectStorage , `wydarzenia_images/${v4()}`);
+  
+    uploadBytes(imgs,e.target.files[0]).then(data =>{
+      getDownloadURL(data.ref).then(val =>{
+        setImgs3(val)
+      })
+    })
+   
+  }
+
   
   
 
@@ -50,7 +76,9 @@ function Wydarzenia() {
     {
 
       text :inputField1 ,
-      imgUrl : imgs
+      imgUrl : imgs ,
+      imgUrl2 : imgs2 ,
+      imgUrl3 : imgs3 ,
 
     })
 
@@ -68,6 +96,8 @@ function Wydarzenia() {
                 <input value={inputField1} placeholder='dodaj nagłówek' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
 
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload(e)}></input>
+                <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload2(e)}></input>
+                <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload3(e)}></input>
             
                 <button onClick={saveData}>Zapisz</button>
                 <div>
@@ -87,8 +117,17 @@ function Wydarzenia() {
 
               return(
                 <div className='wydarzenia-item'>
+
                   <h1>{item.text}</h1>
-                  <img src={item.imgUrl} alt={item.text}></img>
+
+                    <div className='wydarzenia-galeria'>
+
+                        <img src={item.imgUrl} alt={item.text}></img>
+                        <img src={item.imgUrl2} alt={item.text}></img>
+                        <img src={item.imgUrl3} alt={item.text}></img>
+
+                      </div>
+                
                  
                 </div>
               )

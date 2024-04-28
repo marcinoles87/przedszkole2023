@@ -394,7 +394,7 @@ img{
 }
 
 .wydarzenia-item{
-    width: 40%;
+    
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -403,6 +403,7 @@ img{
 
 .wydarzenia-container img{
     width: 30%;
+    margin: 10px;
 }
 
 
