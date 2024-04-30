@@ -98,7 +98,7 @@ function Wydarzenia() {
   
   return (
     <div className='zdjecia_wydarzenia-container'>
-        <h1>Wydarzenia w naszym przedszkolu</h1>
+        <h1>Wydarzenia z życia naszego przedszkola</h1>
 
           <div className='zdjecia_wydarzenia_item'>
               {password ? 
@@ -132,9 +132,19 @@ function Wydarzenia() {
 
                     <div className='wydarzenia-galeria'>
 
+                      <div className='galeria-item'>
                         <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img>
+                      </div>
+
+                      <div className='galeria-item'>
                         <img src={item.imgUrl2} alt={item.text} onClick={handleModal}></img>
+                      </div>
+
+                      <div className='galeria-item'>
                         <img src={item.imgUrl3} alt={item.text} onClick={handleModal}></img>
+                      </div>
+                        
+                        
 
                         <button onClick={deleteData}>Usuń</button>
 

@@ -379,30 +379,46 @@ img{
     color:white;
 }
 
-.zdjecia_wydarzenia-container{
+
+
+.wydarzenia-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.wydarzenia-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 .wydarzenia-item{
-    
+    width: 100%;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.wydarzenia-container img{
-    width: 30%;
+
+
+.galeria-item{
+    width: 160px;
+    margin: 5px;
+    border: 2px solid black;
+    
+}
+
+.galeria-item img{
+    width: 100%;
+    height: auto;
+}
+
+.zdjecia_wydarzenia-container input{
+    margin:5px 10px;
+}
+
+.zdjecia_wydarzenia-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
 }
 
