@@ -86,10 +86,6 @@ function Wydarzenia() {
     alert('data base update')
   }
 
-  const deleteData = (item) => {
-    
-
-  }
 
   const handleModal = (e) => {
    
@@ -116,6 +112,7 @@ function Wydarzenia() {
     </div>
 
           <div className='zdjecia_wydarzenia_item'>
+            
               {password ? 
               <>
                 <input value={inputField1} placeholder='dodaj nagłówek' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
@@ -125,16 +122,13 @@ function Wydarzenia() {
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload2(e)}></input>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload3(e)}></input>
             
-                <button onClick={saveData}>Zapisz</button>
+                <button onClick={saveData}>Zapisz</button> 
                 
-                
-              </>
-
-              : ''
+              </>    : ''
               
             }
 
-<div>
+                <div>
                   <button onClick={showData}>Pokaz wydarzenia</button>
                 </div>
           </div>
