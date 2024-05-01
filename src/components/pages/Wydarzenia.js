@@ -9,13 +9,14 @@ import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 
 function Wydarzenia() {
 
-  const [password , setPassword] = useState(true);
+  const [password , setPassword] = useState(false);
   const [inputField1 , setInputField1] = useState('');
   const [imgs , setImgs] = useState('');
   const [imgs2 , setImgs2] = useState('');
   const [imgs3 , setImgs3] = useState('');
   const [firestoreValues , setFirestoreValue] = useState('');
   const [dataInput , setdataInput] = useState('');
+ 
 
   const db = getFirestore();
 
@@ -95,14 +96,24 @@ function Wydarzenia() {
     let el = e.target;
     el.classList.toggle('img-modal2')
 
-  
-  
+  }
+
+  const passwordCheck = (e) => {
+    const pass = document.querySelector('.password').value
+    if(pass === 'monika'){
+      setPassword(true)
+    }
   }
 
   
   return (
     <div className='zdjecia_wydarzenia-container'>
         <h1>Wydarzenia z życia naszego przedszkola</h1>
+
+        <div className='password-field'>
+      <input className='password' placeholder='admin field' type='password'></input>
+      <button onClick={passwordCheck}>V</button>
+    </div>
 
           <div className='zdjecia_wydarzenia_item'>
               {password ? 
@@ -115,15 +126,17 @@ function Wydarzenia() {
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload3(e)}></input>
             
                 <button onClick={saveData}>Zapisz</button>
-                <div>
-                  <button onClick={showData}>Pokaz wydarzenia</button>
-                </div>
+                
                 
               </>
 
               : ''
               
             }
+
+<div>
+                  <button onClick={showData}>Pokaz wydarzenia</button>
+                </div>
           </div>
 
           <div className='wydarzenia-container'>
@@ -138,28 +151,13 @@ function Wydarzenia() {
 
                     <div className='wydarzenia-galeria'>
 
-                          <div className='modal'></div>
-                      {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img>
-                      {/* </div> */}
-
-                      {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl2} alt={item.text} onClick={handleModal}></img>
-                      {/* </div> */}
-
-                      {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl3} alt={item.text} onClick={handleModal}></img>
-                      {/* </div> */}
-                        
-                        
+                    
+                    </div>
 
-                        
-
-                      </div>
-
-                      {/* <button onClick={deleteData}>Usuń</button> */}
                 
-                 
                 </div>
               )
             })}
