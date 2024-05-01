@@ -397,25 +397,42 @@ img{
     justify-content: center;
 }
 
+.wydarzenia-item h2{
+    border-bottom: 2px solid var(--main-color);
+}
+
 .wydarzenia-item button{
     width: 20%;
 }
 
+
+
 .wydarzenia-galeria{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
    
    
+}
+
+.wydarzenia-galeria img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
 }
 
 
 
 .galeria-item{
-    width: 20vw;
+    width: 200px;
+    height: 180px;
     margin: 5px;
     border: 2px solid #ccc;
+    transition: 0.4s ease;
     
 }
+
+
 
 .galeria-item:hover{
     border: 2px solid black;
@@ -423,7 +440,7 @@ img{
 
 .galeria-item img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -438,6 +455,8 @@ img{
     align-items: center;
     margin: 10px;
 }
+
+
 
 
 
@@ -595,5 +614,10 @@ img{
 .darkMode{
     background-color: rgb(0, 0, 0) !important;
     color:yellow !important;
+}
+
+.img-modal2{
+    width: 80vw;
+    height: 80vh;
 }
 

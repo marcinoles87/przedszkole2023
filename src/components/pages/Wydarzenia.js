@@ -93,7 +93,7 @@ function Wydarzenia() {
   const handleModal = (e) => {
    
     let el = e.target;
-    el.classList.toggle('img-modal')
+    el.classList.toggle('img-modal2')
   
   }
 
@@ -131,21 +131,22 @@ function Wydarzenia() {
               return(
                 <div className='wydarzenia-item'>
 
-                  <h1>{item.text}</h1>
+                  <h2>{item.text}</h2>
+                  <p>{item.date}</p>
 
                     <div className='wydarzenia-galeria'>
 
-                      <div className='galeria-item'>
+                      {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img>
-                      </div>
+                      {/* </div> */}
 
-                      <div className='galeria-item'>
+                      {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl2} alt={item.text} onClick={handleModal}></img>
-                      </div>
+                      {/* </div> */}
 
-                      <div className='galeria-item'>
+                      {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl3} alt={item.text} onClick={handleModal}></img>
-                      </div>
+                      {/* </div> */}
                         
                         
 
@@ -153,7 +154,7 @@ function Wydarzenia() {
 
                       </div>
 
-                      <button onClick={deleteData}>Usuń</button>
+                      {/* <button onClick={deleteData}>Usuń</button> */}
                 
                  
                 </div>
