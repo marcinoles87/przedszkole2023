@@ -94,6 +94,8 @@ function Wydarzenia() {
    
     let el = e.target;
     el.classList.toggle('img-modal2')
+
+  
   
   }
 
@@ -136,6 +138,7 @@ function Wydarzenia() {
 
                     <div className='wydarzenia-galeria'>
 
+                          <div className='modal'></div>
                       {/* <div className='galeria-item'> */}
                         <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img>
                       {/* </div> */}

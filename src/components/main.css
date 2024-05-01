@@ -617,7 +617,11 @@ img{
 }
 
 .img-modal2{
-    width: 80vw;
-    height: 80vh;
-}
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50% ,-50%);
+    transform: scale(3);
+    z-index: 2;
 
+}
