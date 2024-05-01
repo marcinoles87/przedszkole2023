@@ -75,6 +75,7 @@ function Wydarzenia() {
     {
 
       text :inputField1 ,
+      date : dataInput ,
       imgUrl : imgs ,
       imgUrl2 : imgs2 ,
       imgUrl3 : imgs3 ,
