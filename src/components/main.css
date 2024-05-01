@@ -386,6 +386,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .wydarzenia-item{
@@ -396,18 +397,34 @@ img{
     justify-content: center;
 }
 
+.wydarzenia-item button{
+    width: 20%;
+}
+
+.wydarzenia-galeria{
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+
 
 
 .galeria-item{
-    width: 160px;
+    width: 20vw;
     margin: 5px;
-    border: 2px solid black;
+    border: 2px solid #ccc;
     
+}
+
+.galeria-item:hover{
+    border: 2px solid black;
 }
 
 .galeria-item img{
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .zdjecia_wydarzenia-container input{

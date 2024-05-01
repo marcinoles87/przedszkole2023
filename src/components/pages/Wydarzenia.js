@@ -15,6 +15,7 @@ function Wydarzenia() {
   const [imgs2 , setImgs2] = useState('');
   const [imgs3 , setImgs3] = useState('');
   const [firestoreValues , setFirestoreValue] = useState('');
+  const [dataInput , setdataInput] = useState('');
 
   const db = getFirestore();
 
@@ -104,7 +105,8 @@ function Wydarzenia() {
               {password ? 
               <>
                 <input value={inputField1} placeholder='dodaj nagłówek' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
-
+                <label>Data</label>
+                <input type='date'value={dataInput} onChange={ (e) =>setdataInput(e.target.value)}/>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload(e)} ></input>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload2(e)}></input>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload3(e)}></input>
@@ -146,9 +148,11 @@ function Wydarzenia() {
                         
                         
 
-                        <button onClick={deleteData}>Usuń</button>
+                        
 
                       </div>
+
+                      <button onClick={deleteData}>Usuń</button>
                 
                  
                 </div>
