@@ -395,6 +395,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .wydarzenia-item h2{
@@ -410,7 +411,7 @@ img{
 .wydarzenia-galeria{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap:20px;
    
    
 }
@@ -456,6 +457,13 @@ img{
     margin: 10px;
 }
 
+.zdjecia_wydarzenia-container h1{
+    background-color: var(--main-color);
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .img-modal2{
     position: fixed;
     top: 40%;
@@ -463,6 +471,7 @@ img{
     transform: translate(-50% ,-50%);
     transform: scale(3);
     z-index: 2;
+    border-radius: 10px;
 
 }
 
@@ -621,7 +630,7 @@ img{
     .img-modal2{
         top: 30%;
         left: 15%;
-        transform: scale(1.4);
+        transform: scale(1.3);
     }
   
 }
