@@ -145,9 +145,9 @@ function Wydarzenia() {
 
                     <div className='wydarzenia-galeria'>
 
-                      {item.imgUrl ? <img src={item.imgUrl} alt={item.text} onClick={handleModal}></img> : ''}
-                      {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} onClick={handleModal}></img> : '' }
-                      {item.imgUrl3 ? <img src={item.imgUrl3} alt={item.text} onClick={handleModal}></img> : ''}
+                      {item.imgUrl ? <img src={item.imgUrl} alt={item.text} onClick={handleModal} id='galImg'></img> : ''}
+                      {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} onClick={handleModal} id='galImg'></img> : '' }
+                      {item.imgUrl3 ? <img src={item.imgUrl3} alt={item.text} onClick={handleModal} id='galImg'></img> : ''}
                         
                     
                     </div>
