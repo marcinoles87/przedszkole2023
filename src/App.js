@@ -83,7 +83,7 @@ function App() {
           <AboutUs></AboutUs>
           <Galeria></Galeria>
           <div className='wydarzenia'>
-            <Link to={'/wydarzenia'} >Chcesz zobaczyć więcej ? kliknij i zobacz wydarzenia z naszego przedszkola ...</Link>
+            <Link to={'/wydarzenia'} >Chcesz więcej ? Kliknij i zobacz wydarzenia z naszego przedszkola ...</Link>
 
           </div>
           {/* <Jadlospis></Jadlospis> */}

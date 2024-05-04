@@ -466,6 +466,11 @@ img{
     padding: 10px;
 }
 
+.zdjecia_wydarzenia_item button{
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .img-modal2{
     position: fixed;
     top: 40%;
