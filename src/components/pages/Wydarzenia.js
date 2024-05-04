@@ -115,7 +115,7 @@ function Wydarzenia() {
             
               {password ? 
               <>
-                <input value={inputField1} placeholder='dodaj nagłówek' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
+                <input value={inputField1} placeholder='dodaj tytuł' type="text" onChange={ (e) => setInputField1(e.target.value)}></input>
                 <label>Data</label>
                 <input type='date'value={dataInput} onChange={ (e) =>setdataInput(e.target.value)}/>
                 <input placeholder='dodaj zdjecie' type='file' onChange={ (e) => handleUpload(e)} ></input>
