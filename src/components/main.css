@@ -419,8 +419,10 @@ img{
 .wydarzenia-galeria img{
     width: 250px;
     height: 200px;
-    object-fit: cover;
+    object-fit:contain;
+    
 }
+
 
 
 
@@ -631,6 +633,21 @@ img{
         top: 30%;
         left: 15%;
         transform: scale(1.3);
+    }
+
+    .zdjecia_wydarzenia-container h1{
+        text-align: center;
+    }
+
+    .zdjecia_wydarzenia_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .zdjecia_wydarzenia_item button{
+        margin:5px;
     }
   
 }
