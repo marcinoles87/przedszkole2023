@@ -417,7 +417,7 @@ img{
 }
 
 .wydarzenia-galeria img{
-    width: 250px;
+    width: auto;
     height: 200px;
     object-fit:contain;
     
@@ -639,7 +639,7 @@ img{
 
     .img-modal2{
         top:20%;
-        left: 0;
+        left:15%;
         transform: scale(1);
         width: 100%;
         
