@@ -633,11 +633,17 @@ img{
 
     .wydarzenia-galeria img{
         margin: 5px;
-        width: 70%;
+        width: 100%;
         height: auto;
     }
 
+    .wydarzenia-item{
+        width: 70%;
+    }
+
     .img-modal2{
+        margin: 0;
+        width: 100%;
         top:20%;
         left:0;
         transform: scale(1);
