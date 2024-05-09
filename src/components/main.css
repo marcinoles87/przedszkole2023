@@ -639,9 +639,9 @@ img{
 
     .img-modal2{
         top:20%;
-        left:15%;
+        left:0;
         transform: scale(1);
-        width: 100%;
+        
         
     }
 
