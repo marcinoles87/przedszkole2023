@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3dcda0cb.css",
-    "main.js": "./static/js/main.702745c5.js",
+    "main.js": "./static/js/main.27eed487.js",
     "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
     "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
@@ -16,16 +16,16 @@
     "static/media/jedzenie.png": "./static/media/jedzenie.8e4fa74b80dd884e1edb.png",
     "static/media/mapa.png": "./static/media/mapa.c1df36252763b9d664f7.png",
     "static/media/kadra.png": "./static/media/kadra.cc6c07f23d603c77d8ab.png",
-    "static/media/rek.doc": "./static/media/rek.4085ca5b3f3e564263c3.doc",
     "static/media/deklaracja_wak_nasi_rodo.doc": "./static/media/deklaracja_wak_nasi_rodo.07735ec82c97548fe8bb.doc",
+    "static/media/ogloszenie_uzupelniajace.doc": "./static/media/ogloszenie_uzupelniajace.c44d10f95e0c189da117.doc",
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "static/media/karta_zapisu.docX": "./static/media/karta_zapisu.e70611d099177ea35bb5.docX",
     "index.html": "./index.html",
     "main.3dcda0cb.css.map": "./static/css/main.3dcda0cb.css.map",
-    "main.702745c5.js.map": "./static/js/main.702745c5.js.map"
+    "main.27eed487.js.map": "./static/js/main.27eed487.js.map"
   },
   "entrypoints": [
     "static/css/main.3dcda0cb.css",
-    "static/js/main.702745c5.js"
+    "static/js/main.27eed487.js"
   ]
 }
