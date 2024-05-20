@@ -12,7 +12,7 @@ import jedzenie from '../img/jedzenie.png'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
-import doc from './doc/rek.doc'
+import doc from './doc/ogloszenie_uzupelniajace.doc'
 import dyzur from './pages/Dyzurwakacyjny'
 
 
@@ -55,7 +55,7 @@ function Actual() {
 
         {
             title: "Dla rodzicow " ,
-            descirption : "Rekrutacja do przedszkola ... " ,
+            descirption : "Rekrutacja do przedszkola (AKTUALIZACJA MAJ) " ,
             imgUrl : rodzice,
             info : `Rekrutacja na rok 2024 , aby uzyskać więcej informacji kliknij w link lub przejdż do zakładki REKRUTACJA na stronie głównej ` ,
             link : link
