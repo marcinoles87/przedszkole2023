@@ -9,6 +9,7 @@ import kiermasz from '../img/kiermasz.jpeg'
 import kadra from '../img/kadra.png'
 import rodzice from '../img/rodzice.jpg'
 import jedzenie from '../img/jedzenie.png'
+import jubileusz from '../img/jubileusz.jpg'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
@@ -27,9 +28,19 @@ function Actual() {
 
   const link = <a href={doc}> link</a>
   const kier = <a href={kiermasz} >link</a>
+  const jubileuszLink = <a href='https://gazetakrakowska.pl/krakow-przedszkole-pod-modrzewiem-swietuje-60-urodziny-beda-warsztaty-cyrkowe-wesole-miasteczko-i-slodki-poczestunek/ar/c5-18586507'>link</a>
  
 
     const actual = [
+
+        {
+            title: "Jubileusz przedszkola " ,
+            descirption : "informacje o 60-leciu przedszkola " ,
+            imgUrl : jubileusz ,
+            info : 'Już wkrótce w naszym przedszkolu rozpoczną sie obchody 60-lecia , więcej informacji pod linkiem ',
+            link : jubileuszLink
+
+        },
 
        
 
