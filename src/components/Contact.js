@@ -8,10 +8,10 @@ import mapa from '../img/mapa.png'
 function Contact() {
   return (
     <Container id='contact' className='contact-form'>
-        <Row>
+        <Row className='contact-heading'>
             <Col><h1> Kontakt</h1></Col>
         </Row>
-        <Row className='d-flex text-align-center'>
+        <Row className='d-flex text-align-center contact-inf'>
             <Col>
               
 

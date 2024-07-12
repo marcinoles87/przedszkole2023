@@ -168,11 +168,16 @@ img{
 .contact-form{
     background-color: RGB(40, 167, 69);
     color:white;
+    background-image: url('../img/jubileusz.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .contact-form h1{
     text-align: center;
     margin: 50px 0;
+   
+
 }
 
 .contact-info {
@@ -180,7 +185,10 @@ img{
     text-align: center;
     margin-top: 50px;
 
+
 }
+
+
 
 .contact-info p {
     font-size: 20px;
@@ -202,6 +210,16 @@ img{
     transform: translate(-50%,-50%);
     width: 80%;
     height: auto;
+}
+
+.contact-heading{
+    background-color: rgb(35 192 35 / 80%);
+
+}
+
+.contact-inf{
+    background-color: rgb(35 192 35 / 80%);
+
 }
 
 
@@ -596,7 +614,7 @@ img{
 
     .contact-form a img{
       position:relative;
-      top:12vh;
+      top:16vh;
       left: 50vw;
       width: 60%;
       
@@ -606,7 +624,13 @@ img{
     .contact-form{
         position:relative;
         top:100px;
+       
+
     }
+
+
+
+ 
 
     .main-info-container{
         display: flex;
