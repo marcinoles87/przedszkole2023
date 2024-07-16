@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.ec4fb8a6.css",
-    "main.js": "./static/js/main.ddd90a5d.js",
+    "main.js": "./static/js/main.ab25a124.js",
     "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
+    "static/media/standardy.jpeg": "./static/media/standardy.e5344726a54f9b4716e2.jpeg",
     "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
     "static/media/kids.png": "./static/media/kids.6947b23f94d04db6f215.png",
     "static/media/headerimg2.webp": "./static/media/headerimg2.3339428a107d2038932f.webp",
@@ -13,20 +14,20 @@
     "static/media/kids2.jpg": "./static/media/kids2.88d1ebfb4799fd10b9a8.jpg",
     "static/media/kiermasz.jpeg": "./static/media/kiermasz.6e980d7a0846ec68f28c.jpeg",
     "static/media/logo1.jpg": "./static/media/logo1.f701a398ce711978c5a9.jpg",
-    "static/media/jedzenie.png": "./static/media/jedzenie.8e4fa74b80dd884e1edb.png",
     "static/media/mapa.png": "./static/media/mapa.c1df36252763b9d664f7.png",
     "static/media/jubileusz.jpg": "./static/media/jubileusz.7b8036656091e0d56a0f.jpg",
     "static/media/kadra.png": "./static/media/kadra.cc6c07f23d603c77d8ab.png",
+    "static/media/standardy.docx": "./static/media/standardy.72b39bb912b0898e81aa.docx",
     "static/media/deklaracja_wak_nasi_rodo.doc": "./static/media/deklaracja_wak_nasi_rodo.07735ec82c97548fe8bb.doc",
     "static/media/ogloszenie_uzupelniajace.doc": "./static/media/ogloszenie_uzupelniajace.c44d10f95e0c189da117.doc",
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "static/media/karta_zapisu.docX": "./static/media/karta_zapisu.e70611d099177ea35bb5.docX",
     "index.html": "./index.html",
     "main.ec4fb8a6.css.map": "./static/css/main.ec4fb8a6.css.map",
-    "main.ddd90a5d.js.map": "./static/js/main.ddd90a5d.js.map"
+    "main.ab25a124.js.map": "./static/js/main.ab25a124.js.map"
   },
   "entrypoints": [
     "static/css/main.ec4fb8a6.css",
-    "static/js/main.ddd90a5d.js"
+    "static/js/main.ab25a124.js"
   ]
 }
