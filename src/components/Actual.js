@@ -8,13 +8,14 @@ import img1 from '../img/kids.png'
 import kiermasz from '../img/kiermasz.jpeg'
 import kadra from '../img/kadra.png'
 import rodzice from '../img/rodzice.jpg'
-import jedzenie from '../img/jedzenie.png'
 import jubileusz from '../img/jubileusz.jpg'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react'
 import Button from 'react-bootstrap/esm/Button'
 import doc from './doc/ogloszenie_uzupelniajace.doc'
 import dyzur from './pages/Dyzurwakacyjny'
+import sta from './doc/standardy.docx'
+import standardyImg from '../img/standardy.jpeg'
 
 
 
@@ -27,6 +28,7 @@ function Actual() {
     const handleShow = () => setShow(true);
 
   const link = <a href={doc}> link</a>
+  const standardy = <a href={sta}>link</a>
   const kier = <a href={kiermasz} >link</a>
   const jubileuszLink = <a href='https://gazetakrakowska.pl/krakow-przedszkole-pod-modrzewiem-swietuje-60-urodziny-beda-warsztaty-cyrkowe-wesole-miasteczko-i-slodki-poczestunek/ar/c5-18586507'>link</a>
  
@@ -55,14 +57,14 @@ function Actual() {
 
 
 
-        // {
-        //     title: "Jedzenie" ,
-        //     descirption : " informacje na temat żywienia " ,
-        //     imgUrl : jedzenie ,
-        //     info : 'W kontekście jedzenia w przedszkolu warto zwrócić uwagę, że posiłki powinny być odpowiednio zbilansowane pod względem wartości odżywczych i dostosowane do potrzeb rozwojowych dzieci. Ważne jest, aby promować zdrowe nawyki żywieniowe od najmłodszych lat, oferując świeże i różnorodne posiłki, które będą wspierać rozwój fizyczny i umysłowy maluchów. Ponadto, bezpieczeństwo żywności i higiena podczas przygotowywania posiłków w placówce przedszkolnej są kluczowe dla zapewnienia dobrej kondycji zdrowotnej dzieci i uniknięcia problemów związanych z zatruciami pokarmowymi. Dlatego od samego początku preferujemy zdrowe zbilansowane posiłki dla naszych podopiecznych przygotowane w naszej przedszkolnej kuchni . ',
-        //     link :''
+        {
+            title: " Standardów  Ochrony Małoletnich " ,
+            descirption : " informacje na temat ochrony małoletnich...  " ,
+            imgUrl :standardyImg ,
+            info : 'Naczelną zasadą wszystkich działań podejmowanych przez pracowników i współpracowników Samorządowego Przedszkola „Pod Modrzewiem” nr 111 jest działanie dla dobra dziecka i w jego najlepszym interesie. Każdy pracownik i współpracownik ... wiecej pod ' ,
+            link : standardy ,
             
-        // },
+        },
 
         {
             title: "Dla rodzicow " ,
