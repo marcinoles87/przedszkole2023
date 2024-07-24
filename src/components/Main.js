@@ -35,9 +35,20 @@ function Main() {
         </Row>
 <Fade  delay={500}>
         <Row className='main-info-container visible-main-info-container'>
+
+          <Col >
+
+          <h2 >SPOTKANIE ADAPTACYJNE </h2>
+            <p>Serdecznie zapraszamy na spotkanie adaptacyjne dla dzieci 3 letnich rozpoczynających
+              edukację w naszym przedszkolu. <b>29 SIERPNIA 2024 r. w godzinach 10.00 do 12.00 w sali grupy I .</b>
+              PROSIMY O ZABRANIE OBUWIA NA ZMIANĘ DLA DZIIEC I RODZICÓW.
+              Zapraszamy.</p>
+
+          
+          </Col>
           
           <Col > 
-            <h2>Opłaty za korzystanie z przedszkola</h2>
+            <h2>OPŁATY ZA KORZYSTANIE Z PRZEDSZKOLA</h2>
             <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
             <p>Dzienna stawka żywieniowa wynosi:</p>
             <ul>

@@ -58,8 +58,8 @@ function Actual() {
 
 
         {
-            title: " Standardów  Ochrony Małoletnich " ,
-            descirption : " informacje na temat ochrony małoletnich...  " ,
+            title: " Standardy  Ochrony Małoletnich " ,
+            descirption : " informacje na temat  ochrony małoletnich...  " ,
             imgUrl :standardyImg ,
             info : 'Naczelną zasadą wszystkich działań podejmowanych przez pracowników i współpracowników Samorządowego Przedszkola „Pod Modrzewiem” nr 111 jest działanie dla dobra dziecka i w jego najlepszym interesie. Każdy pracownik i współpracownik ... wiecej pod ' ,
             link : standardy ,

@@ -695,7 +695,8 @@ img{
 @media screen and (max-width:350px) {
 
     .contact-form a img{
-        top:30vw;
+        top:27vw;
+        width: 58%;
     }
 
 }
