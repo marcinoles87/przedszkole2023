@@ -49,12 +49,12 @@ function Main() {
           
           <Col > 
             <h2>OPŁATY ZA KORZYSTANIE Z PRZEDSZKOLA</h2>
-            <p>Od stycznia 2023 roku zmianie ulegają opłaty za korzystanie z przedszkola:</p>
+            <p><b>Od 1 sierpnia 2024 roku</b> zmianie ulegają opłaty za korzystanie z przedszkola:</p>
             <p>Dzienna stawka żywieniowa wynosi:</p>
             <ul>
-              <li> 3,3 zł - I śniadanie</li>
-              <li>2,2 zł - II śniadanie</li>
-              <li>5,5 zł - obiad</li>
+              <li> 3,6 zł - I śniadanie</li>
+              <li>2,4 zł - II śniadanie</li>
+              <li>6 zł - obiad</li>
            
 
 
