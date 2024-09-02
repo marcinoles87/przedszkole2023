@@ -38,11 +38,9 @@ function Main() {
 
           <Col >
 
-          <h2 >SPOTKANIE ADAPTACYJNE </h2>
-            <p>Serdecznie zapraszamy na spotkanie adaptacyjne dla dzieci 3 letnich rozpoczynających
-              edukację w naszym przedszkolu. <b>29 SIERPNIA 2024 r. w godzinach 10.00 do 12.00 w sali grupy I .</b>
-              PROSIMY O ZABRANIE OBUWIA NA ZMIANĘ DLA DZIIEC I RODZICÓW.
-              Zapraszamy.</p>
+          <h2 >Zebranie rodziców </h2>
+            <p>Szanowni Państwo, serdecznie zapraszamy na zebranie rodziców, które odbędzie się w dniu 04.09.2024 r. (tj. środa) o godz. 17:00.
+Prosimy o przyjście bez dzieci.</p>
 
           
           </Col>
@@ -67,7 +65,7 @@ function Main() {
          </Col>
          
          
-          <Col className='main-info2'> <h2>Ważne informacje</h2>
+          {/* <Col className='main-info2'> <h2>Ważne informacje</h2>
           <div>
               <h3>INFORMACJA DLA WSZYSTKICH RODZICÓW, KTÓRYCH DZIECI BĘDĄ UCZĘSZCZAĆ DO PRZEDSZKOLA nr 111 OD 1 WRZEŚNIA 2024</h3>
              <p>
@@ -78,7 +76,7 @@ function Main() {
               
 
           </div>
-          </Col>
+          </Col> */}
         </Row>
         </Fade>
         
