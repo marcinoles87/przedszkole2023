@@ -46,16 +46,6 @@ function Actual() {
 
        
 
-        {
-            title: "Kiermasz wiosenny 2024" ,
-            descirption : "informacje na temat zbliżającego sie kiermaszu ..." ,
-            imgUrl : kiermasz ,
-            info : 'Już wkrótce w naszym przedszkolu rozpocznie sie kiermasz wiosenny , więcej informacji pod linkiem ',
-            link : kier
-
-        },
-
-
 
         {
             title: " Standardy  Ochrony Małoletnich " ,
