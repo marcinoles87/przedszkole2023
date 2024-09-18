@@ -17,6 +17,7 @@ const [password , setPassword] = useState(false)
 
 const [imgs , setImgs] = useState('')
 const [imgs2 , setImgs2] = useState('')
+const [imgs3 , setImgs3] = useState('')
 
 
 const db = getFirestore();
@@ -64,6 +65,17 @@ const handleUpload2 = (e) => {
   })
 }
 
+const handleUpload3 = (e) => {
+  
+  const imgs = ref(projectStorage , `imagesGrupa2/${v4()}`);
+
+  uploadBytes(imgs,e.target.files[0]).then(data =>{
+    getDownloadURL(data.ref).then(val =>{
+      setImgs3(val)
+    })
+  })
+}
+
 const saveDataToFireStore = async () => {
 
   const docRef = await addDoc(collection(db,'grupa2'), {
@@ -71,6 +83,7 @@ const saveDataToFireStore = async () => {
     date : inputField2 ,
     imgUrl : imgs,
     imgUrl2 : imgs2,
+    imgUrl3 : imgs3,
     description : inputField3
 
   });
@@ -116,6 +129,7 @@ const handleModal = (e) => {
           
           <input type='file' onChange={ (e) => handleUpload(e)}></input>
           <input type='file' onChange={ (e) => handleUpload2(e)}></input>
+          <input type='file' onChange={ (e) => handleUpload3(e)}></input>
           
 
           <label>Opis</label>
@@ -144,6 +158,7 @@ const handleModal = (e) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
+             <img src={item.imgUrl3} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
            </div>
            
            
