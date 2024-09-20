@@ -131,6 +131,7 @@ const handleModal = (e) => {
           <input type='file' onChange={ (e) => handleUpload2(e)}></input>
           <input type='file' onChange={ (e) => handleUpload3(e)}></input>
           
+          
 
           <label>Opis</label>
           <input type='text' value={inputField3} onChange={ (e) =>setInputField3(e.target.value)}/>
@@ -156,9 +157,10 @@ const handleModal = (e) => {
            <p>{item.date}</p>
            <p>{item.description}</p>
            <div className='group-element-images'>
-              <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <img src={item.imgUrl3} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
+               {item.imgUrl ? <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img> : ''}
+             {item.imgUrl2 ? <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img> : ''}
+             {item.imgUrl3 ? <img src={item.imgUrl3} alt='img_grupa2' className='img-group' onClick={handleModal}></img> : '' }
+
            </div>
            
            
