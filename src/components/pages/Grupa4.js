@@ -145,8 +145,8 @@ console.log(firestoreValues.sort())
            <p>{item.description}</p>
            <div className='group-element-images'>
             
-                {item.imgUrl ? <img src={item.imgUrl} alt={item.text} onClick={handleModal} ></img> : ''}
-                {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} onClick={handleModal} ></img> : ''}
+                {item.imgUrl ? <img src={item.imgUrl} alt={item.text} className='img-group' onClick={handleModal} ></img> : ''}
+                {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} className='img-group' onClick={handleModal} ></img> : ''}
               {/* <img src={item.imgUrl} alt='img_grupa4' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa4' className='img-group' onClick={handleModal}></img> */}
            </div>
