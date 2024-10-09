@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.3ac67677.css",
-    "main.js": "./static/js/main.042ae148.js",
+    "main.css": "./static/css/main.70f9dced.css",
+    "main.js": "./static/js/main.9e037a44.js",
     "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
     "static/media/standardy.jpeg": "./static/media/standardy.e5344726a54f9b4716e2.jpeg",
     "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
@@ -23,11 +23,11 @@
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "static/media/karta_zapisu.docX": "./static/media/karta_zapisu.e70611d099177ea35bb5.docX",
     "index.html": "./index.html",
-    "main.3ac67677.css.map": "./static/css/main.3ac67677.css.map",
-    "main.042ae148.js.map": "./static/js/main.042ae148.js.map"
+    "main.70f9dced.css.map": "./static/css/main.70f9dced.css.map",
+    "main.9e037a44.js.map": "./static/js/main.9e037a44.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ac67677.css",
-    "static/js/main.042ae148.js"
+    "static/css/main.70f9dced.css",
+    "static/js/main.9e037a44.js"
   ]
 }
