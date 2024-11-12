@@ -85,6 +85,10 @@ const handleModal = (e) => {
 
 }
 
+const deleteDocument = (e) => {
+
+}
+
 
 
   return (
@@ -132,7 +136,8 @@ const handleModal = (e) => {
       </div>
       
       <div className='group-container'>
-     {firestoreValues && firestoreValues.map( (item) => {
+     {firestoreValues && firestoreValues.map( (item , index) => {
+      console.logI(index)
 
       
       return(

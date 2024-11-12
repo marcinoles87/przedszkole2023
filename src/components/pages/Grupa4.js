@@ -85,9 +85,6 @@ const handleModal = (e) => {
 
 }
 
-console.log(firestoreValues.sort())
-
-
 
   return (
     <>
@@ -134,7 +131,9 @@ console.log(firestoreValues.sort())
       </div>
       
       <div className='group-container'>
-     {firestoreValues && firestoreValues.map( (item) => {
+     {firestoreValues && firestoreValues.map( (item,index) => {
+            console.log(index)
+
 
       
       return(
