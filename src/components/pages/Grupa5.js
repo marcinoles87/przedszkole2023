@@ -85,8 +85,9 @@ const handleModal = (e) => {
 
 }
 
-const deleteDocument = (e) => {
+const deleteDocument = (index) => {
   console.log(firestoreValues)
+  console.log(index)
 
 }
 
@@ -150,7 +151,7 @@ const deleteDocument = (e) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={deleteDocument}>Delete document</button>
+             <button onClick={ () => deleteDocument(index)}>Delete document</button>
            </div>
            
            
