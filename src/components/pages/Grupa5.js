@@ -86,14 +86,9 @@ const handleModal = (e) => {
 }
 
 const deleteDocument = async (item) => {
-  console.log(item)
- 
 
-  const reference =doc(db, "grupa5" , item);
-  console.log(reference)
-  await deleteDoc(reference)
-
-
+  await deleteDoc(doc(db,"grupa5",item.index))
+  
 
 
 }
@@ -158,7 +153,7 @@ const deleteDocument = async (item) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(item.text)}>Delete document</button>
+             <button onClick={ () => deleteDocument(item)}>Delete document</button>
            </div>
            
            
