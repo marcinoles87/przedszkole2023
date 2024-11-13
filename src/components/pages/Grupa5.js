@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc} from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc , doc} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -85,9 +85,16 @@ const handleModal = (e) => {
 
 }
 
-const deleteDocument = (index) => {
-  console.log(firestoreValues)
-  console.log(index)
+const deleteDocument = async (item) => {
+  console.log(item)
+ 
+
+  const reference =doc(db, "grupa5" , item);
+  console.log(reference)
+  await deleteDoc(reference)
+
+
+
 
 }
 
@@ -151,7 +158,7 @@ const deleteDocument = (index) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(index)}>Delete document</button>
+             <button onClick={ () => deleteDocument(item.text)}>Delete document</button>
            </div>
            
            
