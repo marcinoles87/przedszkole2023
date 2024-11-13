@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -86,6 +86,7 @@ const handleModal = (e) => {
 }
 
 const deleteDocument = (e) => {
+  console.log(firestoreValues)
 
 }
 
@@ -137,11 +138,11 @@ const deleteDocument = (e) => {
       
       <div className='group-container'>
      {firestoreValues && firestoreValues.map( (item , index) => {
-      console.logI(index)
+      console.log(index)
 
       
       return(
-        <>
+        <div key={index}>
          <div className='group-element'>
            <h1>{item.text}</h1>
            <p>{item.date}</p>
@@ -149,11 +150,12 @@ const deleteDocument = (e) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
+             <button onClick={deleteDocument}>Delete document</button>
            </div>
            
            
            </div>
-        </>
+        </div>
       )
     
 })}
