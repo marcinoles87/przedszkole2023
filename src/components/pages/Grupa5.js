@@ -87,7 +87,7 @@ const handleModal = (e) => {
 
 const deleteDocument = async (item) => {
 
-  await deleteDoc(doc(db,"grupa5",item.index))
+  await deleteDoc(doc(db,"grupa5",item.text))
   
 
 
