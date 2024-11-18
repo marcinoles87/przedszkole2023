@@ -86,10 +86,13 @@ const handleModal = (e) => {
 }
 
 const deleteDocument = async (item) => {
-  console.log(item)
+  console.log(db)
+  const docRef = doc(db ,'grupa5',item)
 
-  const reference = doc(db , 'grupa5' , item)
-  console.log(reference)
+  console.log(docRef)
+
+  await deleteDoc(docRef)
+
   
 
 
