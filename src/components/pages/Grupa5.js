@@ -88,6 +88,8 @@ const handleModal = (e) => {
 const deleteDocument = async (item) => {
   console.log(item)
 
+  const reference = doc(db , 'grupa5' , item)
+  console.log(reference)
   
 
 
