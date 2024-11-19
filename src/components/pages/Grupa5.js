@@ -89,15 +89,21 @@ const handleModal = (e) => {
 }
 
 const deleteDocument = async (item) => {
- 
+
   console.log(item)
-  console.log(firestoreValues)
+ 
+ const db = getFirestore();
 
-  
-  
+ const docRef = doc(db,'grupa5',item);
 
-  
 
+deleteDoc(docRef)
+.then( () => {
+  console.log('delete succes')
+})
+.catch(error => {
+  console.log(error)
+})
 
 }
 
@@ -161,7 +167,7 @@ const deleteDocument = async (item) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(index)}>Delete document</button>
+             <button onClick={ () => deleteDocument(item.text)}>Delete document</button>
            </div>
            
            
