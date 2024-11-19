@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc , doc} from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc , doc, Firestore} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -20,6 +20,9 @@ const [imgs2 , setImgs2] = useState('')
 
 
 const db = getFirestore();
+
+
+
 
 const passwordCheck = (e) => {
   const pass = document.querySelector('.password').value
@@ -86,12 +89,12 @@ const handleModal = (e) => {
 }
 
 const deleteDocument = async (item) => {
-  console.log(db)
-  const docRef = doc(db ,'grupa5',item)
+ 
+  console.log(item)
+  console.log(firestoreValues)
 
-  console.log(docRef)
-
-  await deleteDoc(docRef)
+  
+  
 
   
 
@@ -158,7 +161,7 @@ const deleteDocument = async (item) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(item)}>Delete document</button>
+             <button onClick={ () => deleteDocument(index)}>Delete document</button>
            </div>
            
            
