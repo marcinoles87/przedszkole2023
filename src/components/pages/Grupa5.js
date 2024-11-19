@@ -40,7 +40,7 @@ const handlefetchData = async () =>{
 
   querySnapShot.forEach( (doc) => {
     temporaryBase.push(doc.data())
-    console.log(doc)
+    
   });
 
   setFirestoreValue(temporaryBase)
