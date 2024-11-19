@@ -40,6 +40,7 @@ const handlefetchData = async () =>{
 
   querySnapShot.forEach( (doc) => {
     temporaryBase.push(doc.data())
+    console.log(doc)
   });
 
   setFirestoreValue(temporaryBase)
@@ -94,7 +95,10 @@ const deleteDocument = async (item) => {
  
  const db = getFirestore();
 
- const docRef = doc(db,'grupa5',item);
+ console.log(db)
+
+ const docRef = doc(db,'grupa5',`T757YGIstUPK2v8EfHQY`);
+ 
 
 
 deleteDoc(docRef)
@@ -167,7 +171,7 @@ deleteDoc(docRef)
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(item.text)}>Delete document</button>
+             <button onClick={ () => deleteDocument(index)}>Delete document</button>
            </div>
            
            
