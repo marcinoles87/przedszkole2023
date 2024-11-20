@@ -97,17 +97,21 @@ const deleteDocument = async (item) => {
 
  console.log(db)
 
- const docRef = doc(db,'grupa5',`T757YGIstUPK2v8EfHQY`);
+ 
+
+ const docRef = doc(db,'grupa5',`yf4Jx5Hc2RnUVjMgHZOB`);
+
+ console.log(docRef.documentID)
  
 
 
-deleteDoc(docRef)
-.then( () => {
-  console.log('delete succes')
-})
-.catch(error => {
-  console.log(error)
-})
+// deleteDoc(docRef)
+// .then( () => {
+//   console.log('delete succes')
+// })
+// .catch(error => {
+//   console.log(error)
+// })
 
 }
 

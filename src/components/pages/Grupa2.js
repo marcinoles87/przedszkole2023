@@ -147,12 +147,12 @@ const handleModal = (e) => {
       </div>
       
       <div className='group-container'>
-     {firestoreValues && firestoreValues.map( (item) => {
+     {firestoreValues && firestoreValues.map( (item,index) => {
 
       
       return(
-        <>
-         <div className='group-element'>
+        
+         <div className='group-element' key={index}>
            <h1>{item.text}</h1>
            <p>{item.date}</p>
            <p>{item.description}</p>
@@ -165,7 +165,7 @@ const handleModal = (e) => {
            
            
            </div>
-        </>
+        
       )
     
 })}
