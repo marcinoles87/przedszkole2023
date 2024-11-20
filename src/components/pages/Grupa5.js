@@ -99,7 +99,7 @@ const deleteDocument = async (item) => {
 
  
 
- const docRef = doc(db,'grupa5', `${item.text}`);
+ const docRef = doc(db,'grupa5', `${item}`);
 
  console.log(docRef)
 
