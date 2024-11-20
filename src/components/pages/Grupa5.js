@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc , doc, Firestore} from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , getDoc , deleteDoc , doc, Firestore} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -99,11 +99,21 @@ const deleteDocument = async (item) => {
 
  
 
- const docRef = doc(db,'grupa5',`yf4Jx5Hc2RnUVjMgHZOB`);
+ const docRef = doc(db,'grupa5', `${item.text}`);
 
- console.log(docRef.documentID)
+ console.log(docRef)
+
+ const docSnap = await getDoc(docRef);
+
+ console.log(docSnap)
  
+ if (docSnap.exists()) {
+  console.log("Document data:", docSnap.data().text);
+} else {
+  // docSnap.data() will be undefined in this case
+  console.log("No such document!");
 
+}
 
 // deleteDoc(docRef)
 // .then( () => {
@@ -163,7 +173,7 @@ const deleteDocument = async (item) => {
       
       <div className='group-container'>
      {firestoreValues && firestoreValues.map( (item , index) => {
-      console.log(index)
+      
 
       
       return(
@@ -175,7 +185,7 @@ const deleteDocument = async (item) => {
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(index)}>Delete document</button>
+             <button onClick={ () => deleteDocument(item)}>Delete document</button>
            </div>
            
            
