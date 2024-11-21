@@ -106,6 +106,10 @@ const deleteDocument = async (item) => {
  const docSnap = await getDoc(docRef);
 
  console.log(docSnap)
+
+ const docID = docSnap.id
+
+ console.log(docID)
  
  if (docSnap.exists()) {
   console.log("Document data:", docSnap.data() , docSnap.id);
@@ -115,13 +119,13 @@ const deleteDocument = async (item) => {
 
 }
 
-// deleteDoc(docRef)
-// .then( () => {
-//   console.log('delete succes')
-// })
-// .catch(error => {
-//   console.log(error)
-// })
+deleteDoc(docRef)
+.then( () => {
+  console.log('delete succes')
+})
+.catch(error => {
+  console.log(error)
+})
 
 }
 
