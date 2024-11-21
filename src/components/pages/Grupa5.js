@@ -99,7 +99,7 @@ const deleteDocument = async (item) => {
 
  
 
- const docRef = doc(db,'grupa5', `${item}`);
+ const docRef = doc(db,'grupa5', `lafsFIP5yxcG5pvX1Y37`);
 
  console.log(docRef)
 
@@ -108,7 +108,7 @@ const deleteDocument = async (item) => {
  console.log(docSnap)
  
  if (docSnap.exists()) {
-  console.log("Document data:", docSnap.data().text);
+  console.log("Document data:", docSnap.data());
 } else {
   // docSnap.data() will be undefined in this case
   console.log("No such document!");
