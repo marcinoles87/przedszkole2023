@@ -89,31 +89,48 @@ const handleModal = (e) => {
 
 }
 
-const deleteDocument = async (item) => {
+const deleteDocument = async (item,index) => {
 
-  console.log(item)
  
  const db = getFirestore();
 
  const docRef = doc(db,'grupa5', `${item.text}`);
 
- console.log(docRef.id)
-
- const docSnap = await getDoc(docRef);
+ const docSnap = await getDoc(docRef).then( (doc) => { console.log(doc._key.path)})
 
  console.log(docSnap)
 
- const docID = docSnap.id
-
- console.log(docID)
+ const kolekcja = collection(db , 'grupa5')
  
- if (docSnap.exists()) {
-  console.log("Document data:", docSnap.data() , docSnap.id);
-} else {
-  // docSnap.data() will be undefined in this case
-  console.log("No such document!");
+console.log(kolekcja)
 
-}
+let grupy  = [];
+
+getDocs(kolekcja)
+.then( (doc) => {
+  
+  
+  doc.docs.forEach( (doc) => {
+    grupy.push({...doc.data() , id: doc.id})
+    console.log(doc.data())
+  })
+  console.log(grupy)
+}).catch( (err) =>{
+  console.log(err)
+})
+
+const wybranyElement = grupy[index]
+
+console.log(index)
+console.log(wybranyElement)
+ 
+//  if (docSnap.exists()) {
+//   console.log("Document data:", docSnap.data());
+// } else {
+//   // docSnap.data() will be undefined in this case
+//   console.log("No such document!");
+
+// }
 
 deleteDoc(docRef)
 .then( () => {
@@ -183,7 +200,7 @@ deleteDoc(docRef)
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
-             <button onClick={ () => deleteDocument(item)}>Delete document</button>
+             <button onClick={ () => deleteDocument(item,index)}>Delete document</button>
            </div>
            
            
