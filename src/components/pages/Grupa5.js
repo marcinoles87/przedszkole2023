@@ -95,13 +95,9 @@ const deleteDocument = async (item) => {
  
  const db = getFirestore();
 
- console.log(db)
-
- 
-
  const docRef = doc(db,'grupa5', `${item.text}`);
 
- console.log(docRef)
+ console.log(docRef.id)
 
  const docSnap = await getDoc(docRef);
 
@@ -177,8 +173,6 @@ deleteDoc(docRef)
       
       <div className='group-container'>
      {firestoreValues && firestoreValues.map( (item , index) => {
-      
-
       
       return(
         <div key={index}>
