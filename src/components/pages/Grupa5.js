@@ -94,11 +94,13 @@ const deleteDocument = async (item,index) => {
  console.log(item)
  const db = getFirestore();
 
- const docRef = db.collection("grupa5").doc('lafsFIP5yxcG5pvX1Y37')
 
- docRef.get().then( doc => {
-  console.log(doc.data())
- })
+ const docRef = doc(db,'grupa5' , 'lafsFIP5yxcG5pvX1Y37')
+
+ const docSnap = await getDoc(docRef);
+
+
+ console.log(docSnap)
 
 
 }
