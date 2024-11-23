@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs , getDoc , deleteDoc , doc, Firestore} from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , getDoc , deleteDoc , doc , where} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -91,57 +91,17 @@ const handleModal = (e) => {
 
 const deleteDocument = async (item,index) => {
 
- 
+ console.log(item)
  const db = getFirestore();
 
- const docRef = doc(db,'grupa5', `${item.text}`);
+ const docRef = db.collection("grupa5").doc('lafsFIP5yxcG5pvX1Y37')
 
- const docSnap = await getDoc(docRef).then( (doc) => { console.log(doc._key.path)})
+ docRef.get().then( doc => {
+  console.log(doc.data())
+ })
 
- console.log(docSnap)
-
- const kolekcja = collection(db , 'grupa5')
- 
-console.log(kolekcja)
-
-let grupy  = [];
-
-getDocs(kolekcja)
-.then( (doc) => {
-  
-  
-  doc.docs.forEach( (doc) => {
-    grupy.push({...doc.data() , id: doc.id})
-    console.log(doc.data())
-  })
-  console.log(grupy)
-}).catch( (err) =>{
-  console.log(err)
-})
-
-const wybranyElement = grupy[index]
-
-console.log(index)
-console.log(wybranyElement)
- 
-//  if (docSnap.exists()) {
-//   console.log("Document data:", docSnap.data());
-// } else {
-//   // docSnap.data() will be undefined in this case
-//   console.log("No such document!");
-
-// }
-
-deleteDoc(docRef)
-.then( () => {
-  console.log('delete succes')
-})
-.catch(error => {
-  console.log(error)
-})
 
 }
-
 
 
   return (
