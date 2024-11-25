@@ -91,18 +91,18 @@ const handleModal = (e) => {
 
 const deleteDocument = async (item,index) => {
 
- console.log(item)
- const db = getFirestore();
+//  console.log(item)
+//  const db = getFirestore();
 
 
- const docRef = doc(db,'grupa5' , 'lafsFIP5yxcG5pvX1Y37')
-
- const docSnap = await getDoc(docRef);
-
-
- console.log(docSnap)
+ const docRef = doc(db,'grupa5' , 'lafsFIP5yxcG5pvX1Y37');
+//  const  docRef2 = db.collection("grupa5").doc("lafsFIP5yxcG5pvX1Y37");
 
 
+
+ console.log(docRef)  
+//  console.log(docRef2)  
+ 
 }
 
 
