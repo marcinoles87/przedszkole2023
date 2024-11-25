@@ -99,6 +99,11 @@ querySnapShot.forEach( (doc) => {
   console.log(doc.data().description)
   console.log(index)
 
+  const temporaryforId = []
+
+  temporaryforId.push(doc._document.key.path.segments[6])
+  console.log(temporaryforId[1])
+  
 
 });
 
