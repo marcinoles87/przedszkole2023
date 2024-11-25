@@ -97,9 +97,9 @@ querySnapShot.forEach( (doc) => {
   console.log(doc._document.key.path.segments[6])
   console.log(doc.data().text)
   console.log(doc.data().description)
+  console.log(index)
 
-  
-  
+
 });
 
 
