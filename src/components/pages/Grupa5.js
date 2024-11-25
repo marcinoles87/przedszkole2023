@@ -5,7 +5,7 @@ import { getFirestore  , collection, addDoc ,  getDocs , getDoc , deleteDoc , do
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
-
+import { projectFirestore } from '../../firebase/config';
 
 function Grupa5() {
 
@@ -91,20 +91,16 @@ const handleModal = (e) => {
 
 const deleteDocument = async (item,index) => {
 
-//  console.log(item)
- const db = getFirestore();
+const querySnapShot = await getDocs(collection(db,"grupa5"));
 
-// const db = firebase.firestore();
-
-
-
- const docRef = doc(db,'grupa5' , 'lafsFIP5yxcG5pvX1Y37');
- const  docRef2 = db.collection("grupa5").doc("lafsFIP5yxcG5pvX1Y37");
-
+querySnapShot.forEach( (doc) => {
+  console.log(doc.data().text)
+  console.log(doc.data().description)
+  
+  
+});
 
 
- console.log(docRef)  
- console.log(docRef2)  
  
 }
 
