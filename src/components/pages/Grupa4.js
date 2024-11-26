@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc , doc} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -85,6 +85,36 @@ const handleModal = (e) => {
 
 }
 
+const deleteDocument = async (item,index) => {
+
+  const querySnapShot = await getDocs(collection(db,"grupa5"));
+  
+  const deleteElement = querySnapShot._snapshot.docChanges[index]
+  const idDeleteElement = deleteElement.doc.key.path.segments[6]
+  console.log(idDeleteElement)
+  console.log(deleteElement)
+  
+  await deleteDoc(doc(db, "grupa5", `${idDeleteElement}`));
+  
+  // querySnapShot.forEach( (doc) => {
+  //   console.log(doc._document.key.path.segments[6])
+    
+  
+  //   const temporaryforId = []
+  
+  //   temporaryforId.push(doc._document.key.path.segments[6])
+  //   console.log(temporaryforId)
+  
+  //   setDocid(temporaryforId)
+    
+  
+  // });
+  
+  // console.log(doc)
+  
+   
+  }
+
 
   return (
     <>
@@ -146,6 +176,8 @@ const handleModal = (e) => {
             
                 {item.imgUrl ? <img src={item.imgUrl} alt={item.text} className='img-group' onClick={handleModal} ></img> : ''}
                 {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} className='img-group' onClick={handleModal} ></img> : ''}
+                <button onClick={ () => deleteDocument(item,index)}>Delete document</button>
+
               {/* <img src={item.imgUrl} alt='img_grupa4' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa4' className='img-group' onClick={handleModal}></img> */}
            </div>
