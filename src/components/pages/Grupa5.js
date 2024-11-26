@@ -15,6 +15,8 @@ const [inputField3 , setInputField3] = useState('')
 const [firestoreValues , setFirestoreValue ] = useState([])
 const [password , setPassword] = useState(false)
 
+const [docId , setDocid] = useState([])
+
 const [imgs , setImgs] = useState('')
 const [imgs2 , setImgs2] = useState('')
 
@@ -92,24 +94,29 @@ const handleModal = (e) => {
 const deleteDocument = async (item,index) => {
 
 const querySnapShot = await getDocs(collection(db,"grupa5"));
- db.collection("grupa5").where("text","==",true)
- .get()
- .then( (snap) => {
-  console.log(snap)
- })
-querySnapShot.forEach( (doc) => {
-  console.log(doc._document.key.path.segments[6])
-  console.log(doc.data().text)
-  console.log(doc.data().description)
-  console.log(index)
 
-  const temporaryforId = []
+const deleteElement = querySnapShot._snapshot.docChanges[index]
+const idDeleteElement = deleteElement.doc.key.path.segments[6]
+console.log(idDeleteElement)
+console.log(deleteElement)
 
-  temporaryforId.push(doc._document.key.path.segments[6])
-  console.log(temporaryforId)
+await deleteDoc(doc(db, "grupa5", `${idDeleteElement}`));
+
+// querySnapShot.forEach( (doc) => {
+//   console.log(doc._document.key.path.segments[6])
   
 
-});
+//   const temporaryforId = []
+
+//   temporaryforId.push(doc._document.key.path.segments[6])
+//   console.log(temporaryforId)
+
+//   setDocid(temporaryforId)
+  
+
+// });
+
+// console.log(doc)
 
 
 
