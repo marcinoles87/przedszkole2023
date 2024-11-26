@@ -87,14 +87,14 @@ const handleModal = (e) => {
 
 const deleteDocument = async (item,index) => {
 
-  const querySnapShot = await getDocs(collection(db,"grupa5"));
+  const querySnapShot = await getDocs(collection(db,"grupa4"));
   
   const deleteElement = querySnapShot._snapshot.docChanges[index]
   const idDeleteElement = deleteElement.doc.key.path.segments[6]
   console.log(idDeleteElement)
   console.log(deleteElement)
   
-  await deleteDoc(doc(db, "grupa5", `${idDeleteElement}`));
+  await deleteDoc(doc(db, "grupa4", `${idDeleteElement}`));
   
   // querySnapShot.forEach( (doc) => {
   //   console.log(doc._document.key.path.segments[6])
@@ -176,7 +176,7 @@ const deleteDocument = async (item,index) => {
             
                 {item.imgUrl ? <img src={item.imgUrl} alt={item.text} className='img-group' onClick={handleModal} ></img> : ''}
                 {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} className='img-group' onClick={handleModal} ></img> : ''}
-                <button onClick={ () => deleteDocument(item,index)}>Delete document</button>
+                {password ?<button onClick={ () => deleteDocument(item,index)}>Delete document</button> : ''}
 
               {/* <img src={item.imgUrl} alt='img_grupa4' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa4' className='img-group' onClick={handleModal}></img> */}

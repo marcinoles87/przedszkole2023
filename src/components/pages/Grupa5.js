@@ -178,6 +178,7 @@ await deleteDoc(doc(db, "grupa5", `${idDeleteElement}`));
            <div className='group-element-images'>
               <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
              <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img>
+              {password ? <button onClick={ () => deleteDocument(item,index)}>Delete document</button> : ''}
            </div>
            
            
