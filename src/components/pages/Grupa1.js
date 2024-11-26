@@ -174,7 +174,7 @@ const deleteDocument = async (item,index) => {
            <div className='group-element-images'>
            {item.imgUrl ? <img src={item.imgUrl} alt='img_grupa1' className='img-group' onClick={handleModal}></img> : ""}   
             {item.imgUrl2 ?<img src={item.imgUrl2} alt='img_grupa1' className='img-group' onClick={handleModal}></img> : ""} 
-            {password ?<button onClick={ () => deleteDocument(item,index)}>Delete document</button> : ''}
+            {password ?<button onClick={ () => deleteDocument(item,index)}>Usun dokument</button> : ''}
 
             
            </div>
