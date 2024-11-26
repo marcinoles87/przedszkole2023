@@ -92,7 +92,11 @@ const handleModal = (e) => {
 const deleteDocument = async (item,index) => {
 
 const querySnapShot = await getDocs(collection(db,"grupa5"));
-
+ db.collection("grupa5").where("text","==",true)
+ .get()
+ .then( (snap) => {
+  console.log(snap)
+ })
 querySnapShot.forEach( (doc) => {
   console.log(doc._document.key.path.segments[6])
   console.log(doc.data().text)
@@ -102,7 +106,7 @@ querySnapShot.forEach( (doc) => {
   const temporaryforId = []
 
   temporaryforId.push(doc._document.key.path.segments[6])
-  console.log(temporaryforId[1])
+  console.log(temporaryforId)
   
 
 });
