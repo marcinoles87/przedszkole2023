@@ -108,6 +108,8 @@ const deleteDocument = async (item,index) => {
   console.log(deleteElement)
   
   await deleteDoc(doc(db, "grupa2", `${idDeleteElement}`));
+
+  alert('Dokument usunięty')
   
   // querySnapShot.forEach( (doc) => {
   //   console.log(doc._document.key.path.segments[6])
@@ -190,7 +192,7 @@ const deleteDocument = async (item,index) => {
                {item.imgUrl ? <img src={item.imgUrl} alt='img_grupa2' className='img-group' onClick={handleModal}></img> : ''}
              {item.imgUrl2 ? <img src={item.imgUrl2} alt='img_grupa2' className='img-group' onClick={handleModal}></img> : ''}
              {item.imgUrl3 ? <img src={item.imgUrl3} alt='img_grupa2' className='img-group' onClick={handleModal}></img> : '' }
-             {password ?<button onClick={ () => deleteDocument(item,index)}>Delete document</button> : ''}
+             {password ?<button onClick={ () => deleteDocument(item,index)}>Usun dokument</button> : ''}
 
 
            </div>

@@ -102,6 +102,8 @@ console.log(deleteElement)
 
 await deleteDoc(doc(db, "grupa5", `${idDeleteElement}`));
 
+alert('Dokument usunięty')
+
 // querySnapShot.forEach( (doc) => {
 //   console.log(doc._document.key.path.segments[6])
   
