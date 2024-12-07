@@ -16,9 +16,9 @@ function Contact() {
               
 
                 <div className='contact-info'>
-                    <i className="fa fa-house fa-2xl"></i><p>Adres : os na Stoku 21 31-704 Kraków</p>
+                    <i className="fa fa-house fa-2xl"></i><p>Adres : os. na Stoku 21 31-704 Kraków</p>
                     <i className="fa fa-envelope fa-2xl"></i><p>Email : p111@mjo.krakow.pl </p> 
-                    <i className="fa fa-phone fa-2xl"></i><p> Telefon : tel./fax (12) 645-14-80</p>
+                    <i className="fa fa-phone fa-2xl"></i><p> Telefon/fax : (12) 645-14-80</p>
                 </div>
 
                     <div className='contact-info'>
@@ -26,7 +26,7 @@ function Contact() {
                         <p>Poniedziałek	8:00 - 15:00</p>
                         <p> Wtorek	8:00 - 15:00</p>
                         <p>Środa	8:00 - 15:00</p>
-                        <p>Czawartek	8:00 - 15:00</p>
+                        <p>Czwartek	8:00 - 15:00</p>
                         <p>Piątek	8:00 - 15:00</p>
                     </div>
                     
