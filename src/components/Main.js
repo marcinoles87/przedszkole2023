@@ -36,14 +36,14 @@ function Main() {
 <Fade  delay={500}>
         <Row className='main-info-container visible-main-info-container'>
 
-          <Col >
+          {/* <Col >
 
           <h2 >Zebranie rodziców </h2>
             <p>Szanowni Państwo, serdecznie zapraszamy na zebranie rodziców, które odbędzie się w dniu 04.09.2024 r. (tj. środa) o godz. 17:00.
 Prosimy o przyjście bez dzieci.</p>
 
           
-          </Col>
+          </Col> */}
           
           <Col > 
             <h2>OPŁATY ZA KORZYSTANIE Z PRZEDSZKOLA</h2>
