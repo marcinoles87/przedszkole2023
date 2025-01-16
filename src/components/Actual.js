@@ -69,7 +69,7 @@ function Actual() {
             title: "Kadra" ,
             descirption : "Kadra naszego przedszkola " ,
             imgUrl : kadra,
-            info : ' Dyrektor mgr Magdalena Kulpa, referent mgr Katarzyna Dziki.  ' ,
+            info : ` Dyrektor mgr Magdalena Kulpa, referent mgr Katarzyna Dziki.  GR I mgr. Magdalena Topa , mgr.Magdalena Kulpa , GR II mgr.Monika Klimczyk , mgr.Beata Urantówka , GR III mgr.Katarzyna Zdankiewicz , mgr.Małgorzata Dziki , GR IV mgr.Małgorzata Sobucka , mgr.Małgorzata Klocek , GR V mgr.Jolanta Zmarlak , mgr.Anna Nowak ` ,
             link : ''
             
             
