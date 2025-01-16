@@ -31,6 +31,9 @@ function Actual() {
   const standardy = <a href={sta}>link</a>
   const kier = <a href={kiermasz} >link</a>
   const jubileuszLink = <a href='https://gazetakrakowska.pl/krakow-przedszkole-pod-modrzewiem-swietuje-60-urodziny-beda-warsztaty-cyrkowe-wesole-miasteczko-i-slodki-poczestunek/ar/c5-18586507'>link</a>
+  const kadraInfo = <p> Dyrektor mgr. Magdalena Kulpa, referent mgr. Katarzyna Dziki. <br></br>
+              <br></br>
+              GR I mgr. Magdalena Topa , mgr.Magdalena Kulpa <br></br> GR II mgr.Monika Klimczyk , mgr.Beata Urantówka <br></br> GR III mgr.Katarzyna Zdankiewicz , mgr.Małgorzata Dziki <br></br> GR IV mgr.Małgorzata Sobucka , mgr.Małgorzata Klocek <br></br> GR V mgr.Jolanta Zmarlak , mgr.Anna Nowak  ,</p>
  
 
     const actual = [
@@ -60,7 +63,7 @@ function Actual() {
             title: "Dla rodzicow " ,
             descirption : "Rekrutacja do przedszkola (AKTUALIZACJA MAJ) " ,
             imgUrl : rodzice,
-            info : `Rekrutacja na rok 2024 , aby uzyskać więcej informacji kliknij w link lub przejdż do zakładki REKRUTACJA na stronie głównej ` ,
+            info : `Rekrutacja na rok 2024  , aby uzyskać więcej informacji kliknij w link lub przejdż do zakładki REKRUTACJA na stronie głównej ` ,
             link : link
             
         },
@@ -69,7 +72,7 @@ function Actual() {
             title: "Kadra" ,
             descirption : "Kadra naszego przedszkola " ,
             imgUrl : kadra,
-            info : ` Dyrektor mgr Magdalena Kulpa, referent mgr Katarzyna Dziki.  GR I mgr. Magdalena Topa , mgr.Magdalena Kulpa , GR II mgr.Monika Klimczyk , mgr.Beata Urantówka , GR III mgr.Katarzyna Zdankiewicz , mgr.Małgorzata Dziki , GR IV mgr.Małgorzata Sobucka , mgr.Małgorzata Klocek , GR V mgr.Jolanta Zmarlak , mgr.Anna Nowak ` ,
+            info : kadraInfo,
             link : ''
             
             

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './styleGrup.css';
 import { Link } from 'react-router-dom';
-import { getFirestore  , collection, addDoc ,  getDocs } from 'firebase/firestore';
+import { getFirestore  , collection, addDoc ,  getDocs , deleteDoc , doc} from 'firebase/firestore';
 import { projectStorage } from '../../firebase/config';
 import  {v4} from 'uuid'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -101,6 +101,38 @@ function Wydarzenia() {
     }
   }
 
+  const deleteDocument = async (item,index) => {
+
+    const querySnapShot = await getDocs(collection(db,"grupa4"));
+    
+    const deleteElement = querySnapShot._snapshot.docChanges[index]
+    const idDeleteElement = deleteElement.doc.key.path.segments[6]
+    console.log(idDeleteElement)
+    console.log(deleteElement)
+    
+    await deleteDoc(doc(db, "grupa4", `${idDeleteElement}`));
+  
+    alert('Dokument usunięty')
+    
+    // querySnapShot.forEach( (doc) => {
+    //   console.log(doc._document.key.path.segments[6])
+      
+    
+    //   const temporaryforId = []
+    
+    //   temporaryforId.push(doc._document.key.path.segments[6])
+    //   console.log(temporaryforId)
+    
+    //   setDocid(temporaryforId)
+      
+    
+    // });
+    
+    // console.log(doc)
+    
+     
+    }
+
   
   return (
     <div className='zdjecia_wydarzenia-container'>
@@ -148,6 +180,8 @@ function Wydarzenia() {
                       {item.imgUrl ? <img src={item.imgUrl} alt={item.text} onClick={handleModal} ></img> : ''}
                       {item.imgUrl2 ? <img src={item.imgUrl2} alt={item.text} onClick={handleModal} ></img> : '' }
                       {item.imgUrl3 ? <img src={item.imgUrl3} alt={item.text} onClick={handleModal} ></img> : ''}
+                      {password ? <button onClick={ () => deleteDocument(item,index)}>Usun dokument</button> : ''}
+
                         
                     
                     </div>
