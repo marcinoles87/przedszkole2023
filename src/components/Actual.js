@@ -31,9 +31,9 @@ function Actual() {
   const standardy = <a href={sta}>link</a>
   const kier = <a href={kiermasz} >link</a>
   const jubileuszLink = <a href='https://gazetakrakowska.pl/krakow-przedszkole-pod-modrzewiem-swietuje-60-urodziny-beda-warsztaty-cyrkowe-wesole-miasteczko-i-slodki-poczestunek/ar/c5-18586507'>link</a>
-  const kadraInfo = <p> Dyrektor mgr. Magdalena Kulpa, referent mgr. Katarzyna Dziki. <br></br>
+  const kadraInfo = <p> Dyrektor mgr  Magdalena Kulpa, referent mgr Katarzyna Dziki. <br></br>
               <br></br>
-              GR I mgr. Magdalena Topa , mgr.Magdalena Kulpa <br></br> GR II mgr.Monika Klimczyk , mgr.Beata Urantówka <br></br> GR III mgr.Katarzyna Zdankiewicz , mgr.Małgorzata Dziki <br></br> GR IV mgr.Małgorzata Sobucka , mgr.Małgorzata Klocek <br></br> GR V mgr.Jolanta Zmarlak , mgr.Anna Nowak  ,</p>
+              GR I mgr Magdalena Tora , mgr Magdalena Kulpa <br></br> GR II mgr Monika Klimczyk , mgr Beata Urantówka <br></br> GR III mgr Katarzyna Zdankiewicz , mgr Małgorzata Dziki <br></br> GR IV mgr Małgorzata Sobucka , mgr Małgorzata Klocek <br></br> GR V mgr Jolanta Zmarlak , mgr Anna Nowak  ,</p>
  
 
     const actual = [

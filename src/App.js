@@ -71,11 +71,11 @@ function App() {
         <Route  path='*' element={
       <>
           <Navbars link={Link}></Navbars>
-          {/* <div className='invalid'>
+          <div className='invalid'>
           <Button onClick={handleOnClickFontZoom} style={ {backgroundColor:'white' , color:'black', border:'0px'}}> <i class="fa-solid fa-font fa-xl"></i></Button>
           <Button onClick={handleOnClickFontZoomx2} style={ {backgroundColor:'white' , color:'black', border:'0px'}}> <i class="fa-solid fa-font fa-2xl"></i></Button>
           <Button onClick={handleMode} style={ {backgroundColor:'white' , color:'black', border:'0px'}}> <i class="fa-solid fa-circle-half-stroke"></i></Button>
-          </div> */}
+          </div>
           <Button onClick={handleOnClick} className='arrow-up' style={{width:'40px' , height:'40px' , backgroundColor:'grey' , borderRadius:'30px'}}><i className="fa fa-arrow-up 2xl"></i></Button>
           
           <Main></Main>
