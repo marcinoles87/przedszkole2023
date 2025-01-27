@@ -580,8 +580,9 @@ img{
         font-size: smaller;
     }
 
-    #home{
-        margin: 0;
+ 
+    .nav-brand-logo{
+        margin: 0 !important;
     }
 
     #main{
