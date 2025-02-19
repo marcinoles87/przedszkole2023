@@ -69,8 +69,8 @@ function Actual() {
             title: "Dla rodziców " ,
             descirption : "Informacje na temat rekrutacji do przedszkola na rok 2025 " ,
             imgUrl : rodzice,
-            info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej lub kliknij poniżej ` ,
-            link : rekru
+            info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej  ` ,
+            link : ''
 
             
         },
