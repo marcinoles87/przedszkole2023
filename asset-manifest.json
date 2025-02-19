@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.6042400c.css",
-    "main.js": "./static/js/main.9d45c75c.js",
+    "main.js": "./static/js/main.e4be364c.js",
     "static/media/sala1-min.jpg": "./static/media/sala1-min.5202ce3c0b07066cea0f.jpg",
     "static/media/standardy.jpeg": "./static/media/standardy.e5344726a54f9b4716e2.jpeg",
     "static/media/sala2-min.jpg": "./static/media/sala2-min.a0e2fb865dbe92545e02.jpg",
@@ -18,16 +18,17 @@
     "static/media/jubileusz.jpg": "./static/media/jubileusz.7b8036656091e0d56a0f.jpg",
     "static/media/kadra.png": "./static/media/kadra.cc6c07f23d603c77d8ab.png",
     "static/media/standardy.docx": "./static/media/standardy.72b39bb912b0898e81aa.docx",
+    "static/media/rek2025.doc": "./static/media/rek2025.dad4b5d5beef7d35f73a.doc",
     "static/media/deklaracja_wak_nasi_rodo.doc": "./static/media/deklaracja_wak_nasi_rodo.07735ec82c97548fe8bb.doc",
     "static/media/ogloszenie_uzupelniajace.doc": "./static/media/ogloszenie_uzupelniajace.c44d10f95e0c189da117.doc",
     "static/media/rodzice.jpg": "./static/media/rodzice.3175cc2ae9948e965af9.jpg",
     "static/media/karta_zapisu.docX": "./static/media/karta_zapisu.e70611d099177ea35bb5.docX",
     "index.html": "./index.html",
     "main.6042400c.css.map": "./static/css/main.6042400c.css.map",
-    "main.9d45c75c.js.map": "./static/js/main.9d45c75c.js.map"
+    "main.e4be364c.js.map": "./static/js/main.e4be364c.js.map"
   },
   "entrypoints": [
     "static/css/main.6042400c.css",
-    "static/js/main.9d45c75c.js"
+    "static/js/main.e4be364c.js"
   ]
 }
