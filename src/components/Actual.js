@@ -32,6 +32,7 @@ function Actual() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+  const rekru = <a href='/rekrutacja'>link</a>
   const link = <a href={doc}> link</a>
   const standardy = <a href={sta}>link</a>
   const kier = <a href={kiermasz} >link</a>
@@ -69,7 +70,7 @@ function Actual() {
             descirption : "Informacje na temat rekrutacji do przedszkola na rok 2025 " ,
             imgUrl : rodzice,
             info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej lub kliknij poniżej ` ,
-            link : <Nav.Link href="/rekrutacja"><u>Rekrutacja 2025</u></Nav.Link>
+            link : rekru
 
             
         },
