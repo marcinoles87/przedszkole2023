@@ -1,5 +1,6 @@
 import React from 'react'
 import './styleGrup.css'
+import doc from '../doc/rek2025.docx'
 
 function Rekrutacja() {
   return (
@@ -8,25 +9,30 @@ function Rekrutacja() {
 
 <div className='rekrutacja-info'>
 
-    <h1>
-      REKRUTACJA UZUPEŁNIAJĄCA NA ROK 2024/2025
-    DLA DZIECI ROZPOCZYNAJĄCYCH KORZYSTANIE 
-    z  Przedszkola nr 111 „Pod Modrzewiem” 
-    OD 1 WRZEŚNIA 2024 
-    </h1>
+    <h1>Rekrutacja na rok szkolny 2025/2026</h1>
 
+    <h2>Dzieci kontynuujące korzystanie</h2>
 
-  <p><b>Od 20 maja do 3 czerwca 2024 r.</b> będzie odbywać się rekrutacja uzupełniająca na wolne miejsca w przedszkolu. W tych dniach będą przyjmowane wnioski wraz z załącznikami (jedynie w wersji papierowej).<br></br> 
-  <br></br>
-  <b>19 czerwca 2024 r. o godzinie 9:00</b> nastąpi ogłoszenie wyników rekrutacji uzupełniającej.<br></br>
-  <br></br>
-  <b>Od 20 czerwca do 27 czerwca 2024 r.</b> rodzice dzieci zakwalifikowanych do przedszkola muszą potwierdzić wolę przyjęcia.
-  Potwierdzenie woli przyjęcia będzie odbywać się poprzez wypełnienie
-  i podpisanie druku, który będzie dostępny w kancelarii w godzinach od 7:00 do 15:00. <br></br>
-  Nie potwierdzenie woli przyjęcia w wyznaczonym terminie będzie równoznaczne z rezygnacją z przyjęcia dziecka do naszego przedszkola.<br></br>
-  <br></br>
-  <b>28 czerwca 2024 r. o godz. 9:00 </b>nastąpi ogłoszenie listy przyjętych i nieprzyjętych oraz liczby wolnych miejsc.
-  </p>
+    <p>Rodzice, których dzieci uczęszczają obecnie do przedszkola oraz będą <b>nadal uczęszczać</b>  od
+      1 września 2025 r. proszeni są o złożenie deklaracji o kontynuowaniu wychowania
+      przedszkolnego.
+      Deklaracje w wersji papierowej będą dostępne u osoby pełniącej dyżur w szatni  <b>od 20 do 28
+      lutego 2025 r.</b> lub w wersji elektronicznej <a href={doc}>Link</a> .
+      Niezłożenie deklaracji w ustalonym terminie jest równoznaczne z rezygnacją z miejsca w
+      przedszkolu na nowy rok szkolny.
+      </p>
+
+      <h2>Dzieci nowe</h2>
+      <p>Rekrutacja do przedszkola dla dzieci nowych będzie trwać od <b>3 do 31 marca 2025 r.</b>  Informacje
+    dotyczące zasad rekrutacji są zamieszczone na <u>Portalu Edukacyjnym Miasta Krakowa.</u>
+    Kryteria naboru do krakowskich przedszkoli samorządowych określa <u>art. 131 ust. 2 ustawy z dnia
+    14 grudnia 2016 r. Prawo oświatowe (Dz. U. z 2024 r. poz. 737 z późn. zm.) uchwała nr
+    LXVI/1650/17 Rady Miasta Krakowa z dnia 15 marca 2017 r. w sprawie określenia kryteriów naboru do
+    samorządowych przedszkoli na drugim etapie postępowania rekrutacyjnego oraz dokumentów niezbędnych do
+    potwierdzania tych kryteriów (ze zm.).</u>
+    Wypełnione i podpisane wnioski można będzie składać w kancelarii Przedszkola codziennie w
+    godz. 7:00 do 15:00. Kolejność składania wniosków nie ma znaczenia.
+    </p>
 
 
 
