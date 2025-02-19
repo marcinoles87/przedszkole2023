@@ -16,6 +16,11 @@ import doc from './doc/ogloszenie_uzupelniajace.doc'
 import dyzur from './pages/Dyzurwakacyjny'
 import sta from './doc/standardy.docx'
 import standardyImg from '../img/standardy.jpeg'
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 
 
@@ -60,11 +65,12 @@ function Actual() {
         },
 
         {
-            title: "Dla rodzicow " ,
-            descirption : "Rekrutacja do przedszkola (AKTUALIZACJA MAJ) " ,
+            title: "Dla rodziców " ,
+            descirption : "Rekrutacja do przedszkola 2025 " ,
             imgUrl : rodzice,
-            info : `Rekrutacja na rok 2024  , aby uzyskać więcej informacji kliknij w link lub przejdż do zakładki REKRUTACJA na stronie głównej ` ,
-            link : link
+            info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej ` ,
+            link : <Nav.Link href="/rekrutacja"><Link to={'/rekrutacja'} className='navbar-link'>Rekrutacja 2025</Link></Nav.Link>
+
             
         },
 

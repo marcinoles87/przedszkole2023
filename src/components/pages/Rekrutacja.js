@@ -1,6 +1,6 @@
 import React from 'react'
 import './styleGrup.css'
-import doc from '../doc/rek2025.docx'
+import doc from '../doc/rek2025.doc'
 
 function Rekrutacja() {
   return (
@@ -17,7 +17,7 @@ function Rekrutacja() {
       1 września 2025 r. proszeni są o złożenie deklaracji o kontynuowaniu wychowania
       przedszkolnego.
       Deklaracje w wersji papierowej będą dostępne u osoby pełniącej dyżur w szatni  <b>od 20 do 28
-      lutego 2025 r.</b> lub w wersji elektronicznej <a href={doc}>Link</a> .
+      lutego 2025 r.</b> lub w wersji elektronicznej <a href={doc}>link do deklaracji</a> .
       Niezłożenie deklaracji w ustalonym terminie jest równoznaczne z rezygnacją z miejsca w
       przedszkolu na nowy rok szkolny.
       </p>
