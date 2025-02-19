@@ -66,10 +66,10 @@ function Actual() {
 
         {
             title: "Dla rodziców " ,
-            descirption : "Rekrutacja do przedszkola 2025 " ,
+            descirption : "Informacje na temat rekrutacji do przedszkola na rok 2025 " ,
             imgUrl : rodzice,
-            info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej ` ,
-            link : <Nav.Link href="/rekrutacja"><Link to={'/rekrutacja'} className='navbar-link'>Rekrutacja 2025</Link></Nav.Link>
+            info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej lub kliknij poniżej ` ,
+            link : <Nav.Link href="/rekrutacja"><u>Rekrutacja 2025</u></Nav.Link>
 
             
         },
