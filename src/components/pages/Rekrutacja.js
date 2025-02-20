@@ -24,12 +24,12 @@ function Rekrutacja() {
 
       <h2>Dzieci nowe</h2>
       <p>Rekrutacja do przedszkola dla dzieci nowych będzie trwać od <b>3 do 31 marca 2025 r.</b>  Informacje
-    dotyczące zasad rekrutacji są zamieszczone na <u>Portalu Edukacyjnym Miasta Krakowa.</u>
-    Kryteria naboru do krakowskich przedszkoli samorządowych określa <u>art. 131 ust. 2 ustawy z dnia
+    dotyczące zasad rekrutacji są zamieszczone na <u><a href="https://portaledukacyjny.krakow.pl/196467,artykul,rekrutacja_do_przedszkoli.html">Portalu Edukacyjnym Miasta Krakowa.</a></u>
+    Kryteria naboru do krakowskich przedszkoli samorządowych określa <u><a href="https://www.bip.krakow.pl/?dok_id=167&sub_dok_id=167&sub=uchwala&query=id%3D24443%26typ%3Du">art. 131 ust. 2 ustawy z dnia
     14 grudnia 2016 r. Prawo oświatowe (Dz. U. z 2024 r. poz. 737 z późn. zm.) uchwała nr
     LXVI/1650/17 Rady Miasta Krakowa z dnia 15 marca 2017 r. w sprawie określenia kryteriów naboru do
     samorządowych przedszkoli na drugim etapie postępowania rekrutacyjnego oraz dokumentów niezbędnych do
-    potwierdzania tych kryteriów (ze zm.).</u>
+    potwierdzania tych kryteriów (ze zm.).</a></u>
     Wypełnione i podpisane wnioski można będzie składać w kancelarii Przedszkola codziennie w
     godz. 7:00 do 15:00. Kolejność składania wniosków nie ma znaczenia.
     </p>
