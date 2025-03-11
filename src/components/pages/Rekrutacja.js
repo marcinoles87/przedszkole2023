@@ -11,7 +11,7 @@ function Rekrutacja() {
 
     <h1>Rekrutacja na rok szkolny 2025/2026</h1>
 
-    <h2>Dzieci kontynuujące korzystanie</h2>
+    {/* <h2>Dzieci kontynuujące korzystanie</h2>
 
     <p>Rodzice, których dzieci uczęszczają obecnie do przedszkola oraz będą <b>nadal uczęszczać</b>  od
       1 września 2025 r. proszeni są o złożenie deklaracji o kontynuowaniu wychowania
@@ -20,7 +20,7 @@ function Rekrutacja() {
       lutego 2025 r.</b> lub w wersji elektronicznej <a href={doc}>link do deklaracji</a> .
       Niezłożenie deklaracji w ustalonym terminie jest równoznaczne z rezygnacją z miejsca w
       przedszkolu na nowy rok szkolny.
-      </p>
+      </p> */}
 
       <h2>Dzieci nowe</h2>
       <p>Rekrutacja do przedszkola dla dzieci nowych będzie trwać od <b>3 do 31 marca 2025 r.</b>  Informacje

@@ -36,14 +36,22 @@ function Main() {
 <Fade  delay={500}>
         <Row className='main-info-container visible-main-info-container'>
 
-          {/* <Col >
+          <Col >
 
-          <h2 >Zebranie rodziców </h2>
-            <p>Szanowni Państwo, serdecznie zapraszamy na zebranie rodziców, które odbędzie się w dniu 04.09.2024 r. (tj. środa) o godz. 17:00.
-Prosimy o przyjście bez dzieci.</p>
+           <h2>Serdecznie  zapraszamy   przyszłych  przedszkolaków na  DZIEŃ  OTWARTY do  Przedszkola 111 „Pod  Modrzewiem’’,</h2>
+
+                 <p>które  odbędzie  się  13  marca  2025 r. (czwartek) w godzinach  od 15:00 do 17:00. <br></br>W  tym  dniu  zapraszamy do:</p> 
+                  
+                  <p>- zwiedzania naszego przedszkola,</p>
+                  <p>- rozmów z dyrektorem i nauczycielkami,</p>
+                  <p>- udziału w grach i zabawach sportowych,</p>
+                  <p>- spróbowania zdrowego poczęstunku z naszej kuchni,</p>
+                  <p>Przyjdź, poznaj nas i dołącz do naszej  przedszkolnej społeczności.</p>
+                  
+                  
 
           
-          </Col> */}
+          </Col>
           
           <Col > 
             <h2>OPŁATY ZA KORZYSTANIE Z PRZEDSZKOLA</h2>
