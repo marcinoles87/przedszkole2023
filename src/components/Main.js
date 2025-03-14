@@ -6,10 +6,19 @@ import { Fade } from "react-awesome-reveal";
 
 import './main.css'
 
+import doc1 from './doc/DEKLARACJA.doc'
+import doc2 from './doc/KARTAZAPISU.docX'
+
+
+
 
 
 
 function Main() {
+
+    const deklaracja = <a href={doc1}> deklaracje</a>
+    const kartaZapisu = <a href={doc2}> karte zapisu</a>
+  
 
 
 
@@ -42,13 +51,13 @@ function Main() {
           <h2>DYŻUR WAKACYJNY 2025 DLA DZIECI UCZĘSZCZAJĄCYCH do Przedszkola nr 111 „Pod Modrzewiem” </h2>
 <p>Dyżur wakacyjny w naszym przedszkolu będzie odbywał się w lipcu.
 Rodzice dzieci chętnych na dyżur w lipcu, w naszej placówce wypełniają
-deklarację. Wypełnioną i podpisaną deklarację można złożyć u osoby
+{deklaracja}. Wypełnioną i podpisaną deklarację można złożyć u osoby
 pełniącej dyżur w szatni lub bezpośrednio w kancelarii przedszkola, czynnej
 w godzinach od 7:00 do 15:00.
 Składanie deklaracji będzie odbywać się w dniach od 17 do 28 marca 2025 r.
 W sierpniu nasze przedszkole będzie zamknięte.
 Rodzice dzieci chętnych na dyżur wakacyjny w innym przedszkolu,
-wypełniają kartę zapisu, podbijają ją pieczątką naszej placówki i zanoszą do
+wypełniają {kartaZapisu}, podbijają ją pieczątką naszej placówki i zanoszą do
 przedszkola, którym są zainteresowani.
 Deklaracje i karty zapisu będą dostępne w wersji papierowej w szatni
 od 17 marca 2025 r. lub będzie można je wydrukować ze strony internetowej
