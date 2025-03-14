@@ -8,6 +8,7 @@ import './main.css'
 
 
 
+
 function Main() {
 
 
@@ -38,15 +39,38 @@ function Main() {
 
           <Col >
 
-           <h2>Serdecznie  zapraszamy   przyszłych  przedszkolaków na  DZIEŃ  OTWARTY do  Przedszkola 111 „Pod  Modrzewiem’’,</h2>
+          <h2>DYŻUR WAKACYJNY 2025 DLA DZIECI UCZĘSZCZAJĄCYCH do Przedszkola nr 111 „Pod Modrzewiem” </h2>
+<p>Dyżur wakacyjny w naszym przedszkolu będzie odbywał się w lipcu.
+Rodzice dzieci chętnych na dyżur w lipcu, w naszej placówce wypełniają
+deklarację. Wypełnioną i podpisaną deklarację można złożyć u osoby
+pełniącej dyżur w szatni lub bezpośrednio w kancelarii przedszkola, czynnej
+w godzinach od 7:00 do 15:00.
+Składanie deklaracji będzie odbywać się w dniach od 17 do 28 marca 2025 r.
+W sierpniu nasze przedszkole będzie zamknięte.
+Rodzice dzieci chętnych na dyżur wakacyjny w innym przedszkolu,
+wypełniają kartę zapisu, podbijają ją pieczątką naszej placówki i zanoszą do
+przedszkola, którym są zainteresowani.
+Deklaracje i karty zapisu będą dostępne w wersji papierowej w szatni
+od 17 marca 2025 r. lub będzie można je wydrukować ze strony internetowej
+przedszkola.</p>
 
-                 <p>które  odbędzie  się  13  marca  2025 r. (czwartek) w godzinach  od 15:00 do 17:00. <br></br>W  tym  dniu  zapraszamy do:</p> 
-                  
-                  <p>- zwiedzania naszego przedszkola,</p>
-                  <p>- rozmów z dyrektorem i nauczycielkami,</p>
-                  <p>- udziału w grach i zabawach sportowych,</p>
-                  <p>- spróbowania zdrowego poczęstunku z naszej kuchni,</p>
-                  <p>Przyjdź, poznaj nas i dołącz do naszej  przedszkolnej społeczności.</p>
+<h3>ЧЕРГУВАННЯ ЛІТО 2025
+ДЛЯ ДІТЕЙ, ЯКІ ВІДВІДУЮТЬ
+дитячий садок № 111 &quot;Pod Modrzewiem&quot;</h3>
+
+<p> 17 по 28 березня 2025 року ви будете мати змогу зареєструвати дитину на літнє
+чергування в нашому дитячому садку.
+В серпні наш дошкільний заклад буде закритий. 
+Батьки дітей, які бажають відвідувати  інший дитячий садок в серпні, заповнюють
+реєстраційну форму, підтверджують її печаткою нашого закладу і несуть в
+дитячий садок, який їх цікавить.
+В нашому дитячому садку чергування відбудеться в липні.
+Батьки дітей, які бажають відвідувати наш дитячий в липні, заповнюють
+декларацію в нашому закладі.
+Паперові декларації та реєстраційні картки будуть доступні в гардеробі з 17
+березня 2025 року.
+Заповнену та підписану декларацію просимо надати черговому в гардеробі або
+занести безпосередньо  до канцелярії дитячого садка, що працює з 7.00 до 15.00. </p>
                   
                   
 
