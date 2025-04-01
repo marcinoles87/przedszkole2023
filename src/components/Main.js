@@ -58,7 +58,7 @@ W pierwszej kolejności będą przyjmowane: <br></br>
 3. Dzieci, które uczęszczały do przedszkoli zamkniętych na dwa miesiące na terenie Krakowa.<br></br>
 4. Pozostałe dzieci – decyduje kolejność zgłoszeń.<br></br>
 
-Rodzice dzieci, które nie uczęszczały do naszego przedszkola chętnych na dyżur w naszej placówce wypełniają {kartaZapisu}.
+Rodzice dzieci, które  <b>nie uczęszczały </b>do naszego przedszkola chętnych na dyżur w naszej placówce wypełniają {kartaZapisu}.
 Karty zapisu są dostępne w naszym przedszkolu w wersji papierowej u osoby dyżurującej w szatni lub można je wydrukować ze strony internetowej przedszkola. Wydrukowaną kartę należy podbić pieczątką swojej placówki. Podbitą i wypełnioną kartę można zostawić u osoby dyżurującej w szatni lub przynieść bezpośrednio do kancelarii czynnej w godz. od 7:00 do 15:00. </p>
 
 <h3>ЧЕРГУВАННЯ ЛІТО 2025
