@@ -48,20 +48,18 @@ function Main() {
 
           <Col >
 
-          <h2>DYŻUR WAKACYJNY 2025 DLA DZIECI UCZĘSZCZAJĄCYCH do Przedszkola nr 111 „Pod Modrzewiem” </h2>
-<p>Dyżur wakacyjny w naszym przedszkolu będzie odbywał się w lipcu.
-Rodzice dzieci chętnych na dyżur w lipcu, w naszej placówce wypełniają
-{deklaracja}. Wypełnioną i podpisaną deklarację można złożyć u osoby
-pełniącej dyżur w szatni lub bezpośrednio w kancelarii przedszkola, czynnej
-w godzinach od 7:00 do 15:00.
-Składanie deklaracji będzie odbywać się w dniach od 17 do 28 marca 2025 r.
-W sierpniu nasze przedszkole będzie zamknięte.
-Rodzice dzieci chętnych na dyżur wakacyjny w innym przedszkolu,
-wypełniają {kartaZapisu}, podbijają ją pieczątką naszej placówki i zanoszą do
-przedszkola, którym są zainteresowani.
-Deklaracje i karty zapisu będą dostępne w wersji papierowej w szatni
-od 17 marca 2025 r. lub będzie można je wydrukować ze strony internetowej
-przedszkola.</p>
+          <h2>DYŻUR WAKACYJNY 2025 DLA DZIECI NIEUCZĘSZCZAJĄCYCH do Przedszkola nr 111 „Pod Modrzewiem” </h2>
+<p> <b>W dniach od 7 do 11 kwietnia 2025 r. </b>będzie można zapisać dziecko, które
+<b> nie uczęszczało</b> do naszego przedszkola na dyżur wakacyjny, który będzie odbywał się w naszym przedszkolu w <b>lipcu</b>.
+<br></br>
+W pierwszej kolejności będą przyjmowane: <br></br>
+1. Dzieci, które uczęszczały do przedszkoli zamkniętych na dwa miesiące na terenie naszej dzielnicy.<br></br>
+2. Dzieci, których rodzeństwo uczęszcza do naszej placówki.<br></br>
+3. Dzieci, które uczęszczały do przedszkoli zamkniętych na dwa miesiące na terenie Krakowa.<br></br>
+4. Pozostałe dzieci – decyduje kolejność zgłoszeń.<br></br>
+
+Rodzice dzieci, które nie uczęszczały do naszego przedszkola chętnych na dyżur w naszej placówce wypełniają {kartaZapisu}.
+Karty zapisu są dostępne w naszym przedszkolu w wersji papierowej u osoby dyżurującej w szatni lub można je wydrukować ze strony internetowej przedszkola. Wydrukowaną kartę należy podbić pieczątką swojej placówki. Podbitą i wypełnioną kartę można zostawić u osoby dyżurującej w szatni lub przynieść bezpośrednio do kancelarii czynnej w godz. od 7:00 do 15:00. </p>
 
 <h3>ЧЕРГУВАННЯ ЛІТО 2025
 ДЛЯ ДІТЕЙ, ЯКІ ВІДВІДУЮТЬ
