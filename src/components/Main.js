@@ -59,25 +59,9 @@ W pierwszej kolejności będą przyjmowane: <br></br>
 4. Pozostałe dzieci – decyduje kolejność zgłoszeń.<br></br>
 
 Rodzice dzieci, które  <b>nie uczęszczały </b>do naszego przedszkola chętnych na dyżur w naszej placówce wypełniają {kartaZapisu}.
-Karty zapisu są dostępne w naszym przedszkolu w wersji papierowej u osoby dyżurującej w szatni lub można je wydrukować ze strony internetowej przedszkola. Wydrukowaną kartę należy podbić pieczątką swojej placówki. Podbitą i wypełnioną kartę można zostawić u osoby dyżurującej w szatni lub przynieść bezpośrednio do kancelarii czynnej w godz. od 7:00 do 15:00. </p>
+Karty zapisu są dostępne w naszym przedszkolu w wersji papierowej u osoby dyżurującej w szatni lub można je wydrukować ze strony internetowej przedszkola. Wydrukowaną kartę należy podbić pieczątką swojej placówki.Podbitą i wypełnioną kartę można zostawić u osoby dyżurującej w szatni (przedszkole czynne jest w godz. od 6:00 do 17:00) lub przynieść bezpośrednio do kancelarii czynnej w godz. od 7:00 do 15:00.  </p>
 
-<h3>ЧЕРГУВАННЯ ЛІТО 2025
-ДЛЯ ДІТЕЙ, ЯКІ ВІДВІДУЮТЬ
-дитячий садок № 111 &quot;Pod Modrzewiem&quot;</h3>
 
-<p> 17 по 28 березня 2025 року ви будете мати змогу зареєструвати дитину на літнє
-чергування в нашому дитячому садку.
-В серпні наш дошкільний заклад буде закритий. 
-Батьки дітей, які бажають відвідувати  інший дитячий садок в серпні, заповнюють
-реєстраційну форму, підтверджують її печаткою нашого закладу і несуть в
-дитячий садок, який їх цікавить.
-В нашому дитячому садку чергування відбудеться в липні.
-Батьки дітей, які бажають відвідувати наш дитячий в липні, заповнюють
-декларацію в нашому закладі.
-Паперові декларації та реєстраційні картки будуть доступні в гардеробі з 17
-березня 2025 року.
-Заповнену та підписану декларацію просимо надати черговому в гардеробі або
-занести безпосередньо  до канцелярії дитячого садка, що працює з 7.00 до 15.00. </p>
                   
                   
 
