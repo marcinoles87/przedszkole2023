@@ -99,7 +99,7 @@ function App() {
         <Route path='/grupa3' element={<Grupa3></Grupa3>}></Route>
         <Route path='/grupa4' element={<Grupa4></Grupa4>}></Route>
         <Route path='/grupa5' element={<Grupa5></Grupa5>}></Route>
-        <Route path='/rekrutacja' element={<Rekrutacja></Rekrutacja>}></Route>
+        {/* <Route path='/rekrutacja' element={<Rekrutacja></Rekrutacja>}></Route> */}
         <Route path='/dyzur' element={<Dyzurwakacyjny></Dyzurwakacyjny>}></Route>
         <Route path='/wydarzenia' element={<Wydarzenia></Wydarzenia>}></Route>
         

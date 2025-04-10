@@ -48,19 +48,34 @@ function Main() {
 
           <Col >
 
-          <h2>DYŻUR WAKACYJNY 2025 DLA DZIECI NIEUCZĘSZCZAJĄCYCH do Przedszkola nr 111 „Pod Modrzewiem” </h2>
-<p> <b>W dniach od 7 do 11 kwietnia 2025 r. </b>będzie można zapisać dziecko, które
-<b> nie uczęszczało</b> do naszego przedszkola na dyżur wakacyjny, który będzie odbywał się w naszym przedszkolu w <b>lipcu</b>.
-<br></br>
-W pierwszej kolejności będą przyjmowane: <br></br>
-1. Dzieci, które uczęszczały do przedszkoli zamkniętych na dwa miesiące na terenie naszej dzielnicy.<br></br>
-2. Dzieci, których rodzeństwo uczęszcza do naszej placówki.<br></br>
-3. Dzieci, które uczęszczały do przedszkoli zamkniętych na dwa miesiące na terenie Krakowa.<br></br>
-4. Pozostałe dzieci – decyduje kolejność zgłoszeń.<br></br>
+          <h2>Rekrutacja dzieci nowych na 2025/2026
 
-Rodzice dzieci, które  <b>nie uczęszczały </b>do naszego przedszkola chętnych na dyżur w naszej placówce wypełniają {kartaZapisu}.
-Karty zapisu są dostępne w naszym przedszkolu w wersji papierowej u osoby dyżurującej w szatni lub można je wydrukować ze strony internetowej przedszkola. Wydrukowaną kartę należy podbić pieczątką swojej placówki.Podbitą i wypełnioną kartę można zostawić u osoby dyżurującej w szatni (przedszkole czynne jest w godz. od 6:00 do 17:00) lub przynieść bezpośrednio do kancelarii czynnej w godz. od 7:00 do 15:00.  </p>
+rok trwa nadal !!!</h2>
 
+<p>Wypełniony i podpisany wniosek można składać w
+kancelarii Przedszkola codziennie w godz. 7:00 do 15:00.
+<h2>Przyjmujemy dzieci od 2,5 do 6 roku życia</h2>
+Oferujemy:</p>
+<p>- opiekę do 5 godzin bezpłatnie,</p>
+<p>- wykwalifikowaną, doświadczoną kadrę,</p>
+<p>- opiekę specjalistów: psycholog i logopeda,</p>
+<p>- dodatkową pomoc nauczyciela w grupie,</p>
+<p>- przestronne, jasne sale,</p>
+<p>- duży, wyposażony ogród,</p>
+<p>- pyszną domowa kuchnię.</p>
+
+<p>W ofercie bezpłatne zajęcia edukacyjne:</p>
+<p>- zajęcia muzyczno-taneczne (rytmika) oraz przyrodnicze, plastyczne,
+muzyczne, matematyczne, ogólnorozwojowe,</p>
+<p>- język angielski,</p>
+<p>- teatrzyki,</p>
+<p>- kółka zainteresowań i wiele innych.</p>
+Respektujemy:
+- Krakowską Kartę Rodzinną 3+ oraz
+- kartę z programu Kraków dla Rodziny N.
+
+Przyjdź i zobacz Os. Na Stoku 21 �� – zapraszamy w każdą
+środę do oglądania Przedszkola od godziny 15:00-16:00 ��
 
                   
                   
