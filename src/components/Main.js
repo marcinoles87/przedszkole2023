@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 import './main.css'
 
-import doc1 from './doc/DEKLARACJA.doc'
+import doc1 from './doc/W2025.pdf'
 import doc2 from './doc/KARTAZAPISU.docX'
 
 
@@ -16,7 +16,7 @@ import doc2 from './doc/KARTAZAPISU.docX'
 
 function Main() {
 
-    const deklaracja = <a href={doc1}> deklaracje</a>
+    const wniosek = <a href={doc1}> wniosek</a>
     const kartaZapisu = <a href={doc2}> karte zapisu</a>
   
 
@@ -52,13 +52,13 @@ function Main() {
 
 rok trwa nadal !!!</h2>
 
-<p>Wypełniony i podpisany wniosek można składać w
+<p>Wypełniony i podpisany {wniosek} można składać w
 kancelarii Przedszkola codziennie w godz. 7:00 do 15:00.
 <h2>Przyjmujemy dzieci od 2,5 do 6 roku życia</h2>
 Oferujemy:</p>
 <p>- opiekę do 5 godzin bezpłatnie,</p>
 <p>- wykwalifikowaną, doświadczoną kadrę,</p>
-<p>- opiekę specjalistów: psycholog i logopeda,</p>
+<p>- opiekę specjalistów: <b>psycholog i logopeda,</b></p>
 <p>- dodatkową pomoc nauczyciela w grupie,</p>
 <p>- przestronne, jasne sale,</p>
 <p>- duży, wyposażony ogród,</p>
@@ -74,8 +74,8 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
 <p>- Krakowską Kartę Rodzinną 3+</p> 
 <p>- kartę z programu Kraków dla Rodziny N.</p>
 
-<p>Przyjdź i zobacz Os. Na Stoku 21 – zapraszamy w każdą
-środę do oglądania Przedszkola od godziny 15:00-16:00 </p>
+<p><b>Przyjdź i zobacz Os. Na Stoku 21 – zapraszamy w każdą
+środę do oglądania Przedszkola od godziny 15:00-16:00 </b></p>
 
                   
                   
