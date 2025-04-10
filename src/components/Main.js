@@ -64,18 +64,18 @@ Oferujemy:</p>
 <p>- duży, wyposażony ogród,</p>
 <p>- pyszną domowa kuchnię.</p>
 
-<p>W ofercie bezpłatne zajęcia edukacyjne:</p>
+<h3>W ofercie bezpłatne zajęcia edukacyjne:</h3>
 <p>- zajęcia muzyczno-taneczne (rytmika) oraz przyrodnicze, plastyczne,
 muzyczne, matematyczne, ogólnorozwojowe,</p>
 <p>- język angielski,</p>
 <p>- teatrzyki,</p>
 <p>- kółka zainteresowań i wiele innych.</p>
-Respektujemy:
-- Krakowską Kartę Rodzinną 3+ oraz
-- kartę z programu Kraków dla Rodziny N.
+<p>Respektujemy:</p>
+<p>- Krakowską Kartę Rodzinną 3+</p> 
+<p>- kartę z programu Kraków dla Rodziny N.</p>
 
-Przyjdź i zobacz Os. Na Stoku 21 �� – zapraszamy w każdą
-środę do oglądania Przedszkola od godziny 15:00-16:00 ��
+<p>Przyjdź i zobacz Os. Na Stoku 21 – zapraszamy w każdą
+środę do oglądania Przedszkola od godziny 15:00-16:00 </p>
 
                   
                   
