@@ -64,7 +64,7 @@ Oferujemy:</p>
 <p>- duży, wyposażony ogród,</p>
 <p>- pyszną domowa kuchnię.</p>
 
-<h3>W ofercie bezpłatne zajęcia edukacyjne:</h3>
+<h2>W ofercie bezpłatne zajęcia edukacyjne:</h2>
 <p>- zajęcia muzyczno-taneczne (rytmika) oraz przyrodnicze, plastyczne,
 muzyczne, matematyczne, ogólnorozwojowe,</p>
 <p>- język angielski,</p>
@@ -84,25 +84,40 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
           </Col>
           
           <Col > 
-            <h2>OPŁATY ZA KORZYSTANIE Z PRZEDSZKOLA</h2>
-            <p><b>Od 1 września 2024 roku</b> opłata za korzystanie z przedszkola wynosi:</p>
-            <p>Dzienna stawka żywieniowa:</p>
-            <ul>
-              <li> 3,6 zł - I śniadanie</li>
-              <li>2,4 zł - II śniadanie</li>
-              <li>6 zł - obiad</li>
-  
+                        <h2>UMOWA NA NOWY ROK SZKOLNY 2025/2026</h2>
+             <p><b>do Samorządowego Przedszkola nr 111 „Pod Modrzewiem”<br></br>
+             <br></br>
+              Od 22 kwietnia do 5 maja 2025 r. </b>  rodzice wszystkich dzieci, które będą
+              uczęszczać do przedszkola od 1 września 2025 (dotyczy rodziców dzieci
+              nowych, zakwalifikowanych do przedszkola oraz dzieci
+              kontynuujących) muszą potwierdzić wolę przyjęcia poprzez
+              wypełnienie i podpisanie druku, który będzie dostępny w kancelarii,
+              która jest czynna codziennie w godzinach od 7:00 do 15:00.<br></br>
+
+              <b>6 maja 2025 r. od godz. 9:00</b> nastąpi ogłoszenie list przyjętych
+              i nieprzyjętych oraz liczby wolnych miejsc.</p>
+
+              <br></br>
 
 
-            </ul>
-            <p>Miesięczna opłata za pobyt: </p>
-            <p>•bezpłatne od 8.00-13.00 oraz dla dzieci odbywających roczne przygotowanie przedszkolne</p>
-            <p>•1,44 zł/za godzinę dla pozostałych dzieci</p> 
-            <p>• 0,72zł dla rodzin objętych programem „Krakowska Karta Rodzinna 3 +” lub „Kraków dla Rodziny N” </p>
-            <p><b>Numer konta do wpłat : 22 1020 2892 0000 5402 0590 4059</b></p>
-            <p>W tytule płatności prosimy wpisywać : OPŁATA ZA PRZEDSZKOLE NR 111 ZA MIESIĄC ...</p>
+              <h2>DYŻUR WAKACYJNY</h2>
+
+ <h2>w Przedszkolu nr 111 „Pod Modrzewiem”</h2>
+
+<p><b>Od 22 kwietnia do 9 maja 2025 r. </b>wszyscy rodzice, którzy
+wyrazili chęć zapisu dziecka na dyżur wakacyjny w lipcu
+2025 r. proszeni są o <b>potwierdzenie woli przyjęcia.</b> <br></br>
+Rodzice dzieci z naszego przedszkola podpisują <b>aneks</b> do
+potwierdzenia. Rodzice dzieci z poza naszego przedszkola
+podpisują <b>potwierdzenia</b>.
+Druki dokumentów dostępne są w kancelarii, która jest
+czynna codziennie w godzinach od 7:00 do 15:00.</p>
             
          </Col>
+
+         
+
+         
          
          
         

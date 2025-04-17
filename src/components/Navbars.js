@@ -33,7 +33,7 @@ function Navbars() {
           <Nav.Link href="#about" >Nasze przedszkole</Nav.Link>
           <Nav.Link href="#info">Informacje</Nav.Link>
           <Nav.Link href="#gallery">Galeria</Nav.Link>
-          {/* <Nav.Link href="#jadlospis">Jadłospis</Nav.Link> */}
+          <Nav.Link href="/opłaty"><Link to={'/opłaty'} className='navbar-link'>Opłaty</Link></Nav.Link>
           {/* <Nav.Link href="/rekrutacja"><Link to={'/rekrutacja'} className='navbar-link'>Rekrutacja 2025</Link></Nav.Link> */}
           {/* <Nav.Link href="/rekrutacja"><Link to={'/dyzur'} className='navbar-link'>Dyżur wakacyjny</Link></Nav.Link> */}
           <NavDropdown title="Grupy" id="basic-nav-dropdown">

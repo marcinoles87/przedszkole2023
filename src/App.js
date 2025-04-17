@@ -19,6 +19,7 @@ import Grupa5 from './components/pages/Grupa5.js'
 import { projectStorage , projectFirestore } from './firebase/config.js';
 import Dyzurwakacyjny from './components/pages/Dyzurwakacyjny.js';
 import Wydarzenia from './components/pages/Wydarzenia.js';
+import Opłaty from './components/pages/Opłaty.js';
 
 
 
@@ -102,6 +103,7 @@ function App() {
         {/* <Route path='/rekrutacja' element={<Rekrutacja></Rekrutacja>}></Route> */}
         <Route path='/dyzur' element={<Dyzurwakacyjny></Dyzurwakacyjny>}></Route>
         <Route path='/wydarzenia' element={<Wydarzenia></Wydarzenia>}></Route>
+        <Route path='/opłaty' element={<Opłaty></Opłaty>}></Route>
         
 
 
