@@ -100,9 +100,8 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
               <br></br>
 
 
-              <h2>DYŻUR WAKACYJNY</h2>
-
- <h2>w Przedszkolu nr 111 „Pod Modrzewiem”</h2>
+              <h2>DYŻUR WAKACYJNY
+        w Przedszkolu nr 111 „Pod Modrzewiem”</h2>
 
 <p><b>Od 22 kwietnia do 9 maja 2025 r. </b>wszyscy rodzice, którzy
 wyrazili chęć zapisu dziecka na dyżur wakacyjny w lipcu
