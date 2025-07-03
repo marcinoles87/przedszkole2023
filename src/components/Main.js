@@ -84,33 +84,17 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
           </Col>
           
           <Col > 
-                        <h2>UMOWA NA NOWY ROK SZKOLNY 2025/2026</h2>
-             <p><b>do Samorządowego Przedszkola nr 111 „Pod Modrzewiem”<br></br>
-             <br></br>
-              Od 22 kwietnia do 5 maja 2025 r. </b>  rodzice wszystkich dzieci, które będą
-              uczęszczać do przedszkola od 1 września 2025 (dotyczy rodziców dzieci
-              nowych, zakwalifikowanych do przedszkola oraz dzieci
-              kontynuujących) muszą potwierdzić wolę przyjęcia poprzez
-              wypełnienie i podpisanie druku, który będzie dostępny w kancelarii,
-              która jest czynna codziennie w godzinach od 7:00 do 15:00.<br></br>
+            
+            <h2>Serdecznie zapraszamy</h2>
+            <p> przyszłych przedszkolaków do  <b> Samorządowego Przedszkola nr 111 „Pod Modrzewiem’’
+            na DZIEŃ ADAPTACYJNY, </b>który odbędzie się 29 sierpnia 2025 r. (piątek)
+            w godzinach od 10:00 do 12:00.</p>
+             
 
-              <b>6 maja 2025 r. od godz. 9:00</b> nastąpi ogłoszenie list przyjętych
-              i nieprzyjętych oraz liczby wolnych miejsc.</p>
-
-              <br></br>
+              
 
 
-              <h2>DYŻUR WAKACYJNY
-        w Przedszkolu nr 111 „Pod Modrzewiem”</h2>
-
-<p><b>Od 22 kwietnia do 9 maja 2025 r. </b>wszyscy rodzice, którzy
-wyrazili chęć zapisu dziecka na dyżur wakacyjny w lipcu
-2025 r. proszeni są o <b>potwierdzenie woli przyjęcia.</b> <br></br>
-Rodzice dzieci z naszego przedszkola podpisują <b>aneks</b> do
-potwierdzenia. Rodzice dzieci z poza naszego przedszkola
-podpisują <b>potwierdzenia</b>.
-Druki dokumentów dostępne są w kancelarii, która jest
-czynna codziennie w godzinach od 7:00 do 15:00.</p>
+           
             
          </Col>
 
