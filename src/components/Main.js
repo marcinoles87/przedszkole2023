@@ -91,7 +91,16 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
             w godzinach od 10:00 do 12:00.</p>
              
 
-              
+            <h2>SZATNIA w lipcu</h2>
+            <p>Szanowni Państwo,</p>
+            <p>z powodu urlopu personelu rano szatnia jest czynna:</p>
+            <p>od 6:00 do 8:00</p>
+            <p>od 8:45 do 9:00</p>
+
+
+
+
+
 
 
            
