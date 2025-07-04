@@ -85,13 +85,13 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
           
           <Col > 
             
-            <h2>Serdecznie zapraszamy</h2>
-            <p> przyszłych przedszkolaków do  <b> Samorządowego Przedszkola nr 111 „Pod Modrzewiem’’
+            <h1>DZIEŃ ADAPTACYJNY</h1>
+            <p>Serdecznie zapraszamy przyszłych przedszkolaków do  <b> Samorządowego Przedszkola nr 111 „Pod Modrzewiem’’
             na DZIEŃ ADAPTACYJNY, </b>który odbędzie się 29 sierpnia 2025 r. (piątek)
             w godzinach od 10:00 do 12:00.</p>
              
 
-            <h2>SZATNIA w lipcu</h2>
+            <h1>SZATNIA w lipcu</h1>
             <p>Szanowni Państwo,</p>
             <p>z powodu urlopu personelu rano szatnia jest czynna:</p>
             <p>od 6:00 do 8:00</p>
