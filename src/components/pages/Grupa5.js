@@ -193,7 +193,7 @@ alert('Dokument usunięty')
 
       
     </div>
-   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrot do strony glownej</Link></button>
+   <button className='group-button'><Link to={'/'} style={ {color:'white' , textDecoration:'none'}}>Powrót do strony głównej</Link></button>
 
    </>
   )
