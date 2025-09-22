@@ -175,7 +175,7 @@ const deleteDocument = async (item,index) => {
       : ''}
 
       <div className='group-btn'>
-         <button  onClick={handlefetchData}>Pokaz wydarzenia grupy</button>
+         <button  onClick={handlefetchData}>Pokaż wydarzenia grupy</button>
       </div>
       
       <div className='group-container'>

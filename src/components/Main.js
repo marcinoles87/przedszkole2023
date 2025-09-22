@@ -83,7 +83,7 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
           
           </Col>
           
-          <Col > 
+          {/* <Col > 
             
             <h1>DZIEŃ ADAPTACYJNY</h1>
             <p>Serdecznie zapraszamy przyszłych przedszkolaków do  <b> Samorządowego Przedszkola nr 111 „Pod Modrzewiem’’
@@ -105,7 +105,7 @@ muzyczne, matematyczne, ogólnorozwojowe,</p>
 
            
             
-         </Col>
+         </Col> */}
 
          
 
