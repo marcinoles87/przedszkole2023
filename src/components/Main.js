@@ -53,9 +53,9 @@ function Main() {
 rok trwa nadal !!!</h2>
 
 <p>Wypełniony i podpisany {wniosek} można składać w
-kancelarii Przedszkola codziennie w godz. 7:00 do 15:00.
+kancelarii Przedszkola codziennie w godz. 7:00 do 15:00.</p>
 <h2>Przyjmujemy dzieci od 2,5 do 6 roku życia</h2>
-Oferujemy:</p>
+<p>Oferujemy:</p>
 <p>- opiekę do 5 godzin bezpłatnie,</p>
 <p>- wykwalifikowaną, doświadczoną kadrę,</p>
 <p>- opiekę specjalistów: <b>psycholog i logopeda,</b></p>
